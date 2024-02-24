@@ -1,0 +1,43 @@
+apropos - search for functions related to a keyword
+cat - concatenate and display files
+cd - change directory
+chmod - change permission of a file
+chown - change ownership of a file
+clear (ctrl + l) - clear terminal
+cmp - check if two files are identical
+cp - copy file/directory
+date - set or read the date and time
+echo - output text string
+grep - search using patterns
+head - display specified number of lines from the top
+history - command history
+id - user identity
+ip - show and manipulate network devices, routing etc.
+ls - list directory
+lsblk - list blocks / hard drives
+lsusb - list usb files
+man - display system manuals
+mkdir - make a new directory
+mv - move or rename file/directory
+netstat - status of network
+passwd - create/update passwords
+ps - display active processes
+pwd - print working directory
+read - read input from user
+rm - delete file/directory
+rmdir - remove empty directory
+sort - sort lines of text files
+ss - session / sockets
+ssh - secure shell
+sudo - escalate privileges
+tail - display specified number of lines from the bottom
+touch - create blank file
+top - view active processes live
+uname - information about OS and hardware
+unzip - extract compressed files in a ZIP archive
+useradd - add new user
+usermod - change existing user's data
+wc - count the results
+which - find the path of a command
+who, whoami - current user
+zip - compress files into a ZIP archive
