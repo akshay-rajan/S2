@@ -2,25 +2,25 @@
 
 ### 0. Execution
 
-        ./filename.sh
-        sh filename.sh
-        source filename.sh
+    ./filename.sh
+    sh filename.sh
+    source filename.sh
 
 ### 1. Shebang
 
-        #!/bin/bash
+    #!/bin/bash
 
 ### 2. Display
 
-        echo "Hello, World"
+    echo "Hello, World"
 
 ### 3. Comments
 
-        # This is a comment
-        : '
-        These
-        are 
-        multi-line comments '
+    # This is a comment
+    : '
+    These
+    are 
+    multi-line comments '
 
 ### 4. Here Documnet (here-doc)
 
@@ -47,6 +47,19 @@ If we are using signs (`>`, `<`, `=`, ...) instead of letters (`-gt`, `-lt`, `-e
 
     if (( condition ))
 
+We can use logical operators like
 
+    if [ condition1 ] && [ condition2 ]
+                    or
+    if [[ condition1 && condition2 ]]
+
+
+These can also be implemented using the corresponding letters for the logical operators:
+
+    if [ condition1 -a condition2 ]
+
+### 6. `case` Statement
+
+    
 
 
