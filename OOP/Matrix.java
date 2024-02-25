@@ -24,10 +24,26 @@ public class Matrix {
     // Display a matrix
     public void displayMatrix() {
         for (int i = 0; i < this.rows; i++) {
-            for (int j = 0; j < this.cols; j++) {
+            for (int j = 0; j < this.cols; j++)
                 System.out.print(this.matrix[i][j] + " ");
-            }
             System.out.println();
+        }
+    }
+
+    // Add two Matrices
+    void add(Matrix matrix1, Matrix matrix2) {
+        // Check if the matrices are of the same order
+        if (matrix1.rows != matrix2.rows || matrix1.cols != matrix2.cols) {
+            System.out.println("The matrices cannot be added.");
+            return;
+        }
+        this.rows = matrix1.rows;
+        this.cols = matrix1.cols;
+        this.matrix = new int[this.rows][this.cols];
+        for (int i = 0; i < this.rows; i++) {
+            for (int j = 0; j < this.cols; j++) {
+                this.matrix[i][j] = matrix1.matrix[i][j] + matrix2.matrix[i][j];
+            }
         }
     }
     
@@ -40,21 +56,9 @@ public class Matrix {
         Matrix matrix2 = new Matrix();
         matrix2.readMatrix(sc);
 
-        // Add the matrices if they are of the same order
-        if (matrix1.rows != matrix2.rows || matrix1.cols != matrix2.cols) {
-            System.out.println("The matrices cannot be added.");
-            return;
-        }
+        // Add the matrices
         Matrix sum = new Matrix();
-        sum.rows = matrix1.rows;
-        sum.cols = matrix1.cols;
-        sum.matrix = new int[sum.rows][sum.cols];
-        for (int i = 0; i < sum.rows; i++) {
-            for (int j = 0; j < sum.cols; j++) {
-                sum.matrix[i][j] = matrix1.matrix[i][j] + matrix2.matrix[i][j];
-            }
-        }
-
+        sum.add(matrix1, matrix2);
 
         // Display the matrices
         System.out.println("Matrix 1:");
@@ -63,6 +67,7 @@ public class Matrix {
         matrix2.displayMatrix();
         System.out.println("Sum: ");
         sum.displayMatrix();
+
     }
 
 }
