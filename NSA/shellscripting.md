@@ -149,7 +149,9 @@ We can redirect the Standard Output and the Standard Error after running a comma
 
 To redirect the output and error to the same file, do
 
-    
+    command 1>file1.txt 2>$1
+            or
+    command >& file1.txt
 
 
 
