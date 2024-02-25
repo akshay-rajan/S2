@@ -109,6 +109,47 @@ Or we can do
         echo $i
     done
 
+### 11. Script Input: STDIN
+
+**Command-line Arguments**
+
+    ./filename.sh input1 input2 input3
+        ↑           ↑       ↑     ↑
+        $0          $1      $2    $3
+
+We can use any number of command-line arguments given, by using an array
+
+    args=("$@")
+    echo [args[0]]
+
+**Reading a file**
+
+Reading a file using the filename
+
+    while read line
+    do 
+        echo $line
+    done < "{$1:-/dev/stdin}"
+
+To run
+
+    ./filename.sh   file_to_read
+
+If we give no filename as the argument, the program will consider the terminal as the file, and the input given via the command line will be taken as *$line*.
+
+### 12. Script Output: STDOUT, STDERR
+
+We can redirect the Standard Output and the Standard Error after running a command to two different files.
+
+    command 1>file1.txt 2>file2.txt
+            ↑           ↑
+          STDOUT      STDERR
+            ↓
+    command >file.txt
+
+To redirect the output and error to the same file, do
+
+    
 
 
 
