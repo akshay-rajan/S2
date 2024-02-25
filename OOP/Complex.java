@@ -28,14 +28,12 @@ public class Complex {
 		// Read two complex numbers
 		double a, b;
 		Scanner sc = new Scanner(System.in);
-		System.out.print("c1.a: ");
+		System.out.print("Enter c1.a and c1.b: ");
 		a = sc.nextDouble();
-		System.out.print("c1.b: ");
 		b = sc.nextDouble();
 		Complex c1 = new Complex(a, b);
-		System.out.print("c2.a: ");
+		System.out.print("Enter c2.a and c2.b: ");
 		a = sc.nextDouble();
-		System.out.print("c2.b: ");
 		b = sc.nextDouble();
 		Complex c2 = new Complex(a, b);
 		sc.close();
