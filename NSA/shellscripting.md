@@ -60,6 +60,59 @@ These can also be implemented using the corresponding letters for the logical op
 
 ### 6. `case` Statement
 
+    case expression in
+        pattern1)
+            commands
+            ;;
+        pattern2)
+            commands
+            ;;
+        *)
+            default commands
+            ;;
+    esac
+
+### 7. `while` loop
+
+    while [ condition_is_true ]
+    do 
+        statements
+    done
+
+
+### 8. `until` loop
+
+    until [ condition_becomes_true ]
+    do
+        statements
+    done
+
+### 9. `for` loop
+
+    for variable in {start...stop...step}
+    do 
+        statements
+    done
+
+Or we can do
+
+    for (( i=0; i<5; i++ ))
+
+### 10. `break` and `continue`
+
+    for (( i=0; i<=10; i++ ))
+    do
+        if [ $i -eq 5 ]
+        then 
+            continue
+        fi
+        echo $i
+    done
+
+
+
+
+
     
 
 
