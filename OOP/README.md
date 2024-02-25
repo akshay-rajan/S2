@@ -46,6 +46,14 @@ To execute the compiled file,
 21. [The `final` keyword](#the-final-keyword)
 22. [Objects](#objects)
 23. [Constructors](#constructors)
+24. [Scope](#scope)
+25. [Constructor Overloading](#constructor-overloading)
+26. [toString](#tostring)
+27. [Array of Objects](#array-of-objects)
+28. [Static](#static)
+29. [Inheritance](#inheritance)
+30. [Method Overriding](#method-overriding)
+31. [Super](#super)
 <hr>
 <hr>
 
