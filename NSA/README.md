@@ -97,6 +97,9 @@ Path|Description
 A Terminal Emulator is used to communicate with the shell.
 A linux terminal / shell / command line provides a text based I/O interface between the user and the computer. Shell is a text-based GUI in which we enter commands to perform actions.
 
+Shell scripting is a powerful tool used to automate tasks, test solutions and increase efficiency.
+Shell script is a text file with a list of commands that instruct the OS to perform certain tasks.
+
 The most commonly used linux shell is the **Bourne Again Shell (BASH)** which is part of the GNU project.
 
 ## Prompt
