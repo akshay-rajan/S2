@@ -54,6 +54,7 @@ Daemons|Background Services that run continuously on a computer. Performs tasks 
 OS Shell|Operating System Shell or Command Language Interpreter (CLI) is the interface between the OS and the user. This interface lets the user tell the OS what to do. [Types of shells](https://phoenixnap.com/kb/linux-shells) include **Bourne Shell (sh), C Shell (csh), TENEX C Shell (tcsh), KornShell(ksh), Debian Almquist Shell (dash), Bourne Again Shell (bash)**
 Graphics Server|Linux Provides a graphical sub-system called "X-server" that allows graphical programs to run locally
 Window Manager|Graphical User Interface (GUI). e.g. GNOME, KDE, MATE, Unity and Cinnamon
+System Library | Special programs using which application programs access the kernel's features
 Utilities|Programs that performs particular functions
 
 ## Linux Architecture
