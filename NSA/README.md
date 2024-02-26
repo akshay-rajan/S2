@@ -66,6 +66,8 @@ Kernel|The core of the linux operating system whose function is to virtualise an
 Shell|An interface that a user can enter commands into to execute the kernel's functions
 System Utility|Makes available to the user all of the operating system's functionality
 
+![architecture](Others/linux_architecture.jpg)
+
 ## File System Hierarchy
 
 Linux operating system is structured in a tree-like hierarchy (*FSH* - File System Hierarchy):
