@@ -1,4 +1,5 @@
 # Assign a variable to the output of a function
+#!/bin/bash
 
 user=$(whoami)
 date=$(date)

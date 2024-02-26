@@ -1,3 +1,5 @@
+#!/bin/bash
+
 read -p "Enter two numbers: " a b
 if [ $a -gt $b ]
 then 
