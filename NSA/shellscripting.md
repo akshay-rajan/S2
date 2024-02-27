@@ -238,7 +238,16 @@ To insert a value at a particular index, do
 
 ### 18. Functions
 
-    
+To declare a function,
+
+    function funcName()
+    {
+        statements...
+    }
+
+To call a function, run
+
+    funcName
 
 ### 19. Files and Directories
 ### 20. Sending Email
