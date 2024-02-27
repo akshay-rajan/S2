@@ -250,6 +250,39 @@ To call a function, run
     funcName
 
 ### 19. Files and Directories
+
+To create a directory, run
+
+    mkdir -p dir_name
+
+To check if a directory exists, do
+
+    if [ -d $dir_name ]
+    ...
+
+To create an empty file, run `touch filename`.
+
+To chek if a file exists, do
+
+    if [ -f $file_name ]
+    ...
+
+To overwrite a file or append to an existing file, respectively do
+
+    echo "$filename" > "Something to overwrite"
+    echo "$filename" >> "Something to append"
+
+To read line by line from a file,
+
+    while IFS= read -r line
+    do
+        echo "$line"
+    done < $filename
+
+To delete a file, do
+
+    rm filename
+
 ### 20. Sending Email
 ### 21. curl
 ### 22. Professional menus
