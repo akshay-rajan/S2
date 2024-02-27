@@ -187,6 +187,12 @@ In `script2`,
     echo $(expr $n1 \* $n2 ) 
     ...
 
+To convert a hexadecimal number to decimal,
+
+    hexa=f23a2b
+    echo "obase=10; ibase=16; $hexa" | bc
+    
+
 
 ### 16. Declare command
 ### 17. Arrays
