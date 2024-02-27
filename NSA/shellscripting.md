@@ -190,11 +190,25 @@ In `script2`,
 To convert a hexadecimal number to decimal,
 
     hexa=f23a2b
-    echo "obase=10; ibase=16; $hexa" | bc
-    
-
+    echo "obase=10; ibase=16; $hexa" | bc  
 
 ### 16. Declare command
+
+`declare` command is used to update variables within the shell.
+
+We can see all variables in the system by running `declare -p`
+To create a variable, 
+
+    declare myvariable
+
+To give a value to it,
+
+    declare myvariable=12
+
+To create a read only variable, do
+
+    declare -r myvariable="value"
+
 ### 17. Arrays
 ### 18. Functions
 ### 19. Files and Directories
