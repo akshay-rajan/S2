@@ -11,7 +11,7 @@ SELECT * FROM employees WHERE last_name="Fay";
 SELECT hire_date FROM employees WHERE last_name="Grant" OR last_name="Whalen";
 
 -- 05
-SELECT * FROM employees JOIN jobs ON jobs.job_id = employees.job_id WHERE job_title="Shipping Clerk";
+SELECT first_name, last_name FROM employees JOIN jobs ON jobs.job_id = employees.job_id WHERE job_title="Shipping Clerk";
 
 -- 06
 SELECT * FROM employees WHERE department_id=8;
