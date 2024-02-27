@@ -153,8 +153,53 @@ To redirect the output and error to the same file, do
             or
     command >& file1.txt
 
+### 13. Send the output of one script to another 
+
+In `script1`,
+    
+    x = 1234
+    export x
+    ./script2.sh
+
+In `script2`,
+
+    echo $x
+
+### 14. String Processing
+
+* We can compare 2 strings using `==`
+* We can compare their lengths using `\>` and `/>`
+* Use `^` for lowercase and `^^` for uppercase
+
+### 15. Numbers and Arithmetic
+
+    n1 = 4
+    n2 = 5
+    echo $(( n1 + n2 ))
+    echo $(( n1 - n2 ))
+    echo $(( n1 * n2 ))
+    echo $(( n1 / n2 ))
+    echo $(( n1 % n2 ))
+
+        or
+
+    echo $(expr $n1 + $n2 )
+    echo $(expr $n1 \* $n2 ) 
+    ...
 
 
+### 16. Declare command
+### 17. Arrays
+### 18. Functions
+### 19. Files and Directories
+### 20. Sending Email
+### 21. curl
+### 22. Professional menus
+### 23. inotify
+### 24. grep
+### 25. awk
+### 26. sed
+### 27. 
 
     
 
