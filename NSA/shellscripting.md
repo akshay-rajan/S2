@@ -284,6 +284,32 @@ To delete a file, do
     rm filename
 
 ### 20. Sending Email
+
+1. Install ssmtp
+
+        sudo apt install ssmtp
+
+2. Edit the file `/etc/ssmtp/ssmtp.conf`
+
+        root=email@123.com
+        mailhub=ssmtp.gmail.com:587
+        AuthUser=email@123.com
+        AuthPass=
+        UseSTARTTLS=yes
+
+3. Run 
+
+        ssmtp <email>
+    
+4. Write the mail.
+
+        To:
+        From:
+        Cc:
+        Subject:
+        this is the body of the mail.
+
+
 ### 21. curl
 ### 22. Professional menus
 ### 23. inotify
