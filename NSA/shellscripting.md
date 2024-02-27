@@ -310,7 +310,7 @@ To delete a file, do
         this is the body of the mail.
 
 
-### 21. curl
+### 21. `curl`
 
 To download a file, run
 
@@ -326,9 +326,12 @@ To download the header, run
 
     curl -I <url>
 
-### 22. Professional menus
+### 22. `select` loop
 
-
+    select variable_name in option1 option2 option3 option4
+    do 
+        echo $variable_name
+    done
 
 ### 23. inotify
 ### 24. grep
