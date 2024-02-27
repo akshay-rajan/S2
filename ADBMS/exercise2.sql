@@ -32,7 +32,7 @@ SELECT * FROM jobs WHERE max_salary < 5000;
 SELECT LOWER(email) FROM employees;
 
 -- 12
-SELECT 	first_name, last_name FROM employees WHERE YEAR(hire_date) = 1995;
+SELECT first_name, last_name FROM employees WHERE YEAR(hire_date) = 1995;
 
 -- 13
 INSERT INTO employees VALUES (234, "Paul", "Newton", "paulnewton@gmail.com", "234824873", "1856-02-12", 4, 12000, 100, 11, 231);
