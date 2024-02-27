@@ -333,6 +333,28 @@ To download the header, run
         echo $variable_name
     done
 
+To avoid invalid inputs, we can use `switch` to do
+
+    select ...
+    do 
+        case $name in 
+        option1)
+            echo option1
+        ...
+    done
+
+To wait for a keypress,
+
+    while [ true ]
+    do 
+        read -t 3 -n 1
+    if [ $? = 0 ]
+    then 
+        exit;
+    else
+        echo "Waiting for keypress"
+    fi
+
 ### 23. inotify
 ### 24. grep
 ### 25. awk
