@@ -39,6 +39,7 @@ INSERT INTO employees VALUES (234, "Paul", "Newton", "paulnewton@gmail.com", "23
 
 -- 14
 DELETE FROM Dept WHERE department_id=5;
+set sql_safe_updates = 0;
 
 -- 15
 SELECT * FROM employees WHERE DAYNAME(hire_date) = "Thursday";
