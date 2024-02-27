@@ -210,7 +210,36 @@ To create a read only variable, do
     declare -r myvariable="value"
 
 ### 17. Arrays
+
+To create an array and print out the entire array,
+
+    name = ('element1' 'element2' 'element3')
+    echo "${name[@]}"
+
+To print the element at a particular index, do
+
+    echo "${name[1]}"
+
+To print the indexes in the array, do
+
+    echo "${!name[@]}"
+
+To get the length of an array, 
+
+    echo "${#name[@]}"
+
+To remove the value at an index, run
+
+    unset name[2]
+
+To insert a value at a particular index, do
+
+    name[index]=value
+
 ### 18. Functions
+
+    
+
 ### 19. Files and Directories
 ### 20. Sending Email
 ### 21. curl
