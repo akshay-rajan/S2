@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git status
+sleep 1
 git add .
 git commit -m "$1"
-echo "akshay-rajan" | git push 
+git push origin main 
