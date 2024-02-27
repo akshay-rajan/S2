@@ -311,12 +311,30 @@ To delete a file, do
 
 
 ### 21. curl
+
+To download a file, run
+
+    curl <url> -O 
+
+To rename the file
+
+    curl <url> -o new_name
+            or
+    curl <url> > new_name
+
+To download the header, run
+
+    curl -I <url>
+
 ### 22. Professional menus
+
+
+
 ### 23. inotify
 ### 24. grep
 ### 25. awk
 ### 26. sed
-### 27. 
+### 27. Debugging
 
     
 
