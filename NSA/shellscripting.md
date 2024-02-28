@@ -414,6 +414,22 @@ To modify the file, we need the `i` switch
 
 ### 27. Debugging
 
-    
+1. Run 
+
+        bash -x ./filename.sh
+
+    Which enables us to see step-by-step which lines are being executed.
+
+2.  We can also do this by adding `-x` to the shebang
+
+        #!/bin/bash -x
+
+3. We can select the lines to be executed by
+
+        set -x
+            ...
+            statements to be executed
+            ...
+        set +x
 
 
