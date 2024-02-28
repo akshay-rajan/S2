@@ -399,8 +399,19 @@ To print out a specific field
     # Fields 3 and 4
     awk '/linux/ {print $3, $4}' $filename
 
-
 ### 26. sed
+
+Stream EDitor is used to manipulate text files.
+To substitute all occurences of a 'i' with 'I' and display it, do
+
+    cat filename.txt | sed 's/i/I/'
+                or
+    sed 's/i/I/g' <filename>
+
+To modify the file, we need the `i` switch
+
+    sed -i 's/i/I/g' <filename>
+
 ### 27. Debugging
 
     
