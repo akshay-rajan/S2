@@ -356,7 +356,21 @@ To wait for a keypress,
     fi
 
 ### 23. inotify
+
+Inode Notify is used to monitor the files and directories. 
+
+    inotifywait -m /path/to/directory
+
+This constantly notifies us of any operation inside our directory being `watched`.
+
 ### 24. grep
+
+**Global Regular ExPression** is used for searching text for lines that match a regular expression.
+
+    grep <regex>
+
+
+
 ### 25. awk
 ### 26. sed
 ### 27. Debugging
