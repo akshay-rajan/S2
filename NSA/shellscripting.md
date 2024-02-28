@@ -367,9 +367,16 @@ This constantly notifies us of any operation inside our directory being `watched
 
 **Global Regular ExPression** is used for searching text for lines that match a regular expression.
 
-    grep <regex>
+    grep <regex> <file>
 
+Searching case insensitively,
 
+    grep -i $grepVar $filename
+
+For the count or line number, do respectively
+
+    grep -c ...
+    grep -n ...
 
 ### 25. awk
 ### 26. sed
