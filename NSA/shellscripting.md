@@ -379,6 +379,27 @@ For the count or line number, do respectively
     grep -n ...
 
 ### 25. awk
+
+`awk` is a programming language used to manipulate data. 
+awk allows us to search for a particular pattern, and also to specify the action to be taken when the pattern is found.
+We can run `awk` inside bash.
+To print using awk, do
+
+    awk '{print}' /path/to/filename
+
+To search for a pattern,
+
+    awk '/pattern/ {print}' /path/to/filename
+
+To print out a specific field
+
+    # Prints out the second field: "is" from "This is linux"
+    awk '/linux/ {print $2}' $filename
+    
+    # Fields 3 and 4
+    awk '/linux/ {print $3, $4}' $filename
+
+
 ### 26. sed
 ### 27. Debugging
 
