@@ -43,7 +43,6 @@ CREATE TABLE Prerequisite (
 );
 
 -- 02
-
 INSERT INTO Student VALUES ("Smith",17,1,"CS");
 INSERT INTO Student VALUES ("Brown",8,2,"CS");
 
@@ -71,7 +70,14 @@ INSERT INTO prerequisite VALUES ("CS3380","CS3320");
 INSERT INTO prerequisite VALUES ("CS3380","MATH2410");
 INSERT INTO prerequisite VALUES ("CS3320","CS1310");
 
+-- 03
+SELECT Student.name, Course.course_name, Grade_report.grade FROM Grade_report
+INNER JOIN Student on Student.student_number=Grade_report.student_number
+INNER JOIN Section on Section.section_identifier=Grade_report.section_identifier
+INNER JOIN Course on Course.course_number=Section.course_number
+WHERE Student.name="Smith";
 
-DESC Section;
+
+ 
 
 
