@@ -76,13 +76,13 @@ ADD COLUMN Commission INT;
 
 -- 05
 
-/*Data for the table regions */
+-- Data for the table regions
 INSERT INTO regions(region_id,region_name) VALUES (1,'Europe');
 INSERT INTO regions(region_id,region_name) VALUES (2,'Americas');
 INSERT INTO regions(region_id,region_name) VALUES (3,'Asia');
 INSERT INTO regions(region_id,region_name) VALUES (4,'Middle East and Africa');
 
-/*Data for the table countries */
+-- Data for the table countries
 INSERT INTO countries(country_id,country_name,region_id) VALUES ('AR','Argentina',2);
 INSERT INTO countries(country_id,country_name,region_id) VALUES ('AU','Australia',3);
 INSERT INTO countries(country_id,country_name,region_id) VALUES ('BE','Belgium',1);
@@ -109,7 +109,7 @@ INSERT INTO countries(country_id,country_name,region_id) VALUES ('US','United St
 INSERT INTO countries(country_id,country_name,region_id) VALUES ('ZM','Zambia',4);
 INSERT INTO countries(country_id,country_name,region_id) VALUES ('ZW','Zimbabwe',4);
 
-/*Data for the table locations */
+-- Data for the table locations
 INSERT INTO locations(location_id,street_address,postal_code,city,state_province,country_id) VALUES (1400,'2014 Jabberwocky Rd','26192','Southlake','Texas','US');
 INSERT INTO locations(location_id,street_address,postal_code,city,state_province,country_id) VALUES (1500,'2011 Interiors Blvd','99236','South San Francisco','California','US');
 INSERT INTO locations(location_id,street_address,postal_code,city,state_province,country_id) VALUES (1700,'2004 Charade Rd','98199','Seattle','Washington','US');
@@ -119,7 +119,7 @@ INSERT INTO locations(location_id,street_address,postal_code,city,state_province
 INSERT INTO locations(location_id,street_address,postal_code,city,state_province,country_id) VALUES (2700,'Schwanthalerstr. 7031','80925','Munich','Bavaria','DE');
 
 
-/*Data for the table jobs */
+-- Data for the table jobs
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (1,'Public Accountant',4200.00,9000.00);
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (2,'Accounting Manager',8200.00,16000.00);
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (3,'Administration Assistant',3000.00,6000.00);
@@ -141,7 +141,7 @@ INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (18,'Stock Clerk
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (19,'Stock Manager',5500.00,8500.00);
 
 
-/*Data for the table departments */
+-- Data for the table departments
 INSERT INTO Dept(department_id,department_name,location_id) VALUES (1,'Administration',1700);
 INSERT INTO Dept(department_id,department_name,location_id) VALUES (2,'Marketing',1800);
 INSERT INTO Dept(department_id,department_name,location_id) VALUES (3,'Purchasing',1700);
@@ -155,7 +155,7 @@ INSERT INTO Dept(department_id,department_name,location_id) VALUES (10,'Finance'
 INSERT INTO Dept(department_id,department_name,location_id) VALUES (11,'Accounting',1700);
 
 
-/*Data for the table employees */
+-- Data for the table employees
 INSERT INTO employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES (100,'Steven','King','steven.king@sqltutorial.org','515.123.4567','1987-06-17',4,24000.00,NULL,9);
 INSERT INTO employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES (101,'Neena','Kochhar','neena.kochhar@sqltutorial.org','515.123.4568','1989-09-21',5,17000.00,100,9);
 INSERT INTO employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES (102,'Lex','De Haan','lex.de haan@sqltutorial.org','515.123.4569','1993-01-13',5,17000.00,100,9);
@@ -198,7 +198,7 @@ INSERT INTO employees(employee_id,first_name,last_name,email,phone_number,hire_d
 INSERT INTO employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES (206,'William','Gietz','william.gietz@sqltutorial.org','515.123.8181','1994-06-07',1,8300.00,205,11);
 
 
-/*Dataforthetabledependents*/ 
+-- Data for the table dependents
 INSERT INTO dependents(dependent_id,first_name,last_name,relationship,employee_id) VALUES (1,'Penelope','Gietz','Child',206);
 INSERT INTO dependents(dependent_id,first_name,last_name,relationship,employee_id) VALUES (2,'Nick','Higgins','Child',205);
 INSERT INTO dependents(dependent_id,first_name,last_name,relationship,employee_id) VALUES (3,'Ed','Whalen','Child',200);
@@ -231,13 +231,11 @@ INSERT INTO dependents(dependent_id,first_name,last_name,relationship,employee_i
 INSERT INTO dependents(dependent_id,first_name,last_name,relationship,employee_id) VALUES (30,'Sandra','Taylor','Child',176);
 
 
--- Table Descriptions
-DESC countries;
-DESC dependents;
-DESC dept;
-DESC employees;
-DESC jobs;
-DESC locations;
-DESC regions;
-
-
+-- Contents
+SELECT * FROM countries;
+SELECT * FROM locations;
+SELECT * FROM jobs;
+SELECT * FROM regions;
+SELECT * FROM dependents;
+SELECT * FROM employees;
+SELECT * FROM departments;
