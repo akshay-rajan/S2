@@ -58,26 +58,42 @@ INSERT INTO Section VALUES (112,"MATH2410","Fall",08,"Chang");
 INSERT INTO Section VALUES (119,"CS1310","Fall",08,"Anderson");
 INSERT INTO Section VALUES (135,"CS3380","Fall",08,"Stone");
 
+INSERT INTO Grade_report VALUES (17,112,"B");
+INSERT INTO Grade_report VALUES (17,119,"C");
+INSERT INTO Grade_report VALUES (8,85,"A");
+INSERT INTO Grade_report VALUES (8,92,"A");
+INSERT INTO Grade_report VALUES (8,102,"B");
+INSERT INTO Grade_report VALUES (8,135,"A");
 
-INSERT INTO grade_report VALUES (17,112,"B");
-INSERT INTO grade_report VALUES (17,119,"C");
-INSERT INTO grade_report VALUES (8,85,"A");
-INSERT INTO grade_report VALUES (8,92,"A");
-INSERT INTO grade_report VALUES (8,102,"B");
-INSERT INTO grade_report VALUES (8,135,"A");
-
-INSERT INTO prerequisite VALUES ("CS3380","CS3320");
-INSERT INTO prerequisite VALUES ("CS3380","MATH2410");
-INSERT INTO prerequisite VALUES ("CS3320","CS1310");
+INSERT INTO Prerequisite VALUES ("CS3380","CS3320");
+INSERT INTO Prerequisite VALUES ("CS3380","MATH2410");
+INSERT INTO Prerequisite VALUES ("CS3320","CS1310");
 
 -- 03
 SELECT Student.name, Course.course_name, Grade_report.grade FROM Grade_report
-INNER JOIN Student on Student.student_number=Grade_report.student_number
-INNER JOIN Section on Section.section_identifier=Grade_report.section_identifier
-INNER JOIN Course on Course.course_number=Section.course_number
+INNER JOIN Student ON Student.student_number=Grade_report.student_number
+INNER JOIN Section ON Section.section_identifier=Grade_report.section_identifier
+INNER JOIN Course ON Course.course_number=Section.course_number
 WHERE Student.name="Smith";
 
+-- 04
+SELECT name, grade FROM Student
+INNER JOIN Grade_report ON Grade_report.student_number=Student.student_number
+INNER JOIN Section ON Section.section_identifier=Grade_report.section_identifier
+INNER JOIN Course ON Course.course_number=Section.course_number
+WHERE Course.course_name="Database" AND Section.year=08;
 
- 
 
+
+
+
+
+
+
+
+SELECT * FROM Student;
+SELECT * FROM Course;
+SELECT * FROM Section;
+SELECT * FROM Grade_report;
+SELECT * FROM Prerequisite;
 
