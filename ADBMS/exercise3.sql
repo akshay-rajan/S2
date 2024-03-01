@@ -70,7 +70,7 @@ INSERT INTO Prerequisite VALUES ("CS3380","MATH2410");
 INSERT INTO Prerequisite VALUES ("CS3320","CS1310");
 
 -- Extra
-INSERT INTO Student VALUES ("Harry", 11, 4, "CS");
+-- INSERT INTO Student VALUES ("Harry", 11, 4, "CS");
 
 -- 03
 SELECT Student.name, Course.course_name, Grade_report.grade FROM Grade_report
@@ -123,12 +123,16 @@ JOIN Section ON Section.section_identifier = Grade_report.section_identifier
 JOIN Course ON Course.course_number = Section.course_number
 WHERE Student.class = "4" AND Student.major = "CS";
 
-
 -- 10
+INSERT INTO Student VALUES ("Johnson", 25, 1, "Math");
+UPDATE Student SET class = 2 WHERE name = "Smith";
+INSERT INTO Course VALUES ("Knowledge Engineering", "CS4390", 3, "CS");
+DELETE FROM Student WHERE name = "Smith" AND student_number = 17;
 
+
+-- Contents
 SELECT * FROM Student;
 SELECT * FROM Course;
 SELECT * FROM Section;
 SELECT * FROM Grade_report;
 SELECT * FROM Prerequisite;
-
