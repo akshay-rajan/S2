@@ -83,6 +83,10 @@ INNER JOIN Section ON Section.section_identifier=Grade_report.section_identifier
 INNER JOIN Course ON Course.course_number=Section.course_number
 WHERE Course.course_name="Database" AND Section.year=08;
 
+-- 05
+SELECT course_name FROM Course
+INNER JOIN Prerequisite ON Course.course_number = Prerequisite.course_number
+
 
 
 
