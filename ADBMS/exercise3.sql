@@ -46,8 +46,8 @@ CREATE TABLE Prerequisite (
 INSERT INTO Student VALUES ("Smith",17,1,"CS");
 INSERT INTO Student VALUES ("Brown",8,2,"CS");
 
-INSERT INTO Course VALUES ("intro to computer science","CS1310",4,"CS");
-INSERT INTO Course VALUES ("Data structure","CS3320",4,"CS");
+INSERT INTO Course VALUES ("Intro To Computer Science","CS1310",4,"CS");
+INSERT INTO Course VALUES ("Data Structures","CS3320",4,"CS");
 INSERT INTO Course VALUES ("Discrete Mathematics","MATH2410",3,"MATH");
 INSERT INTO Course VALUES ("Database","CS3380",3,"CS");
 
