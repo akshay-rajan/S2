@@ -69,6 +69,9 @@ INSERT INTO Prerequisite VALUES ("CS3380","CS3320");
 INSERT INTO Prerequisite VALUES ("CS3380","MATH2410");
 INSERT INTO Prerequisite VALUES ("CS3320","CS1310");
 
+-- Extra
+INSERT INTO Student VALUES ("Harry", 11, 4, "CS");
+
 -- 03
 SELECT Student.name, Course.course_name, Grade_report.grade FROM Grade_report
 INNER JOIN Student ON Student.student_number=Grade_report.student_number
@@ -84,16 +87,44 @@ INNER JOIN Course ON Course.course_number=Section.course_number
 WHERE Course.course_name="Database" AND Section.year=08;
 
 -- 05
+-- SELECT c2.course_name FROM Course c1
+-- INNER JOIN Prerequisite p1 ON c1.course_number = p1.course_number
+-- INNER JOIN Prerequisite p2 ON p1.course_number = p2.prerequisite_number
+-- INNER JOIN Course c2 ON p2.prerequisite_number = c2.course_number
+-- WHERE c1.course_name = 'Database';
 SELECT course_name FROM Course
-INNER JOIN Prerequisite ON Course.course_number = Prerequisite.course_number
+JOIN Prerequisite ON Course.course_number = Prerequisite.prerequisite_number
+WHERE Prerequisite.course_number = (
+	SELECT course_number FROM Course 
+	WHERE course_name = 'Database'
+);
+
+-- 06
+SELECT name FROM Student
+WHERE major="CS" AND class="2";
+
+-- 07
+SELECT course_name FROM Course
+JOIN Section ON Section.course_number = Course.course_number
+WHERE instructor="King" AND YEAR BETWEEN 07 AND 08;
+
+-- 08
+SELECT Section.course_number, Section.semester, Section.year, COUNT(Student.name) FROM Section
+JOIN Course on Course.course_number = Section.course_number
+JOIN Student ON Student.major = Course.department
+WHERE Section.instructor="King"
+GROUP BY Section.course_number, Section.semester, Section.year;
+
+-- 09
+SELECT Student.name, Course.course_name, Course.course_number, Course.credit_hours, Section.semester, Section.year, Grade_report.grade
+FROM Student
+JOIN Grade_report ON Grade_report.student_number = Student.student_number
+JOIN Section ON Section.section_identifier = Grade_report.section_identifier
+JOIN Course ON Course.course_number = Section.course_number
+WHERE Student.class = "4" AND Student.major = "CS";
 
 
-
-
-
-
-
-
+-- 10
 
 SELECT * FROM Student;
 SELECT * FROM Course;
