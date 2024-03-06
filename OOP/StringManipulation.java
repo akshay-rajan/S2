@@ -34,7 +34,9 @@ public class StringManipulation {
 		} else {
 			System.out.println("The strings are equal");
 		}
-		
+
+		s1.concat(s2);
+		System.out.println("Concatenated string: " + s1);
 
 
 	}
