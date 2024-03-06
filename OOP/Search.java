@@ -1,27 +1,35 @@
 import java.util.Scanner;
 
-
 public class Search {
 
-	static boolean linearSearch(int[] array, int target) {	
-		for (int element:  array) { 
-			if (element == target) 
-				return true;
+	static int linearSearch(int[] array, int target) {	
+		for (int i = 0; i < array.length; i++) { 
+			if (array[i] == target) 
+				return i;
 		}
-		return false;
+		return -1;
 	}
+
 	public static void main(String[] args) {
 
-		// Linear Search
-		int[] array = {2, 5, 21, 12, 40, 23};
+		// Read an array and a number to search for
 		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the size of the array: ");
+		int n = sc.nextInt();
+		int[] array = new int[n];
+		System.out.print("Enter the elements of the array: ");
+		for (int i = 0; i < n; i++) 
+			array[i] = sc.nextInt();
 		System.out.print("Enter the number to search for: ");
 		int target = sc.nextInt();
 		sc.close();
-		if (linearSearch(array, target))
-			System.out.println("Element found!");
-		else 
+
+		// Search for the target
+		int index = linearSearch(array, target);
+		if (index == -1)
 			System.out.println("Element not found!");
+		else 
+			System.out.println("Element found at index " + index);
 
 	}
 
