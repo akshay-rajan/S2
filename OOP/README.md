@@ -804,3 +804,11 @@ A `File` is an abstract representation of a file and directory path names. We ca
 
     FileWriter writer = new FileWriter("path/to/file");
 
+To write to a file, do
+
+    writer.write("Something to write");
+
+Or to append, do
+
+    writer.append("Something to append");
+

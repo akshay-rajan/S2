@@ -8,7 +8,8 @@ public class Practice {
         try {
 
             FileWriter writer = new FileWriter("file.txt");
-            writer.write("Hello World \n I am new here!");
+            writer.write("Hello, World!\n");
+            writer.append("Bye bye, World!");
             writer.close();
 
         } catch (IOException e) {
