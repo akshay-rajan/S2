@@ -605,4 +605,20 @@ An `abstract method` is declared without an implementation.
 
 This forces us to implement the method in one of its child classes.
 
+### Access Modifiers 
 
+**Access Levels**
+Modifier | Class | Package | Subclass | World
+--- | --- | --- | --- | ---
+public | Y | Y | Y | Y
+protected | Y | Y | Y | N
+no modifier | Y | Y | N | N
+private | Y | N | N | N
+
+Without using a modifier, we cannot use the method in a different package by importing it.
+
+A class defined without `public` is available only to classes within the same package.
+
+A `protected method` is accessible to a different class in a different package as long as it is a sub-class of the class containing the protected member.
+
+A `private method` is only visible to the class that it contains.
