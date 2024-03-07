@@ -719,9 +719,24 @@ We can implement more than one interfaces to a class
         ...
     }
 
+### Polymorphism
 
+Polymorphism is a concept by which we can perform a single action in different ways.
+It can be seen as the ability of an object to be identified as more than type.
 
+    Car car = new Car();
+    Bicycle bicycle = new Bicycle();
 
+    Vehicle[] arr = {car, bicycle};
 
+    for (Vehicle v : arr) {
+        v.drive();
+    }
+
+* If one class inherits from another, an object of the child class can be seen as the same datatype as the parent class's object.
+
+* All objects are children-classes of the `Object` class, hence they also identify as an Object.
+
+        Object[] arr = {car, bicycle}
 
 

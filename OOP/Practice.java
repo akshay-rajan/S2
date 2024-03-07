@@ -1,31 +1,33 @@
-public class Practice implements Prey, Predator{
-
-    @Override
-    public void flee() {
-        System.out.println("I'm fleeing");
-    }
-
-    @Override
-    public void hunt() {
-        System.out.println("I'm hunting");
-    }
+public class Practice {
 
     public static void main(String[] args) {
 
-        Practice p = new Practice();
-        p.flee();
-        p.hunt();
+        Car car = new Car();
+        Bicycle bicycle = new Bicycle();
+
+        Vehicle[] arr = {car, bicycle};
+
+        for (Vehicle v : arr) {
+            v.drive();
+        }
         
     }
 }
 
-interface Prey {
-
-    void flee();
-
+abstract class Vehicle {
+    abstract void drive();
 }
-interface Predator {
-    
-    void hunt();
 
+class Car extends Vehicle {
+    @Override
+    public void drive() {
+        System.out.println("Car is driving");
+    }
+}
+
+class Bicycle extends Vehicle {
+    @Override
+    public void drive() {
+        System.out.println("Bicycle driving");
+    }
 }
