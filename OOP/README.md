@@ -639,9 +639,17 @@ These attributes can be accessed only by special methods called `getters` and `s
         public String getName() {
             return name;
         }
+        // Setter
+        public void setName(String name) {
+            this.name = name;
+        }
     }
 
+We can use setters in the constructor by
 
+    Person(String name) {
+        this.setName(name);
+    }
 
 
 
