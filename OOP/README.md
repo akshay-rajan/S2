@@ -651,6 +651,37 @@ We can use setters in the constructor by
         this.setName(name);
     }
 
+### Copying Objects
+
+If we have two objects
+
+    Car car1;
+    Car car2;
+
+and we want to copy one to another, we may do
+
+    car1 = car2;
+
+which is wrong, since now both the names `car1` and `car2` are refering to the same object. 
+Instead, we should create a copy method within our class.
+
+    public void copy(Car car) {
+
+        this.setMake(car.getMake());
+        this.setModel(car.getModel());
+        this.setYear(car.getYear());
+
+    }
+
+Now we can copy car2 to car1 by
+
+    car1.copy(car2);
+
+#### Copy Constructors
+
+We can create `copy constructors` to copy one object to another during the creation of an object, like
+
+    car2 = new Car(car1);
 
 
 
