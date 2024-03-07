@@ -1,34 +1,34 @@
 public class Practice {
     public static void main(String[] args) {
 
-        Fish fish = new Fish("Goldfish", 0.5);
-        System.out.println(fish);
+        Car car = new Car(4);
+        System.out.println(car);
+        
 
     }
 }
 
-class Organism {
-    String name;
-    
-    Organism(String name) {
-        this.name = name;
-    
-    }
+abstract class Vehicle {
 
-    public String toString() {
-        return this.name;
-    }
+    private String name;
+    private double weight;
+
+    abstract void go();
+
 }
 
-class Fish extends Organism {
-    double weight;
-    
-    Fish(String name, double weight) {
-        super(name);
-        this.weight = weight;
+class Car extends Vehicle {
+    private int seats;
+
+    public Car(int seats) {
+        this.seats = seats;
+    }
+
+    public void go() {
+        System.out.println("Car is going");
     }
 
     public String toString() {
-        return super.toString() + " (" + this.weight + " kg)";
+        return super.toString() + ", Seats: " + seats;
     }
 }

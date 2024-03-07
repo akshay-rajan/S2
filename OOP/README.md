@@ -587,6 +587,22 @@ This is similar to `this`, which refers to the same class.
         }
     }
 
+### Abstract Keyword
 
+The `abstract` keyword can be applied to both classes and methods.
+An `abstract class` cannot be instantiated, but its sub-classes can.
+
+    abstract class Vehicle {
+        ...
+    }
+    class Car extends Vehicle {
+        ...
+    }
+
+An `abstract method` is declared without an implementation.
+
+    abstract void go();
+
+This forces us to implement the method in one of its child classes.
 
 
