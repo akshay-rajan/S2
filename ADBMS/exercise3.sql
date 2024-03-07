@@ -84,11 +84,6 @@ INNER JOIN Course ON Course.course_number=Section.course_number
 WHERE Course.course_name="Database" AND Section.year=08;
 
 -- 05
--- SELECT c2.course_name FROM Course c1
--- INNER JOIN Prerequisite p1 ON c1.course_number = p1.course_number
--- INNER JOIN Prerequisite p2 ON p1.course_number = p2.prerequisite_number
--- INNER JOIN Course c2 ON p2.prerequisite_number = c2.course_number
--- WHERE c1.course_name = 'Database';
 SELECT course_name FROM Course
 JOIN Prerequisite ON Course.course_number = Prerequisite.prerequisite_number
 WHERE Prerequisite.course_number = (
