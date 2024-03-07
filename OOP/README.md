@@ -54,6 +54,8 @@ To execute the compiled file,
 29. [Inheritance](#inheritance)
 30. [Method Overriding](#method-overriding)
 31. [Super](#super)
+32. [Abstract Keyword](#abstract-keyword)
+33. [Access Modifiers](#access-modifiers)
 <hr>
 <hr>
 
