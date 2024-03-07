@@ -74,6 +74,8 @@ These can also be implemented using the corresponding letters for the logical op
 
 ### 7. `while` loop
 
+The while loop is executed  as long as the condition evaluates to true.
+
     while [ condition_is_true ]
     do 
         statements
@@ -81,6 +83,9 @@ These can also be implemented using the corresponding letters for the logical op
 
 
 ### 8. `until` loop
+
+The until loop is executed as many times the condition or command evaluates to false.
+The loop terminates when the condition or command becomes true.
 
     until [ condition_becomes_true ]
     do
