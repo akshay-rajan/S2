@@ -624,3 +624,26 @@ A class defined without `public` is available only to classes within the same pa
 A `protected method` is accessible to a different class in a different package as long as it is a sub-class of the class containing the protected member.
 
 A `private method` is only visible to the class that it contains.
+
+
+### Encapsulation
+
+Encapsulation is the process of wrapping code and data together into a single unit.
+Encapsulation means hiding the attributes of a class, by making it private or protected. 
+These attributes can be accessed only by special methods called `getters` and `setters`.
+
+    class Person {
+        private String name;
+        
+        // Getter
+        public String getName() {
+            return name;
+        }
+    }
+
+
+
+
+
+
+

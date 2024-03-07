@@ -1,34 +1,34 @@
 public class Practice {
     public static void main(String[] args) {
 
-        Car car = new Car(4);
-        System.out.println(car);
+        Car car = new Car("Toyota", "Camry", 2020);
         
+        System.out.println(car.getModel());
 
     }
 }
 
-abstract class Vehicle {
+class Car {
 
-    // private String name;
-    // private double weight;
+    private String make;
+    private String model;
+    private int year;
 
-    abstract void go();
-
-}
-
-class Car extends Vehicle {
-    private int seats;
-
-    public Car(int seats) {
-        this.seats = seats;
+    // Getters
+    public String getMake() {
+        return make;
+    }
+    public String getModel() {
+        return model;
+    }
+    public int getYear() {
+        return year;
     }
 
-    public void go() {
-        System.out.println("Car is going");
+    Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
     }
 
-    public String toString() {
-        return super.toString() + ", Seats: " + seats;
-    }
 }
