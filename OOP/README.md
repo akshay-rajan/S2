@@ -740,3 +740,21 @@ It can be seen as the ability of an object to be identified as more than type.
         Object[] arr = {car, bicycle}
 
 
+### Runtime Polymorphism
+
+`Runtime` / `Dynamic Polymorphism` is a process in which a call to an overridden method is resolved at runtime rather than compile time.
+
+An example of doing this is by first creating a general object,
+
+    Human me;
+
+and then changing its datatype on the runtime
+
+    if (choice == 1)
+        me = new Man();
+    else if (choice == 2)
+        me = new Woman();
+
+
+
+

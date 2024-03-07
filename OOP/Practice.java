@@ -1,33 +1,45 @@
+import java.util.Scanner;
+
 public class Practice {
 
     public static void main(String[] args) {
 
-        Car car = new Car();
-        Bicycle bicycle = new Bicycle();
+        Vehicle v;
 
-        Vehicle[] arr = {car, bicycle};
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter 1 for car and 2 for boat: ");
+        int choice = sc.nextInt();
 
-        for (Vehicle v : arr) {
-            v.drive();
+        if (choice == 1) {
+            v = new Car();
+            v.move();
+        } else if (choice == 2) {
+            v = new Boat();
+            v.move();
+        } else {
+            System.out.println("Invalid choice");
         }
+        
         
     }
 }
 
-abstract class Vehicle {
-    abstract void drive();
+class Vehicle {
+    void move() {
+        System.out.println("Vehicle is moving");
+    }
 }
 
 class Car extends Vehicle {
     @Override
-    public void drive() {
+    public void move() {
         System.out.println("Car is driving");
     }
 }
 
-class Bicycle extends Vehicle {
+class Boat extends Vehicle {
     @Override
-    public void drive() {
-        System.out.println("Bicycle driving");
+    public void move() {
+        System.out.println("Boat is moving");
     }
 }
