@@ -719,7 +719,7 @@ We can implement more than one interfaces to a class
         ...
     }
 
-### Polymorphism
+## Polymorphism
 
 Polymorphism is a concept by which we can perform a single action in different ways.
 It can be seen as the ability of an object to be identified as more than type.
@@ -787,7 +787,7 @@ The `finally` block is executed whether or not an exception is catched.
 
 * The `Exception` exception catches all exceptions.
 
-### File Class
+## File Class
 
 A `File` is an abstract representation of a file and directory path names. We can import it by
 
@@ -799,4 +799,8 @@ A `File` is an abstract representation of a file and directory path names. We ca
 * `file.isFile()` checks if the selected object is indeed a file and not a folder
 * To delete a file, do `file.delete()`
 
+
+### FileWriter
+
+    FileWriter writer = new FileWriter("path/to/file");
 
