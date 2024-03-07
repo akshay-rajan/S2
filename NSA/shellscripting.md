@@ -273,6 +273,14 @@ To call a function, run
 
     funcName
 
+We can use positional arguments in a function
+
+    funcName() {
+        echo $1 $2
+    }
+
+    funcName "Hello" "World"
+
 ### 19. Files and Directories
 
 To create a directory, run
