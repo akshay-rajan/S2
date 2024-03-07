@@ -787,5 +787,16 @@ The `finally` block is executed whether or not an exception is catched.
 
 * The `Exception` exception catches all exceptions.
 
+### File Class
+
+A `File` is an abstract representation of a file and directory path names. We can import it by
+
+    File file = new File("path/to/filename");
+
+* To check if a file exists, do `file.exists()`
+* Do `file.getPath()` to get the path entered
+* For the complete path in the system, run `file.getAbsolutePath()`
+* `file.isFile()` checks if the selected object is indeed a file and not a folder
+* To delete a file, do `file.delete()`
 
 
