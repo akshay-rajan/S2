@@ -69,9 +69,6 @@ INSERT INTO Prerequisite VALUES ("CS3380","CS3320");
 INSERT INTO Prerequisite VALUES ("CS3380","MATH2410");
 INSERT INTO Prerequisite VALUES ("CS3320","CS1310");
 
--- Extra
--- INSERT INTO Student VALUES ("Harry", 11, 4, "CS");
-
 -- 03
 SELECT Student.name, Course.course_name, Grade_report.grade FROM Grade_report
 INNER JOIN Student ON Student.student_number=Grade_report.student_number
@@ -100,8 +97,10 @@ WHERE Prerequisite.course_number = (
 );
 
 -- 06
+CREATE VIEW seniors AS
 SELECT name FROM Student
 WHERE major="CS" AND class="2";
+SELECT * FROM seniors;
 
 -- 07
 SELECT course_name FROM Course
