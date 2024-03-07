@@ -56,6 +56,9 @@ To execute the compiled file,
 31. [Super](#super)
 32. [Abstract Keyword](#abstract-keyword)
 33. [Access Modifiers](#access-modifiers)
+34. [Encapsulation](#encapsulation)
+35. [Copying Objects](#copying-objects)
+36. [Interface](#interface)
 <hr>
 <hr>
 
@@ -687,6 +690,38 @@ To do this, add another constructor (overloading) which does the copying at the 
     Car(Car car) {
         this.copy(car);
     }
+
+### Interface
+
+An interface is a template that can be applied to a class.
+The template specifies what a class has / must do.
+This is similar to inheritance, but inheritance is limited to one super-class, meanwhile classes can apply more than one interface.
+
+    interface Prey {
+        void flee();
+    }
+
+    public class Rabbit implements Prey {
+        @Override
+        public void flee() {
+            System.out.println("I'm fleeing!");
+        }
+    }
+    
+We can implement more than one interfaces to a class
+
+    interface Predator {
+        void hunt();
+    }
+
+    # Fish can be prey or predator
+    public class Fish implements Predator, Prey {
+        ...
+    }
+
+
+
+
 
 
 
