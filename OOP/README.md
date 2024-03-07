@@ -669,7 +669,6 @@ Instead, we should create a copy method within our class.
 
         this.setMake(car.getMake());
         this.setModel(car.getModel());
-        this.setYear(car.getYear());
 
     }
 
@@ -683,6 +682,11 @@ We can create `copy constructors` to copy one object to another during the creat
 
     car2 = new Car(car1);
 
+To do this, add another constructor (overloading) which does the copying at the creation.
+
+    Car(Car car) {
+        this.copy(car);
+    }
 
 
 

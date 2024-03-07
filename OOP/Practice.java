@@ -2,19 +2,11 @@ public class Practice {
     public static void main(String[] args) {
 
         Car car1 = new Car("Toyota", "Camry", 2020);
-        Car car2 = new Car("Honda", "Civic", 2019);
+        Car car2 = new Car(car1);
         
         System.out.println(car1);
         System.out.println(car2);
         
-        car1.copy(car2);
-
-        System.out.println(car1);
-        System.out.println(car2);
-
-
-
-
     }
 }
 
@@ -50,6 +42,10 @@ class Car {
         this.setMake(make);
         this.setModel(model);;
         this.setYear(year);
+    }
+    // Copy constructor
+    Car(Car car) {
+        this.copy(car);
     }
 
     // Copy method
