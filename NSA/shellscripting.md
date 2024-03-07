@@ -241,6 +241,19 @@ To insert a value at a particular index, do
 
     name[index]=value
 
+We can use `seq` to get a sequence of values
+
+    seq [last]
+    seq [first] [last]
+    seq [first] [step] [last]
+
+For example, do
+
+    for i in $(seq 5) 
+    do 
+        echo $i
+    done
+
 ### 18. Functions
 
 To declare a function,
