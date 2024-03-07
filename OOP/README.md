@@ -746,15 +746,22 @@ It can be seen as the ability of an object to be identified as more than type.
 
 An example of doing this is by first creating a general object,
 
-    Human me;
+    Language myLang;
 
 and then changing its datatype on the runtime
 
     if (choice == 1)
-        me = new Man();
+        myLang = new English();
     else if (choice == 2)
-        me = new Woman();
+        myLang = new Malayalam();
 
+and each of these objects may have overriden methods, which can be invoked according to its datatype
 
+    myLang.greet();
+
+### Exception Handling
+
+An `exception` is an unexpected event that occurs during the execution of a program which disrupts the normal flow of instructions.
+To gracefully handle these exceptions,
 
 
