@@ -762,6 +762,30 @@ and each of these objects may have overriden methods, which can be invoked accor
 ### Exception Handling
 
 An `exception` is an unexpected event that occurs during the execution of a program which disrupts the normal flow of instructions.
-To gracefully handle these exceptions,
+Example of exceptions include ArithmeticException, InputMismatchException etc.
+We need to gracefully handle these exceptions, using the `try` and `catch` blocks.
+
+    try {
+        
+        risky_statements;
+
+    } catch (ArithmeticException e) {
+        
+        statements;
+
+    } catch (Exception e) {
+
+        statements;
+
+    } finally {
+        
+        statements_to_always_execute;
+
+    }
+
+The `finally` block is executed whether or not an exception is catched.
+
+* The `Exception` exception catches all exceptions.
+
 
 
