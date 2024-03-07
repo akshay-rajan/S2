@@ -10,8 +10,8 @@ public class Practice {
 
 abstract class Vehicle {
 
-    private String name;
-    private double weight;
+    // private String name;
+    // private double weight;
 
     abstract void go();
 

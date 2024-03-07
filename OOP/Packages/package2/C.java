@@ -1,5 +1,4 @@
 package Packages.package2;
-import Packages.package1.*;
 
 public class C {
     
