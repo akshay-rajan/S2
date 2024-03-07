@@ -250,6 +250,12 @@ To declare a function,
         statements...
     }
 
+Or
+
+    funcName() {
+        statements...
+    }
+
 To call a function, run
 
     funcName
