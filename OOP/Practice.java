@@ -1,23 +1,24 @@
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.FileReader;
 
 public class Practice {
 
     public static void main(String[] args) {
 
         try {
+            FileReader reader = new FileReader("file.txt");
 
-            FileWriter writer = new FileWriter("file.txt");
-            writer.write("Hello, World!\n");
-            writer.append("Bye bye, World!");
-            writer.close();
+            int data = reader.read();
+            while (data != -1) {
+                System.out.print((char) data);
+                data = reader.read();
+            }
+            reader.close();
 
-        } catch (IOException e) {
+        } catch (Exception e) {
 
             e.printStackTrace();
 
         }
-
         
     }
 }

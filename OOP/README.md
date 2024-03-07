@@ -59,6 +59,12 @@ To execute the compiled file,
 34. [Encapsulation](#encapsulation)
 35. [Copying Objects](#copying-objects)
 36. [Interface](#interface)
+37. [Polymorphism](#polymorphism)
+38. [Runtime Polymorphism](#runtime-polymorphism)
+39. [Exception Handling](#exception-handling)
+40. [File Class](#file-class)
+41. [FileWriter](#filewriter)
+42. [FileReader](#filereader)
 <hr>
 <hr>
 
@@ -811,4 +817,24 @@ To write to a file, do
 Or to append, do
 
     writer.append("Something to append");
+
+### FileReader
+
+The FileReader object lets us read the contents of a file as a stream of characters. 
+    
+    FileReader reader = new FileReader("path/to/file");
+
+`read()` returns an 'int' value which contains the byte value of the character currently being read.
+When read() returns `-1`, the file has no more content to read.
+
+    int data = reader.read();
+    while (data != -1) {
+        System.out.print((char) data);
+        data = reader.read();
+    }
+    reader.close();
+
+Make sure to handle necessary exceptions like `FileNotFoundException` and `IOException`.
+
+
 
