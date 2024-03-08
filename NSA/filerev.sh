@@ -1,3 +1,4 @@
 #!/bin/bash
 
-cat file.txt
+rev=$(cat file.txt | rev)
+echo $rev > file.txt
