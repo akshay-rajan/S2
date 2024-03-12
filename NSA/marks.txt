@@ -1,0 +1,5 @@
+abc 95
+pqr 85
+xyz 62
+mno 78
+ABC 75
