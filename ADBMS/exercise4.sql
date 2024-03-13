@@ -1,2 +1,4 @@
 CREATE DATABASE PLSQL;
 CALL parity(2);
+CALL grade(76);
+
