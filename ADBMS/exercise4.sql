@@ -1,0 +1,2 @@
+CREATE DATABASE PLSQL;
+CALL parity(2);
