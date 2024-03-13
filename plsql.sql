@@ -24,4 +24,16 @@ BEGIN
     SELECT grade;
 END
 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `factorial`(IN n INT)
+BEGIN
+	DECLARE fact INT DEFAULT 1;
+	WHILE n > 0
+    DO
+		SET fact = fact * n;
+        SET n = n - 1;
+	END WHILE;
+    SELECT fact;
+END
+
+
 
