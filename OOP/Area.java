@@ -31,7 +31,7 @@ public class Area {
         Rectangle rectangle = new Rectangle(sc.nextInt(), sc.nextInt());
         System.out.println("Area of the rectangle: " + area(rectangle));
 
-        System.out.println("Enter the base and height of the triangle: ");
+        System.out.print("Enter the base and height of the triangle: ");
         Triangle triangle = new Triangle(sc.nextInt(), sc.nextInt());
         System.out.println("Area of the triangle: " + area(triangle));
         sc.close();
