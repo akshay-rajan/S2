@@ -21,50 +21,23 @@ To execute the compiled file,
 <hr>
 <hr>
 
-### Contents
+| Contents | Contents | Contents |
+| -------- | -------- | -------- |
+| 1. [JDK](#jdk) | 2. [APIs](#apis) | 3. [Data Types in Java](#data-types-in-java) |
+| 4. [Identifiers](#identifiers) | 5. [Scanner](#scanner) | 6. [Math Methods](#math-methods) |
+| 7. [Random Numbers](#random-numbers) | 8. [Conditionals: `if...else`](#conditionals-ifelse) | 9. [Switch Statements](#switch-statements) |
+| 10. [Logical Operators: `\&&, \|\|, !`](#logical-operators) | 11. [Loops: `for` and `while`](#loops-for-and-while) | 12. [Arrays](#arrays) |
+| 13. [String Methods](#string-methods) | 14. [Wrapper Classes](#wrapper-classes) | 15. [ArrayLists](#arraylists) |
+| 16. [for-each loop](#for-each-loop) | 17. [Methods](#methods) | 18. [The `main()` method](#the-main-method) |
+| 19. [Method Overloading](#method-overloading) | 20. [`printf` method](#printf-method) | 21. [The `final` keyword](#the-final-keyword) |
+| 22. [Objects](#objects) | 23. [Constructors](#constructors) | 24. [Scope](#scope) |
+| 25. [Constructor Overloading](#constructor-overloading) | 26. [toString](#tostring) | 27. [Array of Objects](#array-of-objects) |
+| 28. [Static](#static) | 29. [Inheritance](#inheritance) | 30. [Method Overriding](#method-overriding) |
+| 31. [Super](#super) | 32. [Abstract Keyword](#abstract-keyword) | 33. [Access Modifiers](#access-modifiers) |
+| 34. [Encapsulation](#encapsulation) | 35. [Copying Objects](#copying-objects) | 36. [Interface](#interface) |
+| 37. [Polymorphism](#polymorphism) | 38. [Runtime Polymorphism](#runtime-polymorphism) | 39. [Exception Handling](#exception-handling) |
+| 40. [File Class](#file-class) | 41. [FileWriter](#filewriter) | 42. [FileReader](#filereader) |
 
-1. [JDK](#jdk)
-2. [APIs](#apis)
-3. [Data Types in Java](#data-types-in-java)
-4. [Identifiers](#identifiers)
-5. [Scanner](#scanner)
-6. [Math Methods](#math-methods)
-7. [Random Numbers](#random-numbers)
-8. [Conditionals: `if...else`](#conditionals-ifelse)
-9. [Switch Statements](#switch-statements)
-10. [Logical Operators: `&&, ||, !`](#logical-operators-)
-11. [Loops: `for` and `while`](#loops-for-and-while)
-12. [Arrays](#arrays)
-13. [String Methods](#string-methods)
-14. [Wrapper Classes](#wrapper-classes)
-15. [ArrayLists](#arraylists)
-16. [for-each loop](#for-each-loop)
-17. [Methods](#methods)
-18. [The `main()` method](#the-main-method)
-19. [Method Overloading](#method-overloading)
-20. [`printf` method](#printf-method)
-21. [The `final` keyword](#the-final-keyword)
-22. [Objects](#objects)
-23. [Constructors](#constructors)
-24. [Scope](#scope)
-25. [Constructor Overloading](#constructor-overloading)
-26. [toString](#tostring)
-27. [Array of Objects](#array-of-objects)
-28. [Static](#static)
-29. [Inheritance](#inheritance)
-30. [Method Overriding](#method-overriding)
-31. [Super](#super)
-32. [Abstract Keyword](#abstract-keyword)
-33. [Access Modifiers](#access-modifiers)
-34. [Encapsulation](#encapsulation)
-35. [Copying Objects](#copying-objects)
-36. [Interface](#interface)
-37. [Polymorphism](#polymorphism)
-38. [Runtime Polymorphism](#runtime-polymorphism)
-39. [Exception Handling](#exception-handling)
-40. [File Class](#file-class)
-41. [FileWriter](#filewriter)
-42. [FileReader](#filereader)
 <hr>
 <hr>
 
