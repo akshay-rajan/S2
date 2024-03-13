@@ -35,5 +35,7 @@ BEGIN
     SELECT fact;
 END
 
-
-
+CREATE DEFINER=`root`@`localhost` PROCEDURE `day`(IN dd DATE)
+BEGIN
+	SELECT dayname(dd);
+END
