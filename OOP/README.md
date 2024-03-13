@@ -402,6 +402,18 @@ The methods must have different *Method Signatures*.
         return x + y + z;
     }
 
+In the functions 
+
+    void f(int n) {
+        ...
+    }
+    void f(float f) {
+        ...
+    }
+
+If we call the function `f` using an argument that is neither `int` nor `float`, automatic type promotion will be applied. 
+
+![type-promotion](./type-promotion.png)
 
 ### `printf` method
 
