@@ -263,7 +263,7 @@ Used for controlling the access to data within the database. It includes command
 Used for managing transactions within a database. It includes commands such as `COMMIT`, `ROLLBACK`, and `SAVEPOINT`.
 
 
-## PL/SQL
+# PL/SQL
 
 PL/SQL (Procedural Language/Structured Query Language) is a programming language used for developing applications within Oracle databases. 
 It extends SQL (Structured Query Language) by adding procedural capabilities, allowing developers to write procedural code such as loops, conditional statements, and error handling directly within SQL blocks. PL/SQL is commonly used to create stored procedures, functions, triggers, and packages, which enhance the functionality and performance of Oracle database applications.
@@ -320,3 +320,50 @@ BEGIN
         SELECT message;
 END;
 ```
+
+# MySQL
+
+MySQL is an open-source relational database management system (RDBMS) that uses Structured Query Language (SQL) for adding, accessing, and managing content in a database.
+It's known for its speed, reliability, and flexibility.
+
+MySQL provides a rich set of built-in functions that you can use in SQL statements.
+
+1. **String Functions**: Manipulate and process string data.
+   - `CONCAT(str1, str2, ...)`: Returns a string that results from concatenating the arguments.
+   - `LENGTH(str)`: Returns the length of a string in bytes.
+   - `SUBSTRING(str, pos, len)`: Returns a substring from a string starting at a specified position.
+
+2. **Numeric Functions**: Perform operations on numeric data.
+   - `ABS(X)`: Returns the absolute value of X.
+   - `CEIL(X) or CEILING(X)`: Returns the smallest integer value not less than X.
+   - `FLOOR(X)`: Returns the largest integer value not greater than X.
+
+3. **Date and Time Functions**: Process date and time data.
+   - `NOW()`: Returns the current date and time.
+   - `CURDATE()`: Returns the current date.
+   - `DATEDIFF(expr1, expr2)`: Returns the difference in days between two date expressions.
+
+4. **Control Flow Functions**: Implement conditional logic.
+   - `IF(expr1, expr2, expr3)`: If expr1 is TRUE, IF() returns expr2; otherwise, it returns expr3.
+   - `CASE`: Implements a complex conditional construct.
+
+5. **Aggregate Functions**: Perform a calculation on a set of values and return a single value.
+   - `AVG(expr)`: Returns the average value of expr.
+   - `SUM(expr)`: Returns the sum of expr.
+   - `COUNT(expr)`: Returns a count of the number of non-NULL values of expr.
+
+6. **Comparison Functions**: Compare values and return a logical value.
+   - `COALESCE(value,...)`: Returns the first non-NULL value in the list.
+   - `GREATEST(value1,value2,...)`: Returns the greatest value in the list of arguments.
+   - `LEAST(value1,value2,...)`: Returns the smallest value in the list of arguments.
+
+7. **Conversion Functions**: Convert a value from one data type to another.
+   - `CAST(expr AS type)`: Converts a value to a specified type.
+   - `CONVERT(expr,type)`: Converts a value to a specified type.
+
+8. **Information Functions**: Provide information about databases, tables, and server settings.
+   - `DATABASE()`: Returns the default (current) database name.
+   - `USER()`: Returns the current MySQL user name and host name.
+
+[MySQL Functions Reference](https://dev.mysql.com/doc/refman/8.3/en/built-in-function-reference.html).
+[MySQL Data Types Reference](https://dev.mysql.com/doc/refman/8.3/en/data-types.html)
