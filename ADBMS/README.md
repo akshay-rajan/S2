@@ -284,6 +284,7 @@ END LOOP;
 ```sql
 WHILE counter <= 5 LOOP
         ...
+        SET counter = counter + 1;
 END LOOP;
 ```
 
@@ -291,22 +292,21 @@ END LOOP;
 
 ```sql
 IF x > 5 THEN
-DBMS_OUTPUT.PUT_LINE('x is greater than 5');
+        SELECT 'x is greater than 5';
 ELSE
-DBMS_OUTPUT.PUT_LINE('x is not greater than 5');
+        SELECT 'x is not greater than 5';
 END IF;
 ```
 
 ### 4. Create a Function
 
 ```sql
-CREATE OR REPLACE FUNCTION calculate_area(length IN NUMBER, width IN NUMBER)
-RETURN NUMBER
-IS
-    area NUMBER;
+CREATE FUNCTION calculate_area(length FLOAT, width FLOAT)
+RETURNS FLOAT
 BEGIN
-    area := length * width;
-    RETURN area;
+        DECLARE area FLOAT;
+        SET area = length * width;
+        RETURN area;
 END;
 ```
 
@@ -315,9 +315,8 @@ END;
 Procedures (PL/SQL Blocks) have no return values. These are used for operations to be performed multiple times.
 
 ```sql
-CREATE OR REPLACE PROCEDURE display_message(message IN VARCHAR2)
-IS
+CREATE PROCEDURE display_message(IN message VARCHAR(255))
 BEGIN
-    DBMS_OUTPUT.PUT_LINE(message);
+        SELECT message;
 END;
 ```
