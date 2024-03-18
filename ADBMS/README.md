@@ -271,21 +271,17 @@ It extends SQL (Structured Query Language) by adding procedural capabilities, al
 ### 1. Declare a Variable
 
 ```sql
-my_variable VARCHAR(50);
+DECLARE my_variable VARCHAR(50);
 ```
 
 ### 2. Create a Simple Loop
 
 ```sql
-FOR i IN 1..5 LOOP
-        ...
-END LOOP;
-```
-```sql
-WHILE counter <= 5 LOOP
-        ...
+DECLARE counter INT DEFAULT 1;
+WHILE counter <= 5 DO
+        SELECT counter;
         SET counter = counter + 1;
-END LOOP;
+END WHILE;
 ```
 
 ### 3. Create a Conditional Statement
