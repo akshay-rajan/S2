@@ -254,6 +254,14 @@ UNION
 SELECT column_name(s) FROM table2;
 ```
 
+## 3. DCL (Data Control Language):
+
+Used for controlling the access to data within the database. It includes commands such as `GRANT` and `REVOKE`.
+
+## 4. TCL (Transaction Control Language): 
+
+Used for managing transactions within a database. It includes commands such as `COMMIT`, `ROLLBACK`, and `SAVEPOINT`.
+
 
 ## PL/SQL
 
