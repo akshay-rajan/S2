@@ -317,6 +317,9 @@ BEGIN
 END;
 ```
 
+The `IN` indicates that a parameter is an `INPUT` parameter. We provide a value for this parameter when the procedure is called. Also `IN` is the default mode of a parameter, and hence can be avoided.
+Other keywords are `OUT` (representing an output parameter) and `INOUT` (a parameter that can be both read and modified).
+
 # MySQL
 
 MySQL is an open-source relational database management system (RDBMS) that uses Structured Query Language (SQL) for adding, accessing, and managing content in a database.
