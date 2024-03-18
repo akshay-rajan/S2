@@ -6,7 +6,9 @@ Relational Database Management System is the basis for SQL. The data in RDBMS is
 
 SQL keywords are not case sensitive.
 
-### Data Definition Language (DDL):
+## 1. Data Definition Language (DDL):
+
+DDL (Data Definition Language) is a subset of SQL that is used to define and manage the structure of a database. It includes commands such as creating databases, tables, and modifying their structure.
 
 
 1. **CREATE DATABASE**: Creates a new database.
@@ -46,35 +48,24 @@ TRUNCATE TABLE tablename;
 
 6. **ALTER TABLE**: Modifies an existing table's structure.
 
- **ADD COLUMN**
-
 ```sql
 ALTER TABLE tablename
 ADD COLUMN columnname datatype;
 ```
-
-**DROP COLUMN**
-
 ```sql
 ALTER TABLE tablename
 DROP COLUMN columnname;
 ```
-
-**RENAME COLUMN**
-
 ```sql
 ALTER TABLE tablename
 RENAME COLUMN oldname TO newname;
 ```
-
-**Modify Datatype**
-
 ```sql
 ALTER TABLE tablename
 MODIFY COLUMN columnname datatype;
 ```
 
-7. **CONSTRAINTS**
+7. **CONSTRAINTS**: Rules applied to the data columns.
 
 **On Creation**:
 
@@ -218,7 +209,11 @@ CREATE VIEW view_name AS
 SELECT column1, column2, ...
 FROM table_name
 WHERE condition;
-```### Data Manipulation Language (DML):
+```
+
+## 2. Data Manipulation Language (DML):
+
+Used for manipulating the data within the database. It includes commands such as SELECT, INSERT, UPDATE, and DELETE.
 
 1. **SELECT**: Retrieves data from one or more tables.
 
@@ -242,6 +237,23 @@ WHERE EmployeeID = 1;
 ```sql
 DELETE FROM Employees WHERE EmployeeID = 1;
 ```
+5. **JOIN** (**INNER JOIN**): Combines rows from two or more tables based on a related column.
+```sql
+SELECT Orders.OrderID, Customers.CustomerName FROM Orders
+JOIN Customers 
+ON Orders.CustomerID = Customers.CustomerID;
+```
+6. **LEFT JOIN**: Returns all records from left table, and matching records from right table (NULL if no match on the right table)
+
+7. **RIGHT JOIN**: Returns all records from right table, and matching records from left table (NULL if no match on the left table)
+
+8. **UNION**: Combine the result set of two or more `SELECT` statements.
+```sql
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+```
+
 
 ## PL/SQL
 
@@ -270,15 +282,11 @@ END LOOP;
 ### 3. Create a Conditional Statement
 
 ```sql
-DECLARE
-    x NUMBER := 10;
-BEGIN
-    IF x > 5 THEN
-        DBMS_OUTPUT.PUT_LINE('x is greater than 5');
-    ELSE
-        DBMS_OUTPUT.PUT_LINE('x is not greater than 5');
-    END IF;
-END;
+IF x > 5 THEN
+DBMS_OUTPUT.PUT_LINE('x is greater than 5');
+ELSE
+DBMS_OUTPUT.PUT_LINE('x is not greater than 5');
+END IF;
 ```
 
 ### 4. Create a Function
@@ -295,6 +303,8 @@ END;
 ```
 
 ### 5. Create a Procedure
+
+Procedures (PL/SQL Blocks) have no return values. These are used for operations to be performed multiple times.
 
 ```sql
 CREATE OR REPLACE PROCEDURE display_message(message IN VARCHAR2)
