@@ -88,13 +88,6 @@ This command will display the output of `dmesg`, starting from the first occurre
 
 In conclusion, the `less` command is a powerful tool for viewing text files and command outputs in the terminal. It provides a variety of options for customizing the display and supports advanced navigation and search features¹².
 
-Source: Conversation with Bing, 3/20/2024
-(1) less command in Linux with Examples - GeeksforGeeks. https://www.geeksforgeeks.org/less-command-linux-examples/.
-(2) Less Command in Linux | Linuxize. https://linuxize.com/post/less-command-in-linux/.
-(3) less Linux Command Guide | Usage, Syntax, and Examples. https://ioflood.com/blog/less-linux-command/.
-(4) How To Use The Less Command In Linux - redswitches.com. https://www.redswitches.com/blog/less-command-in-linux/.
-(5) What is the less command in Linux? [With Easy Examples]. https://www.linuxfordevices.com/tutorials/linux/less-command.
-
 # 3. find
 The `find` command in Linux is a utility for searching files and directories in a directory hierarchy based on different criteria such as name, size, type, and more¹².
 
