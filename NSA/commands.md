@@ -807,9 +807,73 @@ In conclusion, the `ps` command is a powerful tool for managing and viewing proc
 
 # 17. ssh
 
+The `ssh` command in Linux stands for "Secure Shell". It is a cryptographic network protocol for operating network services securely over an unsecured network¹². Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH¹².
 
+Here's the basic syntax of the `ssh` command¹:
+
+```bash
+ssh [username]@[hostname or IP address]
+```
+
+While using `ssh`, you can use the following options¹:
+
+- `-p port`: Specifies the port to connect to on the remote host.
+- `-i key_file`: Selects a file from which the identity (private key) for public key authentication is read.
+- `-C`: Requests compression of all data.
+- `-v`: Verbose mode. Causes `ssh` to print debugging messages about its progress. This is helpful in debugging connection, authentication, and configuration problems.
+
+Here are some examples of how to use the `ssh` command:
+
+- To connect to a remote server:
+
+```bash
+ssh username@hostname
+```
+
+- To connect to a remote server using a specific port:
+
+```bash
+ssh -p port username@hostname
+```
+
+- To connect to a remote server with a specific identity (private key):
+
+```bash
+ssh -i key_file username@hostname
+```
+
+In conclusion, the `ssh` command is a powerful tool for secure remote command execution, secure file transfer, and secure tunneling of other applications¹².
 
 # 18. scp
 
+The `scp` command in Linux stands for "secure copy". It is used to copy files securely between hosts on a network¹². It uses SSH (Secure Shell) for data transfer and uses the same authentication and security as SSH¹².
+
+Here's the basic syntax of the `scp` command¹²:
+
+```bash
+scp [options] [[user@]host1:]source_file_or_directory ... [[user@]host2:]destination
+```
+
+While using `scp`, you can use the following options¹²:
+
+- `-P port`: Specifies the port to connect to on the remote host.
+- `-p`: Preserves modification times, access times, and modes from the original file.
+- `-q`: Disables the progress meter.
+- `-r`: Recursively copy entire directories.
+- `-s`: Name of program to use for the encrypted connection. The program must understand ssh (1) options.
+
+Here are some examples of how to use the `scp` command:
+
+- To copy a file from a local machine to a remote machine¹:
+
+```bash
+scp file_name remoteuser@remotehost:/remote/directory
+```
+
+- To copy a file from a remote machine to the local machine¹:
+
+```bash
+scp user@remotehost:/home/user/file_name .
+```
 
 
