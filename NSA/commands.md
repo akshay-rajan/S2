@@ -442,5 +442,193 @@ chown -R new_owner directory
 
 In conclusion, the `chown` command is a powerful tool for managing file and directory ownership in Linux¹².
 
-# 10. 
+# 10. useradd
+
+The `useradd` command in Linux is used to add user accounts to your system³. It edits `/etc/passwd`, `/etc/shadow`, `/etc/group` and `/etc/gshadow` files for the newly created user accounts, creates and populates a home directory for the new user, and sets permissions and ownerships to the home directory³.
+
+Here's the basic syntax of the `useradd` command³:
+
+```bash
+useradd [options] [username]
+```
+
+While using `useradd`, you can use the following options³:
+
+- `-d, --home`: Create a new home directory for the user.
+- `-u, --uid`: Assign a specific user ID (UID) to the new user.
+- `-g, --gid`: Assign a specific group ID (GID) to the new user.
+- `-M`: Do not create a home directory for the new user.
+- `-e, --expiredate`: Set an expiry date for the user account.
+- `-c, --comment`: Add a comment or description for the user.
+- `-s, --shell`: Change the login shell for the user.
+- `-p, --password`: Set an unencrypted password for the user.
+
+Here are some examples of how to use the `useradd` command:
+
+- To add a new user in Linux:
+
+```bash
+sudo useradd test_user
+```
+
+- To add a user by specifying a home directory path for the new user:
+
+```bash
+sudo useradd -d /home/test_user test_user
+```
+
+- To create a user with a specific User ID (UID):
+
+```bash
+sudo useradd -u 1234 test_user
+```
+
+- To create a user with a specific Group ID (GID):
+
+```bash
+sudo useradd -g 1000 test_user
+```
+
+- To create a user without a home directory:
+
+```bash
+sudo useradd -M test_user
+```
+
+- To create a user with an expiry date:
+
+```bash
+sudo useradd -e 2020-05-30 test_user
+```
+
+- To create a user with a comment:
+
+```bash
+sudo useradd -c "This is a test user" test_user
+```
+
+- To create a user with a changed login shell:
+
+```bash
+sudo useradd -s /bin/sh test_user
+```
+
+In conclusion, the `useradd` command is a powerful tool for managing user accounts in Linux³.
+
+# 11. userdel
+
+The `userdel` command in Linux is a utility for deleting user accounts¹². It is used to remove a user account and related files¹.
+
+Here's the basic syntax of the `userdel` command¹:
+
+```bash
+userdel [options] USERNAME
+```
+
+- `USERNAME`: The name of the user to be deleted¹.
+- `options`: Additional settings or conditions for deleting the user¹.
+
+# 11. userdel
+
+The `userdel` command in Linux is a utility for deleting user accounts and their associated files¹²³. It modifies the system account files, deleting all entries that refer to the username¹²³.
+
+Here's the basic syntax of the `userdel` command¹²³:
+
+```bash
+userdel [options] USER
+```
+
+While using `userdel`, you can use the following options¹²³:
+
+- `-r, --remove`: Remove the user’s home directory along with the account¹²³.
+- `-f, --force`: Force removal of the user account, even if the user is still logged in¹²³.
+- `-Z`: Remove SELinux user mapping for the user’s login¹.
+- `--help`: Display a help message and exit¹.
+
+Here are some examples of how to use the `userdel` command:
+
+- To delete a user:
+
+```bash
+sudo userdel username
+```
+
+- To forcibly delete a user:
+
+```bash
+sudo userdel -f username
+```
+
+- To delete a user along with the home directory and mail spool:
+
+```bash
+sudo userdel --remove username
+```
+
+In conclusion, the `userdel` command is a powerful tool for managing user accounts in Linux¹²³.
+
+
+# 12. usermod
+
+The `usermod` command in Linux is a command-line utility that allows you to modify a user’s login information¹. This includes adding a user to a group, changing a user shell, login name, home directory, and more¹.
+
+Here's the basic syntax of the `usermod` command¹:
+
+```bash
+usermod [options] USER
+```
+
+While using `usermod`, you can use the following options¹:
+
+- `-a, -G GROUP`: Add the user to the supplementary group(s). Use only with the `-G` option¹.
+- `-c COMMENT`: The new value of the user's password file comment field. It is typically a short description of the login, and is currently used as the field for the user's full name¹.
+- `-d HOME_DIR`: The user's new login directory¹.
+- `-e EXPIRE_DATE`: The date on which the user account will be disabled¹.
+- `-f INACTIVE`: The number of days after a password expires until the account is permanently disabled¹.
+- `-g GROUP`: The group name or number of the user's new initial login group. The group must exist¹.
+- `-G GROUP1[,GROUP2,...[,GROUPN]]]`: A list of supplementary groups which the user is also a member of. Each group is separated from the next by a comma, with no intervening whitespace¹.
+- `-l LOGIN`: The name of the user will be changed from LOGIN to NEW_LOGIN¹.
+- `-L`: Lock a user's password¹.
+- `-m`: Move the content of the user's home directory to the new location¹.
+- `-p PASSWORD`: The encrypted password, as returned by `crypt(3)`¹.
+- `-s SHELL`: The name of the user's new login shell¹.
+- `-u UID`: The numerical value of the user's ID¹.
+- `-U`: Unlock a user's password¹.
+
+Here are some examples of how to use the `usermod` command:
+
+- To add a user to a group:
+
+```bash
+sudo usermod -a -G GROUP USER
+```
+
+- To change a user's home directory:
+
+```bash
+sudo usermod -d HOME_DIR -m USER
+```
+
+- To change a user's login shell:
+
+```bash
+sudo usermod -s /bin/sh USER
+```
+
+- To change a user's login name:
+
+```bash
+sudo usermod -l NEW_LOGIN USER
+```
+
+In conclusion, the `usermod` command is a powerful tool for managing user accounts in Linux¹.
+
+# 13. passwd
+# 14. df
+# 15. top
+# 16. ps
+# 17. ssh
+# 18. scp
+
+
 
