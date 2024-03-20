@@ -354,5 +354,93 @@ head -c 6 file.txt
 
 In conclusion, the `head` command is a simple yet powerful tool for displaying the beginning of text files or command outputs¹².
 
+# 8. tail
 
+The `tail` command in Linux is a utility for displaying the end of text files or command outputs¹². By default, it prints the last 10 lines of the specified files¹.
+
+Here's the basic syntax of the `tail` command¹:
+
+```bash
+tail [options] [file]
+```
+
+While using `tail`, you can use the following options¹:
+
+- `-n num`: Prints the last `num` lines instead of last 10 lines¹. For example, `tail -n 5 file.txt` will display the last 5 lines of `file.txt`¹.
+- `-c num`: Prints the last `num` bytes from the file specified¹. For example, `tail -c 6 file.txt` will display the last 6 bytes of `file.txt`¹.
+- `-q`: It is used if more than 1 file is given. Because of this command, data from each file is not preceded by its file name¹.
+- `-v`: By using this option, data from the specified file is always preceded by its file name¹.
+
+Here are some examples of how to use the `tail` command:
+
+- To display the last 10 lines of a file:
+
+```bash
+tail file.txt
+```
+
+- To display the last 5 lines of a file:
+
+```bash
+tail -n 5 file.txt
+```
+
+- To display the last 6 bytes of a file:
+
+```bash
+tail -c 6 file.txt
+```
+
+In conclusion, the `tail` command is a simple yet powerful tool for displaying the end of text files or command outputs¹².
+
+# 9. chown
+
+The `chown` command in Linux is a utility for changing the ownership of files and directories¹². The term `chown` stands for "change owner"⁵.
+
+Here's the basic syntax of the `chown` command¹:
+
+```bash
+chown [options] [OWNER][:[GROUP]] [file]
+```
+
+- `OWNER`: The user name or the user ID (UID) of the new owner³.
+- `GROUP`: The new group’s name or the group ID (GID)³.
+- `file`: The name of one or more files, directories, or links³.
+
+While using `chown`, you can use the following options¹:
+
+- `-R, --recursive`: Operate on files and directories recursively¹.
+- `--dereference`: Affect the referent of each symbolic link (this is the default), rather than the symbolic link itself¹.
+- `-h, --no-dereference`: Affect symbolic links instead of any referenced file (useful only on systems that can change the ownership of a symlink)¹.
+- `--from=CURRENT_OWNER:CURRENT_GROUP`: Change the owner and/or group of each file only if its current owner and/or group match those specified here¹.
+- `--no-preserve-root`: Do not treat '/' specially (the default)¹.
+- `--preserve-root`: Fail to operate recursively on '/'¹.
+- `--reference=RFILE`: Use RFILE's owner and group rather than specifying OWNER:GROUP values¹.
+- `-v, --verbose`: Output a diagnostic for every file processed¹.
+- `--help`: Display help and exit¹.
+- `--version`: Output version information and exit¹.
+
+Here are some examples of how to use the `chown` command:
+
+- To change the owner of a file:
+
+```bash
+chown new_owner file.txt
+```
+
+- To change the owner and group of a file:
+
+```bash
+chown new_owner:new_group file.txt
+```
+
+- To change the owner of all files in a directory recursively:
+
+```bash
+chown -R new_owner directory
+```
+
+In conclusion, the `chown` command is a powerful tool for managing file and directory ownership in Linux¹².
+
+# 10. 
 
