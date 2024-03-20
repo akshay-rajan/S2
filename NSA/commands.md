@@ -624,10 +624,191 @@ sudo usermod -l NEW_LOGIN USER
 In conclusion, the `usermod` command is a powerful tool for managing user accounts in Linux¹.
 
 # 13. passwd
+
+The `passwd` command in Linux is a utility for managing password-related tasks¹². Its primary purpose is to change user passwords, but it offers additional functionalities such as updating password aging policies, unlocking accounts, and more¹².
+
+Here's the basic syntax of the `passwd` command¹:
+
+```bash
+passwd [options] [username]
+```
+
+While using `passwd`, you can use the following options¹²:
+
+- `-d, --delete`: Deletes the user password, making the account password-less¹.
+- `-e, --expire`: Immediately expires the account password, prompting the user to change it on the next login¹.
+- `-h, --help`: Displays help related to the `passwd` command¹.
+- `-i, --inactive`: Sets the number of days after password expiration before the account is deactivated¹.
+- `-k, --keep-tokens`: Changes the password only if it is expired, keeping authentication tokens if not expired¹.
+- `-l, --lock`: Locks the password of the user, preventing login with a password¹.
+- `-n, --mindays`: Changes the minimum number of days between password changes, preventing the user from changing the password for a specified period¹.
+- `-q, --quiet`: Enables quiet mode, suppressing the usual message “Changing password for $user” during password change¹.
+- `-r, --repository`: Changes the password for a specified repository¹.
+- `-R, --root`: Applies changes in the specified directory and uses configuration files from that directory¹.
+- `-S, --status`: Shows the password status of a user, including last change date, minimum age, maximum age, warning period, and inactivity period¹.
+- `-a, --all`: Shows password status for all users. Requires the use of -S option¹.
+- `-u, --unlock`: Unlocks the password of an account, allowing login with the password¹.
+- `-w, --warndays`: Changes the number of days before password expiration to display a warning¹.
+- `-x, --maxdays`: Sets the maximum number of days a password remains valid¹.
+
+Here are some examples of how to use the `passwd` command:
+
+- To change your own password:
+
+```bash
+passwd
+```
+
+- To change another user's password:
+
+```bash
+sudo passwd username
+```
+
+- To lock a user's password:
+
+```bash
+sudo passwd -l username
+```
+
+- To unlock a user's password:
+
+```bash
+sudo passwd -u username
+```
+
+In conclusion, the `passwd` command is a powerful tool for managing password-related tasks in Linux¹².
+
 # 14. df
+
+The `df` command in Linux stands for "disk filesystem". It is used to get a full summary of available and used disk space usage of the file system on the Linux system¹². If no file name is given, it displays the space available on all currently mounted file systems¹².
+
+Here's the basic syntax of the `df` command¹²:
+
+```bash
+df [options] [filesystems]
+```
+
+While using `df`, you can use the following options¹²:
+
+- `-a, --all`: Includes pseudo, duplicate, and inaccessible file systems in the output.
+- `-B, --block-size=S`: Scales sizes by SIZE before printing them. Here, SIZE is an integer and optional unit (example: -BM prints sizes in units of 1,048,576 bytes).
+- `-h, --human-readable`: Prints sizes in a human-readable format (e.g., 1K, 234M, 2G).
+- `-H, --si`: Prints sizes in a human-readable format (e.g., 1k, 234m, 2g).
+- `-i, --inodes`: Lists inode information instead of block usage.
+- `-l, --local`: Limits listing to local file systems.
+- `-P, --portability`: Uses POSIX output format.
+- `-t, --type=TYPE`: Limits listing to file systems of type TYPE.
+- `-T, --print-type`: Prints file system type.
+- `--total`: Produces a grand total.
+- `--help`: Display help and exit.
+
+Here are some examples of how to use the `df` command:
+
+- To display information about all the mounted file systems:
+
+```bash
+df
+```
+
+- To display disk usage in a human-readable format:
+
+```bash
+df -h
+```
+
+- To display the file system type along with the disk usage:
+
+```bash
+df -T
+```
+
+In conclusion, the `df` command is a powerful tool for managing disk space in Linux¹².
+
 # 15. top
+
+The `top` command in Linux is a utility that provides a dynamic real-time view of the running system¹². It shows information about system performance and running processes, including the process ID, user, CPU usage, memory usage, and more¹².
+
+Here's the basic syntax of the `top` command¹:
+
+```bash
+top [options]
+```
+
+While using `top`, you can use the following options¹:
+
+- `-d`: Changes the delay time between refreshing the screen.
+- `-p`: Monitors specific processes based on their process ID.
+- `-u`: Displays processes owned by a specific user.
+- `-i`: Ignores idle or zombie processes.
+- `-n`: Updates the display a specified number of times, then exits.
+
+Here are some examples of how to use the `top` command:
+
+- To start `top`:
+
+```bash
+top
+```
+
+- To change the update interval to 2 seconds:
+
+```bash
+top -d 2
+```
+
+- To display only the processes for a specific user:
+
+```bash
+top -u username
+```
+
+In conclusion, the `top` command is a powerful tool for monitoring system performance and managing processes in Linux¹².
+
 # 16. ps
+
+The `ps` command in Linux stands for "process status". It is used to provide a snapshot of the current processes on your system¹². By default, `ps` displays information about the processes associated with the current terminal session¹².
+
+Here's the basic syntax of the `ps` command¹:
+
+```bash
+ps [options]
+```
+
+While using `ps`, you can use the following options¹²:
+
+- `-A`: Displays information about all processes.
+- `-e`: Displays information about all processes.
+- `-f`: Provides full-format listing.
+- `-u user`: Displays information about processes owned by `user`.
+- `-x`: Includes processes without a controlling terminal.
+
+Here are some examples of how to use the `ps` command:
+
+- To display information about all the processes:
+
+```bash
+ps -A
+```
+
+- To display detailed information about all the processes:
+
+```bash
+ps -ef
+```
+
+- To display information about all the processes for a specific user:
+
+```bash
+ps -u username
+```
+
+In conclusion, the `ps` command is a powerful tool for managing and viewing processes in Linux¹².
+
 # 17. ssh
+
+
+
 # 18. scp
 
 
