@@ -1,3 +1,13 @@
+| Contents | Contents | Contents |
+| -------- | -------- | -------- |
+| [more](#1-more) | [less](#2-less) | [find](#3-find) |
+| [wc](#4-wc) | [cut](#5-cut) | [paste](#6-paste) |
+| [head](#7-head) | [tail](#8-tail) | [chown](#9-chown) |
+| [useradd](#10-useradd) | [userdel](#11-userdel) | [usermod](#12-usermod) |
+| [passwd](#13-passwd) | [df](#14-df) | [top](#15-top) |
+| [ps](#16-ps) | [ssh](#17-ssh) | [scp](#18-scp) |
+
+
 # 1. more
 The `more` command in Linux is a utility for viewing text files and command outputs in the terminal, one screenful at a time¹². It's particularly useful for reading large files or long outputs that would otherwise scroll past the screen too quickly².
 
