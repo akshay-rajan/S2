@@ -315,5 +315,44 @@ paste -s file1 file2
 
 In conclusion, the `paste` command is a powerful tool for merging lines of files horizontally¹².
 
+# 7. head
+
+The `head` command in Linux is a utility for displaying the beginning of text files or command outputs¹². By default, it prints the first 10 lines of the specified files¹.
+
+Here's the basic syntax of the `head` command¹:
+
+```bash
+head [options] [file]
+```
+
+While using `head`, you can use the following options¹:
+
+- `-n num`: Prints the first `num` lines instead of first 10 lines¹. For example, `head -n 5 file.txt` will display the first 5 lines of `file.txt`¹.
+- `-c num`: Prints the first `num` bytes from the file specified¹. For example, `head -c 6 file.txt` will display the first 6 bytes of `file.txt`¹.
+- `-q`: It is used if more than 1 file is given. Because of this command, data from each file is not preceded by its file name¹.
+- `-v`: By using this option, data from the specified file is always preceded by its file name¹.
+
+Here are some examples of how to use the `head` command:
+
+- To display the first 10 lines of a file:
+
+```bash
+head file.txt
+```
+
+- To display the first 5 lines of a file:
+
+```bash
+head -n 5 file.txt
+```
+
+- To display the first 6 bytes of a file:
+
+```bash
+head -c 6 file.txt
+```
+
+In conclusion, the `head` command is a simple yet powerful tool for displaying the beginning of text files or command outputs¹².
+
 
 
