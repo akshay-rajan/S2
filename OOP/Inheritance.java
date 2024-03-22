@@ -1,8 +1,12 @@
 public class Inheritance {
+
     public static void main(String[] args) {
         Teacher tr = new Teacher(1, "John Doe", 15000, "Trivandrum, Kerala", "English", "Poetry");
-        System.out.println(tr);
+        Teacher tr2 = new Teacher(2, "John Doe", 15000, "Trivandrum, Kerala", "English", "Poetry");
+        Teacher[] arr = {tr, tr2};
+        System.out.println(arr);
     }
+
 }
 
 
@@ -20,7 +24,6 @@ class Employee {
         this.Address = Address;
     }
 
-    
     public String toString() {
         return "EmpId: " + this.EmpId + "\nName: " + this.Name + "\nSalary: " + this.Salary + "\nAddress: " + this.Address;
     }
