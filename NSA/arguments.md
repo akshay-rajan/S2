@@ -1,7 +1,6 @@
 # Positional Arguments
 
 Arguments passed to a script or command in a specific order when it is executed.
-Here is the information formatted in a table:
 
 | Variable  | Description                                                                                                                                                                         |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
