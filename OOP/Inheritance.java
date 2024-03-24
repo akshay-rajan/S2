@@ -1,13 +1,25 @@
+import java.util.Scanner;
+
 public class Inheritance {
 
     public static void main(String[] args) {
-        Teacher tr1 = new Teacher(1, "John Doe", 15000, "Trivandrum, Kerala", "English", "Poetry");
-        Teacher tr2 = new Teacher(2, "John Doe", 15000, "Trivandrum, Kerala", "English", "Poetry");
-        Teacher[] arr = {tr1, tr2};
+
+        // Array to store the teachers
+        Teacher[] teachers;
+
+        // Read the teachers from the user and add it to the array
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Number of teachers: ");
+        int n = sc.nextInt();
+        teachers = new Teacher[n];
+        for (int i = 0; i < n; i++) {
+            System.out.println("---------------- Teacher " + (i + 1) + "----------------");
+            teachers[i] = Teacher.readTeacher(sc);            
+        }
         
         // Display the teachers
-        System.out.println("EmpId\tName\t\tSalary\tAddress\t\t\tDepartment\tSubjects");
-        for (Teacher tr: arr)
+        System.out.println("EmpId\tName\tSalary\tAddress\tDepartment\tSubjects");
+        for (Teacher tr: teachers)
             System.out.println(tr);
     }
 
@@ -21,6 +33,7 @@ class Employee {
     int Salary;
     String Address;
 
+    // Constructor
     Employee(int EmpId, String Name, int Salary, String Address) {
         this.EmpId = EmpId;
         this.Name = Name;
@@ -28,6 +41,7 @@ class Employee {
         this.Address = Address;
     }
 
+    // String Representation
     public String toString() {
         return this.EmpId + "\t" + this.Name + "\t" + this.Salary + "\t" + this.Address;
     }
@@ -40,12 +54,37 @@ class Teacher extends Employee {
     String Department;
     String Subjects;
 
+    // Inherited Constructor
     Teacher(int EmpId, String Name, int Salary, String Address, String Department, String Subjects) {
         super(EmpId, Name, Salary, Address);
         this.Department = Department;
         this.Subjects = Subjects;
     }
 
+    // Read a teacher from the user
+    public static Teacher readTeacher(Scanner sc) {
+        System.err.print("EmpId: ");
+        int EmpId = sc.nextInt();
+        sc.nextLine();
+    
+        System.out.print("Name: ");
+        String Name = sc.nextLine();
+    
+        System.out.print("Salary: ");
+        int Salary = sc.nextInt();
+        sc.nextLine(); 
+    
+        System.out.print("Address: ");
+        String Address = sc.nextLine();
+    
+        System.out.print("Department: ");
+        String Department = sc.nextLine();
+    
+        System.out.print("Subjects: ");
+        String Subjects = sc.nextLine();
+    
+        return new Teacher(EmpId, Name, Salary, Address, Department, Subjects);
+    }
     
 
     @Override
