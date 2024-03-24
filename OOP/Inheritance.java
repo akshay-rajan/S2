@@ -1,10 +1,14 @@
 public class Inheritance {
 
     public static void main(String[] args) {
-        Teacher tr = new Teacher(1, "John Doe", 15000, "Trivandrum, Kerala", "English", "Poetry");
+        Teacher tr1 = new Teacher(1, "John Doe", 15000, "Trivandrum, Kerala", "English", "Poetry");
         Teacher tr2 = new Teacher(2, "John Doe", 15000, "Trivandrum, Kerala", "English", "Poetry");
-        Teacher[] arr = {tr, tr2};
-        System.out.println(arr);
+        Teacher[] arr = {tr1, tr2};
+        
+        // Display the teachers
+        System.out.println("EmpId\tName\t\tSalary\tAddress\t\t\tDepartment\tSubjects");
+        for (Teacher tr: arr)
+            System.out.println(tr);
     }
 
 }
@@ -25,7 +29,7 @@ class Employee {
     }
 
     public String toString() {
-        return "EmpId: " + this.EmpId + "\nName: " + this.Name + "\nSalary: " + this.Salary + "\nAddress: " + this.Address;
+        return this.EmpId + "\t" + this.Name + "\t" + this.Salary + "\t" + this.Address;
     }
 
 }
@@ -42,8 +46,11 @@ class Teacher extends Employee {
         this.Subjects = Subjects;
     }
 
+    
+
+    @Override
     public String toString() {
-        return super.toString() + "\nDepartment: " + this.Department + "\nSubjects: " + this.Subjects;
+        return super.toString() + "\t" + this.Department + "\t\t" + this.Subjects;
     }
 
 }
