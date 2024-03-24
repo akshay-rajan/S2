@@ -241,45 +241,6 @@ cut -d ',' --complement -f 1 file.txt
 
 In conclusion, the `cut` command is a powerful tool for manipulating text files and command outputs in the terminal¹².
 
-
-6. paste
-
-The `paste` command in Linux is a utility for merging lines of files horizontally¹². It outputs lines consisting of the sequentially corresponding lines of each file specified as an argument, separated by tabs¹².
-
-Here's the basic syntax of the `paste` command¹:
-
-```bash
-paste [options] [file]
-```
-
-While using `paste`, you can use the following options¹:
-
-- `-d, --delimiters`: Specifies a list of characters to be used as delimiters instead of the default TAB separator¹².
-- `-s, --serial`: Merges the lines of one file at a time instead of one line from each file¹².
-- `-z, --zero-terminated`: Uses a null character to delimit the items instead of the default newline character².
-
-Here are some examples of how to use the `paste` command:
-
-- To merge lines of two files horizontally, separated by space²:
-
-```bash
-paste file1 file2
-```
-
-- To use the underscore character as a delimiter instead of TAB²:
-
-```bash
-paste -d '_' file1 file2
-```
-
-- To merge all lines from the given file in separated lines²:
-
-```bash
-paste -s file1 file2
-```
-
-In conclusion, the `paste` command is a powerful tool for merging lines of files horizontally¹².
-
 # 6. paste
 
 The `paste` command in Linux is a utility for merging lines of files horizontally¹². It outputs lines consisting of the sequentially corresponding lines of each file specified as an argument, separated by tabs¹².
@@ -517,19 +478,6 @@ sudo useradd -s /bin/sh test_user
 ```
 
 In conclusion, the `useradd` command is a powerful tool for managing user accounts in Linux³.
-
-# 11. userdel
-
-The `userdel` command in Linux is a utility for deleting user accounts¹². It is used to remove a user account and related files¹.
-
-Here's the basic syntax of the `userdel` command¹:
-
-```bash
-userdel [options] USERNAME
-```
-
-- `USERNAME`: The name of the user to be deleted¹.
-- `options`: Additional settings or conditions for deleting the user¹.
 
 # 11. userdel
 
