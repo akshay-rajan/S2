@@ -444,7 +444,21 @@ To modify the file, we need the `i` switch
 
     sed -i 's/i/I/g' <filename>
 
-### 27. Debugging
+### 27. comm
+
+The `comm` command is used to compare two files line by line. 
+
+    comm [OPTION]... FILE1 FILE2
+
+For example, to compare two sorted files named file1.txt and file2.txt and display only the lines unique to file1.txt, you can use:
+
+    comm -23 file1.txt file2.txt
+
+Similarly, to display only the lines common to both files, you can use:
+
+    comm -12 file1.txt file2.txt
+
+### 28. Debugging
 
 1. Run 
 
@@ -463,5 +477,6 @@ To modify the file, we need the `i` switch
             statements to be executed
             ...
         set +x
+
 
 
