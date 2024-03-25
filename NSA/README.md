@@ -4,6 +4,7 @@ Linux is a family of UNIX - like Operating Systems based on the linux kernel, an
 Linux is open source, meaning it is _free to use_, _free to distribute_ and its _source code can be modified_.
 Linux distributions (**distros**) package the linux kernel with various software applications and tools to create complete operating systems tailored for specific purposes. 
 Popular linux distributions include **Ubundu, Debian, Fedora, OpenSUSE, elementary, Manjaro, Gentoo Linux, RedHat and Linux Mint**.
+A *kernel* is a crucial component of an OS which acts as a bridge between the hardware of a system and the software applications running on it.
 
 <hr>
 
