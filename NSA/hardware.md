@@ -112,7 +112,7 @@ A Solid State Drive (SSD) is a type of non-volatile storage device that uses fla
 
 In summary, SSDs provide faster data access, improved system performance, and greater durability compared to HDDs, making them a popular choice for modern computing devices.
 
-### Graphics Card (GPU - Graphics Processing Unit)
+## Graphics Card (GPU - Graphics Processing Unit)
 
 A Graphics Processing Unit (GPU), commonly referred to as a graphics card, is a specialized hardware component designed to handle graphics-related tasks in a computer system. Here are the key aspects of a graphics card:
 
@@ -134,7 +134,7 @@ A Graphics Processing Unit (GPU), commonly referred to as a graphics card, is a 
 
 In summary, GPUs are specialized hardware components designed for graphics rendering, parallel processing, and accelerating compute-intensive tasks, making them vital for gaming, multimedia, and professional applications.
 
-### Ports
+## Ports
 
 Ports on a computer or electronic device refer to physical interfaces that allow connectivity with external devices or peripherals. Here are the key aspects of ports:
 
@@ -160,7 +160,7 @@ Ports on a computer or electronic device refer to physical interfaces that allow
 In summary, ports play a crucial role in enabling connectivity between computers and external devices, facilitating data transfer, multimedia output, networking, and power delivery.
 
 
-### Audio Connectors
+## Audio Connectors
 
 Audio connectors on computers and electronic devices are used for connecting audio input and output devices such as headphones, speakers, microphones, and sound systems. Here are the key aspects of audio connectors:
 
@@ -184,7 +184,7 @@ Audio connectors on computers and electronic devices are used for connecting aud
 
 In summary, audio connectors enable the connection of audio input and output devices to computers, audio systems, and multimedia devices, facilitating audio playback, recording, and communication.
 
-### Motherboard
+## Motherboard
 
 The motherboard is the main printed circuit board (PCB) in a computer system. It provides the physical and electrical connections for other components to communicate and work together. Here are the key components of a motherboard:
 
