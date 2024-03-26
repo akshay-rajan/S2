@@ -17,10 +17,6 @@
 ### 3. Comments
 
     # This is a comment
-    : '
-    These
-    are 
-    multi-line comments '
 
 ### 4. Here Documnet (here-doc)
 
