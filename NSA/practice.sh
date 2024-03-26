@@ -1,8 +1,8 @@
 #!/bin/bash
 
-read -p "n: " n
+printArray() {
+	names=('a' 'b' 'c')
+	echo "${names[@]}"
+}
 
-for (( i=0; i<n; i++ ))
-do
-	echo $i
-done
+printArray
