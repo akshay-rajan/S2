@@ -1,6 +1,47 @@
 import java.util.Scanner;
 
-public class Inheritance {
+public class Teacher extends Employee {
+
+    String Department;
+    String Subjects;
+
+    // Inherited Constructor
+    Teacher(int EmpId, String Name, int Salary, String Address, String Department, String Subjects) {
+        super(EmpId, Name, Salary, Address);
+        this.Department = Department;
+        this.Subjects = Subjects;
+    }
+
+    // Read a teacher from the user
+    public static Teacher readTeacher(Scanner sc) {
+        System.err.print("EmpId: ");
+        int EmpId = sc.nextInt();
+        sc.nextLine();
+    
+        System.out.print("Name: ");
+        String Name = sc.nextLine();
+    
+        System.out.print("Salary: ");
+        int Salary = sc.nextInt();
+        sc.nextLine(); 
+    
+        System.out.print("Address: ");
+        String Address = sc.nextLine();
+    
+        System.out.print("Department: ");
+        String Department = sc.nextLine();
+    
+        System.out.print("Subjects: ");
+        String Subjects = sc.nextLine();
+    
+        return new Teacher(EmpId, Name, Salary, Address, Department, Subjects);
+    }
+    
+
+    @Override
+    public String toString() {
+        return super.toString() + "\t" + this.Department + "\t\t" + this.Subjects;
+    }
 
     public static void main(String[] args) {
 
@@ -49,47 +90,3 @@ class Employee {
 }
 
 
-class Teacher extends Employee {
-
-    String Department;
-    String Subjects;
-
-    // Inherited Constructor
-    Teacher(int EmpId, String Name, int Salary, String Address, String Department, String Subjects) {
-        super(EmpId, Name, Salary, Address);
-        this.Department = Department;
-        this.Subjects = Subjects;
-    }
-
-    // Read a teacher from the user
-    public static Teacher readTeacher(Scanner sc) {
-        System.err.print("EmpId: ");
-        int EmpId = sc.nextInt();
-        sc.nextLine();
-    
-        System.out.print("Name: ");
-        String Name = sc.nextLine();
-    
-        System.out.print("Salary: ");
-        int Salary = sc.nextInt();
-        sc.nextLine(); 
-    
-        System.out.print("Address: ");
-        String Address = sc.nextLine();
-    
-        System.out.print("Department: ");
-        String Department = sc.nextLine();
-    
-        System.out.print("Subjects: ");
-        String Subjects = sc.nextLine();
-    
-        return new Teacher(EmpId, Name, Salary, Address, Department, Subjects);
-    }
-    
-
-    @Override
-    public String toString() {
-        return super.toString() + "\t" + this.Department + "\t\t" + this.Subjects;
-    }
-
-}
