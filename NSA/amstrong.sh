@@ -9,9 +9,10 @@ isAmstrong() {
 		sum=$(( $sum + $(( $digit * $digit * $digit )) ))
 		num=$(( $num / 10 ))
 	done
-	exit $(( $1 == $sum ))
+	return $(( $1 == $sum ))
 }
 
-isAmstrong 153
+read -p "Enter a number: " num
+isAmstrong $num
 echo $? 
-echo "hello"
+
