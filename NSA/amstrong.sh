@@ -14,5 +14,7 @@ isAmstrong() {
 
 read -p "Enter a number: " num
 isAmstrong $num
-echo $? 
 
+result=$(( $? == 1 ? "true" : "false"))
+echo $result
+echo "hello"
