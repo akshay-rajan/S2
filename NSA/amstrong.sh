@@ -19,7 +19,7 @@ isAmstrong $num
 # Check the return value (exit status) of the function
 if [ $? -eq 1 ]
 then
-	echo "$num is an Amstrong number."
+	echo "Amstrong number"
 else
-	echo "$num is not an Amstrong number."
+	echo "Not an Amstrong number!"
 fi
