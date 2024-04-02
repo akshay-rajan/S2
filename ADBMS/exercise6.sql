@@ -32,9 +32,9 @@ SET QtyInStock = QtyInStock - NEW.Qty
 WHERE PdtId = NEW.PdtId;
 
 
-INSERT INTO Product VALUES (1, 'Apple', 100, 100);
-INSERT INTO Sale VALUES (1, 'New York');
-INSERT INTO Saleitem VALUES (1, 1, 25);
+INSERT INTO Product VALUES (2, 'Apple', 100, 100);
+INSERT INTO Sale VALUES (2, 'Trivandrum');
+INSERT INTO Saleitem VALUES (2, 2, 25);
 
 SELECT * FROM Product;
 SELECT * FROM Sale;
