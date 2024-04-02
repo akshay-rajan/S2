@@ -1,0 +1,24 @@
+# Glasgow Haskell Compiler
+
+# Enable Haskell Repositories
+sudo nano /etc/apt/sources.list
+
+deb http://ftp.debian.org/debian buster main
+deb http://ftp.debian.org/debian buster-updates main
+
+# Update package index
+sudo apt update
+
+# Installation
+sudo apt install haskell-platform
+
+# Verification
+ghc --version
+
+# Interactive Mode
+ghci
+
+# Execution
+ghc -o ExecutableName FileName.hs
+./ExecutableName
+
