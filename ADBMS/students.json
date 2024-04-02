@@ -449,3 +449,247 @@
     "no": "04702721890"
   }
 }]
+=======
+[
+    {
+      "name": { "fname": "John", "lname": "Doe" },
+      "mark": 85,
+      "gender": "male",
+      "grade": "A",
+      "department": "MCA",
+      "contact": "New York"
+    },
+    {
+      "name": { "fname": "Jane", "lname": "Smith" },
+      "mark": 78,
+      "gender": "female",
+      "grade": "B+",
+      "department": "Mechanical",
+      "contact": "Mexico"
+    },
+    {
+      "name": { "fname": "Michael", "lname": "Johnson" },
+      "mark": 92,
+      "gender": "male",
+      "grade": "A+",
+      "department": "Electrical",
+      "contact": "Los Angeles"
+    },
+    {
+      "name": { "fname": "Emily", "lname": "Brown" },
+      "mark": 80,
+      "gender": "female",
+      "grade": "A",
+      "department": "Computer Science",
+      "contact": "Chicago"
+    },
+    {
+      "name": { "fname": "Daniel", "lname": "Wilson" },
+      "mark": 88,
+      "gender": "male",
+      "grade": "A",
+      "department": "Civil",
+      "contact": "Seattle"
+    },
+    {
+      "name": { "fname": "Sarah", "lname": "Jones" },
+      "mark": 75,
+      "gender": "female",
+      "grade": "B",
+      "department": "Information Technology",
+      "contact": "Houston"
+    },
+    {
+      "name": { "fname": "Matthew", "lname": "Taylor" },
+      "mark": 82,
+      "gender": "male",
+      "grade": "B+",
+      "department": "Chemical",
+      "contact": "Dallas"
+    },
+    {
+      "name": { "fname": "Olivia", "lname": "Anderson" },
+      "mark": 90,
+      "gender": "female",
+      "grade": "A+",
+      "department": "Aerospace",
+      "contact": "San Francisco"
+    },
+    {
+      "name": { "fname": "William", "lname": "Martinez" },
+      "mark": 79,
+      "gender": "male",
+      "grade": "B",
+      "department": "Mechanical",
+      "contact": "Miami"
+    },
+    {
+      "name": { "fname": "Sophia", "lname": "Garcia" },
+      "mark": 85,
+      "gender": "female",
+      "grade": "A",
+      "department": "Electrical",
+      "contact": "Austin"
+    },
+    {
+      "name": { "fname": "Ethan", "lname": "Lopez" },
+      "mark": 88,
+      "gender": "male",
+      "grade": "A",
+      "department": "Computer Science",
+      "contact": "San Diego"
+    },
+    {
+      "name": { "fname": "Ava", "lname": "Hernandez" },
+      "mark": 84,
+      "gender": "female",
+      "grade": "A-",
+      "department": "MCA",
+      "contact": "Boston"
+    },
+    {
+      "name": { "fname": "James", "lname": "Gonzalez" },
+      "mark": 91,
+      "gender": "male",
+      "grade": "A+",
+      "department": "Civil",
+      "contact": "Washington, D.C."
+    },
+    {
+      "name": { "fname": "Mia", "lname": "Wilson" },
+      "mark": 77,
+      "gender": "female",
+      "grade": "B",
+      "department": "Aerospace",
+      "contact": "Philadelphia"
+    },
+    {
+      "name": { "fname": "Alexander", "lname": "Perez" },
+      "mark": 89,
+      "gender": "male",
+      "grade": "A",
+      "department": "Mechanical",
+      "contact": "Phoenix"
+    },
+    {
+      "name": { "fname": "Charlotte", "lname": "Rivera" },
+      "mark": 83,
+      "gender": "female",
+      "grade": "B+",
+      "department": "Chemical",
+      "contact": "Denver"
+    },
+    {
+      "name": { "fname": "Benjamin", "lname": "Garcia" },
+      "mark": 86,
+      "gender": "male",
+      "grade": "A",
+      "department": "Information Technology",
+      "contact": "Las Vegas"
+    },
+    {
+      "name": { "fname": "Amelia", "lname": "Hernandez" },
+      "mark": 76,
+      "gender": "female",
+      "grade": "B-",
+      "department": "Electrical",
+      "contact": "Portland"
+    },
+    {
+      "name": { "fname": "Jacob", "lname": "Torres" },
+      "mark": 93,
+      "gender": "male",
+      "grade": "A+",
+      "department": "Computer Science",
+      "contact": "San Antonio"
+    },
+    {
+      "name": { "fname": "Harper", "lname": "Lopez" },
+      "mark": 80,
+      "gender": "female",
+      "grade": "A",
+      "department": "Aerospace",
+      "contact": "Detroit"
+    },
+    {
+      "name": { "fname": "Logan", "lname": "Ramirez" },
+      "mark": 85,
+      "gender": "male",
+      "grade": "A",
+      "department": "MCA",
+      "contact": "Atlanta"
+    },
+    {
+      "name": { "fname": "Evelyn", "lname": "Torres" },
+      "mark": 79,
+      "gender": "female",
+      "grade": "B",
+      "department": "Mechanical",
+      "contact": "Charlotte"
+    },
+    {
+      "name": { "fname": "Liam", "lname": "Gonzalez" },
+      "mark": 87,
+      "gender": "male",
+      "grade": "A-",
+      "department": "Civil",
+      "contact": "San Jose"
+    },
+    {
+      "name": { "fname": "Aria", "lname": "Diaz" },
+      "mark": 82,
+      "gender": "female",
+      "grade": "B+",
+      "department": "Chemical",
+      "contact": "Orlando"
+    },
+    {
+      "name": { "fname": "Noah", "lname": "Rodriguez" },
+      "mark": 90,
+      "gender": "male",
+      "grade": "A+",
+      "department": "Information Technology",
+      "contact": "Minneapolis"
+    },
+    {
+      "name": { "fname": "Luna", "lname": "Martinez" },
+      "mark": 78,
+      "gender": "female",
+      "grade": "B",
+      "department": "Electrical",
+      "contact": "Indianapolis"
+    },
+    {
+      "name": { "fname": "Mason", "lname": "Wright" },
+      "mark": 84,
+      "gender": "male",
+      "grade": "A-",
+      "department": "Computer Science",
+      "contact": "Columbus"
+    },
+    {
+      "name": { "fname": "Ellie", "lname": "Perez" },
+      "mark": 81,
+      "gender": "female",
+      "grade": "B+",
+      "department": "Aerospace",
+      "contact": "San Francisco"
+    },
+    {
+      "name": { "fname": "Lucas", "lname": "Miller" },
+      "mark": 88,
+      "gender": "male",
+      "grade": "A",
+      "department": "Mechanical",
+      "contact": "Nashville"
+    },
+    {
+      "name": { "fname": "Stella", "lname": "Gonzalez" },
+      "mark": 77,
+      "gender": "female",
+      "grade": "B",
+      "department": "Civil",
+      "contact": "Boston"
+    }
+  ]
+  
