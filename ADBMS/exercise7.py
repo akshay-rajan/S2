@@ -27,7 +27,7 @@ Phone: {student['phone']['no']} ({student['phone']['type']})
 
 
 print("2. Student who scored the highest mark in MCA: ")
-topper = sorted([student for student in collection.find({"course": "MCA"})], key=lambda x: x["mark"])[-1]
+topper = collection.find({"course": "MCA"}).sort("mark", -1).limit(1)
 print_details(topper)
 
 
