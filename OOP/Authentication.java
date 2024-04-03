@@ -7,30 +7,31 @@ public class Authentication {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your username: ");
         String username = sc.next();
+        sc.nextLine();
         
-        System.out.print( "Enter your password:" );
+        System.out.print( "Enter your password: " );
         String password = sc.next();
+        sc.nextLine();
+
 
         // Exception Handling
         try {
             authenticate(username, password);
         } catch (InvalidUsernameException e) {
             e.printStackTrace();
-            System.out.println(username);
         } catch (InvalidPasswordException e) {
             e.printStackTrace();
-            System.out.println(password);
         }
         sc.close();
     }
 
     static void authenticate(String username, String password) {
-        if (username != "username") {
-            throw new InvalidUsernameException();
-        } else if (password != "password"){
+        if (username.equals("username") && password.equals("password")) {
+            System.out.println( "You are logged in!" );
+        } else if (username.equals("username")){
             throw new InvalidPasswordException();
         } else {
-            System.out.println( "You are logged in!" );
+            throw new InvalidUsernameException();
         }
     }
 
