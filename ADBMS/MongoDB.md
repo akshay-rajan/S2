@@ -135,14 +135,6 @@ Remember, MongoDB is schema-less, meaning the documents in a single collection d
    result = collection.delete_many(filter)
    ```
 
-9. **Indexes:**
-   You can create indexes on fields in your collections for faster query performance. Use `collection.create_index()` to create indexes:
-   ```python
-   # Create an index on the "name" field
-   collection.create_index([("name", pymongo.ASCENDING)])
-   ```
-
-
 
 | Operation | Description | Example |
 |-----------|-------------|---------|
