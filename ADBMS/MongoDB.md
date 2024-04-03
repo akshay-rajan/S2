@@ -142,15 +142,26 @@ Remember, MongoDB is schema-less, meaning the documents in a single collection d
    collection.create_index([("name", pymongo.ASCENDING)])
    ```
 
-10. **Error Handling:**
-    Implement error handling to deal with potential exceptions, such as connection errors or database operation failures:
-    ```python
-    try:
-        # MongoDB operations
-    except pymongo.errors.ConnectionError as e:
-        print("Error connecting to MongoDB:", e)
-    except pymongo.errors.OperationFailure as e:
-        print("MongoDB operation failed:", e)
-    ```
 
-These are the essential concepts and practices you need to know when using PyMongo to interact with MongoDB databases from Python. Familiarizing yourself with these concepts will enable you to work effectively with MongoDB in your Python applications.
+
+| Operation | Description | Example |
+|-----------|-------------|---------|
+| Find All Documents | Returns all documents in the collection | `cursor = collection.find({})` |
+| Match a Filter | Returns documents that match the filter condition | `query = { "age": { "$gt": 20 } }; cursor = collection.find(query)` |
+| Limit Fields to Return | Returns only the specified fields from the documents | `query = { "age": { "$gt": 20 } }; projection = { "name": 1, "_id": 0 }; cursor = collection.find(query, projection)` |
+| Sort Query Results | Returns the documents sorted by the specified field | `cursor = collection.find().sort("age", -1)` |
+| Count Documents | Returns the count of documents in the collection | `count = collection.count_documents({})` |
+| Limit Number of Documents | Returns a specified number of documents | `cursor = collection.find().limit(5)` |
+| Skip Specified Number of Documents | Skips over a specified number of documents in the result | `cursor = collection.find().skip(5)` |
+| Query for a Document | Returns the first document that matches the filter | `document = collection.find_one({"age": {"$gt": 20}})` |
+   
+
+| OPERATORS | AND | DESCRIPTIONS |
+|------------------------|------------------------|------------------------|
+| `$eq` - Equal to | `$gt` - Greater than | `$gte` - Greater than or equal |
+| `$lt` - Less than | `$lte` - Less than or equal | `$ne` - Not equal |
+| `$in` - In an array | `$nin` - Not in an array | `$or` - Logical OR |
+| `$and` - Logical AND | `$not` - Not | `$nor` - Logical NOR |
+| `$exists` - Field exists | `$type` - Type of field | `$all` - All elements in array |
+| `$elemMatch` - Match in array | `$size` - Size of array | `$regex` - Regular expression |
+| `$mod` - Modulo operation | `$text` - Text search | |
