@@ -60,3 +60,20 @@ for student in collection.find({"mark": {"$gt": 80, "$lt": 90}}):
 print("7. Students whose name starts with 'V': ")
 for student in collection.find({"name.fname": {"$regex": "^V"}}):
     print_details(student)
+
+
+print("8. All students from Kollam: ")
+for student in collection.find({"address.city": "Kollam"}):
+    print_details(student)
+
+
+print("9. Students who does not belong to neither Kollam nor Thiruvananthapuram: ")
+not_kollam_nor_tvn = collection.find({"address.city":  {"$ne": "Kollam"}, "address.city": {"$ne": "Thiruvananthapuram"}})
+for student in not_kollam_nor_tvn:
+    print_details(student)
+
+
+print("10. Female students who belong to either Kollam or Thiruvananthapuram: ")
+kollam_or_tvm = collection.find({"gender": "female", "$or": [{"address.city": "Thiruvananthapuram"}, {"address.city": "Kollam"}]})
+for student in kollam_or_tvm:
+    print_details(student)

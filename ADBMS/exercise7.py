@@ -41,6 +41,7 @@ mech_toppers = collection.find({"course": "Mechanical"}).sort("mark", -1).limit(
 for student in mech_toppers:
     print_details(student)
 
+
 print("5. Female Students who have secured more than 90: ")
 for student in collection.find({"gender": "female", "mark": {"$gt": 90}}):
     print(f"""
@@ -50,3 +51,29 @@ Mark: {student['mark']}
 Contact: {student['phone']['no']} ({student['phone']['type']})
 """)
 
+
+print("6. Students who scored marks in between 80 and 90: ")
+for student in collection.find({"mark": {"$gt": 80, "$lt": 90}}):
+    print_details(student)
+
+
+print("7. Students whose name starts with 'V': ")
+for student in collection.find({"name.fname": {"$regex": "^V"}}):
+    print_details(student)
+
+
+print("8. All students from Kollam: ")
+for student in collection.find({"address.city": "Kollam"}):
+    print_details(student)
+
+
+print("9. Students who does not belong to neither Kollam nor Thiruvananthapuram: ")
+not_kollam_nor_tvn = collection.find({"address.city":  {"$ne": "Kollam"}, "address.city": {"$ne": "Thiruvananthapuram"}})
+for student in not_kollam_nor_tvn:
+    print_details(student)
+
+
+print("10. Female students who belong to either Kollam or Thiruvananthapuram: ")
+kollam_or_tvm = collection.find({"gender": "female", "$or": [{"address.city": "Thiruvananthapuram"}, {"address.city": "Kollam"}]})
+for student in kollam_or_tvm:
+    print_details(student)
