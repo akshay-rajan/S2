@@ -15,14 +15,25 @@ public class Authentication {
 
 
         // Exception Handling
-        try {
-            authenticate(username, password);
-        } catch (InvalidUsernameException e) {
-            e.printStackTrace();
-        } catch (InvalidPasswordException e) {
-            e.printStackTrace();
+        while (true) {            
+            try {
+                authenticate(username, password);
+                sc.close();
+                return;
+            } catch (InvalidUsernameException e) {
+                e.printStackTrace();
+                System.out.print("Enter your username: ");
+                username = sc.next();
+                sc.nextLine();
+            } catch (InvalidPasswordException e) {
+                e.printStackTrace();
+                System.out.print( "Enter your password: " );
+                password = sc.next();
+                sc.nextLine();
+            } catch (Exception e) {
+                return;
+            }
         }
-        sc.close();
     }
 
     static void authenticate(String username, String password) {
