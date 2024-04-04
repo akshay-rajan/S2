@@ -41,6 +41,7 @@ mech_toppers = collection.find({"course": "Mechanical"}).sort("mark", -1).limit(
 for student in mech_toppers:
     print_details(student)
 
+
 print("5. Female Students who have secured more than 90: ")
 for student in collection.find({"gender": "female", "mark": {"$gt": 90}}):
     print(f"""
@@ -49,4 +50,12 @@ Grade: {student['grade']}
 Mark: {student['mark']}
 Contact: {student['phone']['no']} ({student['phone']['type']})
 """)
+
+
+print("6. Students who scored marks in between 80 and 90: ")
+students_80_90 = collection.find({"mark": {"$gt": 80, "$lt": 90}})
+for student in students_80_90:
+    print_details(student)
+
+
 
