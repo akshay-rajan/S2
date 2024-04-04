@@ -53,9 +53,10 @@ Contact: {student['phone']['no']} ({student['phone']['type']})
 
 
 print("6. Students who scored marks in between 80 and 90: ")
-students_80_90 = collection.find({"mark": {"$gt": 80, "$lt": 90}})
-for student in students_80_90:
+for student in collection.find({"mark": {"$gt": 80, "$lt": 90}}):
     print_details(student)
 
 
-
+print("7. Students whose name starts with 'V': ")
+for student in collection.find({"name.fname": {"$regex": "^V"}}):
+    print_details(student)
