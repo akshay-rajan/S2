@@ -28,7 +28,7 @@ Phone: {student['phone']['no']} ({student['phone']['type']})
 
 print("2. Student who scored the highest mark in MCA: ")
 topper = collection.find({"course": "MCA"}).sort("mark", -1).limit(1)
-print_details(topper)
+print_details(topper[0])
 
 
 print("3. All male students who secured A+: ")
@@ -37,9 +37,16 @@ for student in collection.find({"gender": "male", "grade": "A+"}):
 
 
 print("4. Top 3 Students in Mechanical Department: ")
-mech_toppers = sorted([student for student in collection.find({"course": "Mechanical"})], key=lambda x: x["mark"], reverse=True)[:3]
-for stud in mech_toppers:
-    print_details(stud)
+mech_toppers = collection.find({"course": "Mechanical"}).sort("mark", -1).limit(3)
+for student in mech_toppers:
+    print_details(student)
 
-
+print("5. Female Students who have secured more than 90: ")
+for student in collection.find({"gender": "female", "mark": {"$gt": 90}}):
+    print(f"""
+Name: {student['name']['fname']} {student['name']['lname']}
+Grade: {student['grade']}
+Mark: {student['mark']}
+Contact: {student['phone']['no']} ({student['phone']['type']})
+""")
 
