@@ -68,8 +68,8 @@ for student in collection.find({"address.city": "Kollam"}):
 
 
 print("9. Students who does not belong to neither Kollam nor Thiruvananthapuram: ")
-not_kollam_nor_tvn = collection.find({"address.city":  {"$ne": "Kollam"}, "address.city": {"$ne": "Thiruvananthapuram"}})
-for student in not_kollam_nor_tvn:
+not_kollam_nor_tvm = collection.find({"address.city":  {"$nin": ["Thiruvananthapuram", "Kollam"]}})
+for student in not_kollam_nor_tvm:
     print_details(student)
 
 
