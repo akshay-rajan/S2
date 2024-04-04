@@ -17,7 +17,7 @@ def print_details(student):
     """Function to print all details of a student"""
     print(f"""
 Name: {student['name']['fname']} {student['name']['lname']}
-Address: {student['address']['house_name'], student['address']['city']}
+Address: {student['address']['house_name']}, {student['address']['city']}
 Gender: {student['gender']}
 Course: {student['course']}
 Mark: {student['mark']}
