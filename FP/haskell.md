@@ -79,7 +79,7 @@ Call the function
 ghci> doubleMe 3
 6
 ```
-
+If the file is updated we can reload the current file using `:r`
 
 
 
