@@ -81,7 +81,15 @@ ghci> doubleMe 3
 ```
 If the file is updated we can reload the current file using `:r`
 
-
-
+```haskell
+-- If in haskell must always return something
+doubleSmallNo x = if x > 100
+                  then x
+                  else x * 2
+```
+We use a `'` to denote a strict version of a fuction by appending it to the end of the function name (since it has no special meaning).
+```haskell
+hello' = "Hello, World!"
+```
 
 
