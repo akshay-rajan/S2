@@ -185,7 +185,43 @@ ghci> product [1, 2, 3, 4]
 24
 ```
 
+### 5. Range
+
+Ranges are used to make lists composed of elements that can be enumerated.
+
+```haskell
+ghci> [1..10]
+[1,2,3,4,5,6,7,8,9,10]
+ghci> ['a'..'z']
+"abcdefghijklmnopqrstuvwxyz"
+ghci> [2,4..10] -- [first,second..limit]
+[2,4,6,8,10]
+```
+
+We can define an infinite list using `[first,last..]`
+```haskell
+ghci> sum (take 100 [2,4..]) -- Sum of first 100 even numbers
+10100
+```
+
+`cycle` generates an infinite repetition of a list, meanwhile `repeat` generates an infinite repetition of an element
+
+```haskell
+ghci> take 20 (cycle "abc")
+"abcabcabcabcabcabcab"
+ghci> take 20 (repeat 10)
+[10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]
+```
+
+`replicate` is a similar function that works like
+
+```haskell
+ghci> replicate 3 20
+[20,20,20]
+```
+### 6. List Comprehension
 
 ```haskell
 
 ```
+
