@@ -11,7 +11,7 @@ Features of haskell include
 5. Statically Typed - Compiler knows the datatype of each piece of code
 6. Type Inference - The datatype is determined by the value stored in a variable
 
-### Start
+### 1. Start
 
 Open GHC's interactive mode
 
@@ -19,9 +19,47 @@ Open GHC's interactive mode
 $ghci
 ghci> 2 + 3
 5
-ghci> True && False
+ghci> not (True && False)
+True
+ghci> 5 /= 5 -- Not equal
 False
 ```
+
+### 2. Function Calls
+
+Type | Call
+---|---
+Infix Function | \<operand> \<operator> \<operand>
+Prefix Function | \<operator> \<operand> \<operand>
+
+```haskell
+ghci> 5 * 2
+10
+ghci> succ 8
+9
+ghci> min 4 5
+4
+```
+
+Function application has the highest precedence in Haskell
+
+```haskell
+ghci> succ 9 * 10
+100
+ghci> succ (9 * 10)
+91
+```
+Any prefix function taking 2 arguments can be converted to an infix by using \`
+
+```haskell
+ghci> div 5 2
+2
+ghci> 5 `div` 2
+2
+```
+
+### 3. Function Definition
+
 
 
 
