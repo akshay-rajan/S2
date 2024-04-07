@@ -60,6 +60,27 @@ ghci> 5 `div` 2
 
 ### 3. Function Definition
 
+Create a file with the extension `hs`
+    
+    touch filename.hs
+
+We can define a function using
+
+```haskell
+doubleMe x = x + x
+```
+
+Open ghci and load the file
+
+    ghci> :l filename.hs
+
+Call the function
+```haskell
+ghci> doubleMe 3
+6
+```
+
+
 
 
 
