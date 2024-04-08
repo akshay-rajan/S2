@@ -70,6 +70,13 @@ We can define a function using
 doubleMe x = x + x
 ```
 
+Often, we include **type signatures** along with the function statement
+
+```haskell
+doubleMe :: Integer -> Integer
+doubleMe x = x + x
+```
+
 Open ghci and load the file
 
     ghci> :l filename.hs
@@ -277,6 +284,102 @@ ghci> snd (1,2)
 ghci> zip [1,2,3,4,5] [5,5,5,5,5]
 [(1,5),(2,5),(3,5),(4,5),(5,5)]
 ```
+
+### 8. Data Types
+
+To check the type of a variable, use `:t`
+
+```haskell
+ghci> :t 'a'
+'a' :: Char
+-- '::' is read as "has type of"
+
+ghci> :t (True, '5')
+(True, '5') :: (Bool, Char)
+
+-- Type of a function
+ghci> :t onlyCapital
+onlyCapital :: [Char] -> [Char]
+```
+
+| Data Type | Description | Example |
+|-----------|-------------|---------|
+| `Int`     | Integral numbers, fixed precision | `123` |
+| `Integer` | Integral numbers, arbitrary precision | `123456789101112131415` |
+| `Float`   | Single precision floating point numbers | `123.45` |
+| `Double`  | Double precision floating point numbers | `123.4567891011` |
+| `Bool`    | Boolean values | `True`, `False` |
+| `Char`    | Single characters | `'a'` |
+| `String`  | List of characters | `"Hello"` |
+| `Tuple`   | Fixed size collection of values, can be of different types | `(True, 'a')` |
+| `List`    | Variable size collection of values, must be of same type | `[1, 2, 3, 4, 5]` |
+<!-- | `Maybe`   | Optional values, can be `Nothing` or `Just` something | `Just "Hello"`, `Nothing` | -->
+<!-- | `Either`  | Represents a value that can be one of two types | `Left "Error"`, `Right 123` | -->
+<!-- | `IO`      | Represents a computation which performs I/O and returns a value of type a | `getLine`, `putStrLn "Hello"` | -->
+
+
+```haskell
+-- `a` is a **type variable**, which means it can be of any type
+ghci> :t head
+head :: [a] -> a
+-- Type Variables are given names a,b,c...
+ghci> :t fst
+fst :: (a,b) -> a
+```
+
+Functions that use type variables are called **polymorphic functions**.
+
+#### Type Class
+Type class is an interface that defines some behaviour. If a type is an instance of a type class, then it supports and implements the behaviour the type class describes.
+
+Equality function takes any two values that are of the same type and returns a bool.
+```haskell
+-- Eq type class provides an interface for testing equality
+-- Almost all types are an instance of Eq
+ghci> :t (==)
+(==) :: Eq a => a -> a -> Bool
+```
+`=>` is the 'Class Constraint'
+
+```haskell
+-- Ord is a type class for types whose values can be put in some order
+ghci> :t (>)
+(>) :: Ord a => a -> a -> Bool
+
+-- Values of type class 'Show' can be represented as strings
+ghci> :t show
+show :: Show a => a -> String
+ghci> show 3
+"3"
+
+-- 'Read' takes a string and returns an object of type 'read' (opposite of show)
+ghci> :t read
+read :: Read a => String -> a
+ghci> read "True" || False
+True
+ghci> read "5" :: Float
+5.0
+
+-- 'Enum' is for sequentially ordered types; that can be enumerated
+ghci> :t succ
+succ :: Enum a => a -> a
+
+-- Instances of 'Bounded' have an upper and lower bound
+ghci> minBound :: Int
+-9223372036854775808
+ghci> maxBound :: Char
+'\1114111'
+
+-- 'Num' is for numeric
+ghci> :t 20
+20 :: Num a => a
+
+-- sin, cos, sqrt etc. return 'Floating' type
+
+-- 'Integral' includes only whole numbers
+```
+
+
 
 ```haskell
 
