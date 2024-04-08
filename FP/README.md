@@ -22,6 +22,8 @@ Features of haskell include
 7. [Tuples](#7-tuples)
 8. [Data Types](#8-data-types)
 9. [Function Syntax](#9-function-syntax)
+10. [Recursion](#10-recursion)
+11. [Higher Order Functions](#11-higher-order-functions)
 
 ### 1. Start
 
@@ -392,6 +394,35 @@ ghci> :t 20
 ```
 
 ### 9. Function Syntax
+
+**Pattern matching** is used to specify patterns to which
+some data should conform and to deconstruct the
+data according to those patterns.
+
+```haskell
+lucky :: Int -> String
+lucky 7 = "You've won!"
+lucky x = "Better luck next time!"
+```
+
+```haskell
+ghci> lucky 4
+"Better luck next time!"
+ghci> lucky 7
+"You've won!"
+```
+
+**Guards** are used when some property of passed values is satisfied.
+
+```haskell
+greatest x y
+    | x > y = x
+    | otherwise = y
+```
+
+### 10. Recursion
+
+### 11. Higher Order Functions
 
 
 ```haskell
