@@ -249,6 +249,35 @@ ghci> onlyCapital "heLLO, worLd"
 
 ### 7. Tuples
 
+Tuples are used to store several heterogeneous elements as a single value.
+
+```haskell
+ghci> (1, 3)
+(1,3)
+ghci> (3, 'a', "hello")
+(3,'a',"hello")
+```
+
+A tuple of size 2 (*pair*) and a tuple of size 3 (*triple*) are treated as two distinct types, and they cannot be mixed. Also, tuples with elements having different datatypes are also treated as different.
+
+A tuple must atleast have 2 elements.
+
+Functions on pairs include `fst` and `snd`
+
+```haskell
+ghci> fst (1,2)
+1
+ghci> snd (1,2)
+2
+```
+
+`zip` takes two lists, produces a list of pairs
+
+```haskell
+ghci> zip [1,2,3,4,5] [5,5,5,5,5]
+[(1,5),(2,5),(3,5),(4,5),(5,5)]
+```
+
 ```haskell
 
 ```
