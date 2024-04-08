@@ -222,6 +222,33 @@ ghci> replicate 3 20
 ### 6. List Comprehension
 
 ```haskell
-
+ghci> [2 * x | x <- [1..10]]
+[2,4,6,8,10,12,14,16,18,20]
 ```
 
+In the above example, we say that we *draw* our elements from the list `[1..10]`, and we bind each of those elements to `x`. `2 * x` represents how we want the elements that we have drawn to be reflected in the resulting list.
+
+We can easily add a condition / **predicate** to our comprehension.
+
+```haskell
+ghci> [2 * x | x <- [1..10], x `mod` 4 == 0]
+[8,16]
+```
+The process of weeding out elements from a list using predicates is called *filtering*.
+
+```haskell
+ghci> boomBangs xs = [ if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x]
+ghci> boomBangs [5..20]
+["BOOM!","BOOM!","BOOM!","BANG!","BANG!","BANG!","BANG!","BANG!"]
+ghci> [x+y | x <- [1,2,3], y <- [10,100,1000]] -- Multiple lists
+[11,101,1001,12,102,1002,13,103,1003]   
+ghci> let onlyCapital xs = [ c | c <- xs, c `elem` ['A'..'Z']]
+ghci> onlyCapital "heLLO, worLd"
+"LLOL"
+```
+
+### 7. Tuples
+
+```haskell
+
+```
