@@ -11,6 +11,18 @@ Features of haskell include
 5. Statically Typed - Compiler knows the datatype of each piece of code
 6. Type Inference - The datatype is determined by the value stored in a variable
 
+## Index
+
+1. [Start](#1-start)
+2. [Function Calls](#2-function-calls)
+3. [Function Definition](#3-function-definition)
+4. [Lists Introduction](#4-lists-introduction)
+5. [Range](#5-range)
+6. [List Comprehension](#6-list-comprehension)
+7. [Tuples](#7-tuples)
+8. [Data Types](#8-data-types)
+9. [Function Syntax](#9-function-syntax)
+
 ### 1. Start
 
 Open GHC's interactive mode
@@ -379,6 +391,7 @@ ghci> :t 20
 -- 'Integral' includes only whole numbers
 ```
 
+### 9. Function Syntax
 
 
 ```haskell
