@@ -424,6 +424,7 @@ greatest x y
 
 ### 11. Higher Order Functions
 
+A function which takes functions as arguments or returns functions as return values are called higher order functions.
 
 ```haskell
 
