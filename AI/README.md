@@ -144,8 +144,8 @@ A node is a data structure that keeps track of
    ```
    AStar(start_node, goal_node):
        Initialize an empty priority queue.
-       Enqueue start_node into the priority queue with priority f(start_node) = g(start_node) + h(start_node).
-       Mark start_node as visited and set its g-value to 0.
+       Enqueue start_node into the priority queue with priority f(start_node) = h(start_node) (g(start_node) = 0).
+       Mark start_node as visited.
        
        while priority queue is not empty:
            Dequeue a node from the priority queue.
