@@ -141,25 +141,43 @@ A node is a data structure that keeps track of
    ```
 
 7. **A\* Search**:
-   ```
-   AStar(start_node, goal_node):
-       Initialize an empty priority queue.
-       Enqueue start_node into the priority queue with priority f(start_node) = h(start_node) (g(start_node) = 0).
-       Mark start_node as visited.
-       
-       while priority queue is not empty:
-           Dequeue a node from the priority queue.
-           Process the node.
-           
-           if node == goal_node:
-               return "Goal found"
-               
-           for each neighbor of the dequeued node:
-               if neighbor is not visited or g-value is lower:
-                   Mark neighbor as visited.
-                   Update neighbor's g-value to g(neighbor) = g(node) + cost(node, neighbor).
-                   Enqueue neighbor into the priority queue with priority f(neighbor) = g(neighbor) + h(neighbor).
-       return "Goal not found"
+
+    ```c
+    OPEN - Nodes generated, but "not yet examined"
+    CLOSED - Nodes that are "already examined"
+    
+    f(n) = g(n) + h(n)
+        where h(n) is the 'heuristic function':- Estimated cost from node 'n' to 'goal'
+              g(n) is the cost to reach 'n' from 'start'
+    ```
+   ```c
+    AStar(start_node, goal_node):
+        Enqueue 'start' into 'OPEN' 
+        Set 'f(start) = h(start)'
+            // Since g(start) = 0
+        
+        while 'OPEN' is not empty:
+            Pick the 'BEST-NODE' in 'OPEN' (node with lowest 'f' value)
+            Remove 'BEST-NODE' from 'OPEN'
+            
+            if 'BEST-NODE' is 'goal':
+                return success
+            
+            else:
+                for each 'SUCCESSOR' of 'BEST-NODE':
+                    Set 'SUCCESSOR' to point back to 'BEST-NODE'
+                    g(SUCCESSOR) = g(BEST-NODE) + cost(BEST-NODE, SUCCESSOR)
+                    if 'SUCCESSOR' in 'OPEN':
+                        Call the 'SUCCESSOR' already in OPEN, 'OLD'
+                        if 'OLD' is better than 'SUCCESSOR' (comparing f values) continue
+                        else Update 'OLD's parent link to point to 'BEST-NODE'
+                    else if 'SUCCESSOR' not in 'OPEN' but in 'CLOSED':
+                        Call the 'SUCCESSOR' already in CLOSED, 'OLD'
+                        Add it to 'OPEN', with the best path (parent link)
+                    else if 'SUCCESSOR' not in 'OPEN' and not in 'CLOSED':
+                        Add the 'SUCCESSOR' to OPEN
+                        Compute f('SUCCESSOR') = g('SUCCESSOR') + h('SUCCESSOR')
+        return failure
    ```
 
 8. **Simulated Annealing**:
