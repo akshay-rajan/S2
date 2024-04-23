@@ -43,5 +43,7 @@ ghci
 ```bash
 ghc -o ExecutableName FileName.hs
 ./ExecutableName
+# or
+runghc FileName.hs
 ```
 
