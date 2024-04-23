@@ -1,5 +1,11 @@
 # Glasgow Haskell Compiler
 
+## For Windows (PowerShell)
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; try { Invoke-Command -ScriptBlock ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -ArgumentList $true } catch { Write-Error $_ }
+```
+
 ## Enable Haskell Repositories
 ```bash
 sudo nano /etc/apt/sources.list
