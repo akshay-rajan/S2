@@ -387,7 +387,7 @@ In the functions
 If we call the function `f` using an argument that is neither `int` nor `float`, `automatic type promotion` will be applied. 
 Thus, if we pass a `character` as an argument, a the function with `int` argument will be called.
 
-![type-promotion](./type-promotion.png)
+![type-promotion](./Others/type-promotion.png)
 
 ### `printf` method
 
