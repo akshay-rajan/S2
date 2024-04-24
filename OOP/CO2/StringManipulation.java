@@ -1,3 +1,5 @@
+// 3. Perform string manipulations
+
 import java.util.Scanner;
 
 public class StringManipulation {
