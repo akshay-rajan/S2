@@ -1,3 +1,5 @@
+// 2. Search an element in an array.
+
 import java.util.Scanner;
 
 public class Search {
