@@ -6,3 +6,8 @@
 
 # [Networking and System Administration Lab](/NSA#readme)
 
+
+# [Functional Programming](/FP#readme)
+
+
+# [Artificial Intelligence](/AI#readme)
