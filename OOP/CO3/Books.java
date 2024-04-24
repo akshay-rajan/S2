@@ -1,3 +1,6 @@
+// 4. Write a program has class Publisher, Book, Literature and Fiction. Read the information and print the details of books from either the category, using inheritance.
+
+
 import java.util.Scanner;
 
 public class Books {
