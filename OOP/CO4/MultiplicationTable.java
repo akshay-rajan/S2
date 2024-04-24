@@ -1,3 +1,6 @@
+// 5. Define 2 classes; one for generating multiplication table of 5 and other for displaying first N prime numbers. Implement using threads. (Thread class)
+
+
 public class MultiplicationTable {
 
     public static void main(String[] args) {
