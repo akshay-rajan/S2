@@ -1,3 +1,6 @@
+// 4. Find the average of N positive integers, raising a user defined exception for each negative input.
+
+
 import java.util.Scanner;
 
 public class Average {
