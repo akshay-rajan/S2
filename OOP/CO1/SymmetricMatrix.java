@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class symmetric_matrix {
+public class SymmetricMatrix {
     
     public static void main(String[] args) {
 
