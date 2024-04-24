@@ -1,5 +1,6 @@
-import java.util.Scanner;
+// 4. Program to create a class for Employee having attributes eNo, eName eSalary. Read n employ information and Search for an employee given eNo, using the concept of Array of Objects.
 
+import java.util.Scanner;
 
 public class Employee {
     
