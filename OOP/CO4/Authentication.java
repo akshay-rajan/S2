@@ -1,6 +1,5 @@
 // 3. Write a user defined exception class to authenticate the user name and password.
 
-
 import java.util.Scanner;
 
 public class Authentication {
