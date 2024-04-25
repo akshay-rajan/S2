@@ -37,6 +37,8 @@ To execute the compiled file,
 | 34. [Encapsulation](#encapsulation) | 35. [Copying Objects](#copying-objects) | 36. [Interface](#interface) |
 | 37. [Polymorphism](#polymorphism) | 38. [Runtime Polymorphism](#runtime-polymorphism) | 39. [Exception Handling](#exception-handling) |
 | 40. [File Class](#file-class) | 41. [FileWriter](#filewriter) | 42. [FileReader](#filereader) |
+| 43. [Nested Classes](#nested-classes) | 44. [Enumerations](#enumerations) | 45. [Generics](#generics) |
+| 46. [Collections](#collections) |  |  |
 
 <hr>
 <hr>
