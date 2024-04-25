@@ -976,15 +976,15 @@ deque.addFirst(1);
 deque.offerFirst(2);    // Returns true if success
 deque.addLast(3);       // Insert to the end
 deque.offerLast(4);     // Returns true if success
-pop()                   // Removes the first element and returns it
-removeFirst()           // Throws exception if empty
-removeLast()
-pollFirst()             // Returns null if deque empty
-pollLast()
-getFirst()              // Throws exception if empty
-getLast()
-peekFirst()             // Returns exception if empty
-peekLast()
+pop();                  // Removes the first element and returns it
+removeFirst();          // Throws exception if empty
+removeLast();
+pollFirst();            // Returns null if deque empty
+pollLast();
+getFirst();             // Throws exception if empty
+getLast();
+peekFirst();            // Returns exception if empty
+peekLast();
 ```
 
 ### LinkedList
@@ -993,26 +993,41 @@ A `LinkedList` is a collection of elements, with each element having a reference
 
 ```java
 LinkedList<String> list = new LinkedList<String>();
-list.add("A");
-list.add("B");
-list.add("C");
-
+list.add("A");          // Insertion at the end
+list.add("B", 2);       // Insertion at a position
 list.addFirst("Z");
 list.addLast("Y");
+list.get(2);            // Returns element at a position
+list.getFirst();
+list.getLast();
+list.remove();          // Removes the head
+list.remove(3);         // Deletion at a position
+list.removeFirst();
+list.removeLast();
+list.size();
 ```
 
-### Map
+### HashMap
 
-A `Map` is a collection of key-value pairs, where each key is associated with a value.
+The `HashMap` class is an implementation of `Map` interface, which is a collection of key-value pairs.
 
 ```java
 Map<String, Integer> map = new HashMap<String, Integer>();
 map.put("A", 1);
 map.put("B", 2);
 map.put("C", 3);
-
-System.out.println(map.get("B"));
+map.get("B");
+map.remove("C");
+map.containsKey("D");       // Returns true if a key is present
+map.containsValue(4);       // Returns true if a value is present
+map.keySet();               // Returns a Set of keys
+map.entrySet();             // Returns a Set of entries
+map.size();
+map.isEmpty();
 ```
+- `Hashtable` is a class in java which also stores key-value pairs. 
+- Hashtable provides thread safety and does not allow null keys / values
+- HashMap is generally faster.  
 
 ### Set
 
@@ -1021,10 +1036,12 @@ A `Set` is a collection of unique elements.
 ```java
 Set<Integer> set = new HashSet<Integer>();
 set.add(1);
-set.add(2);
-set.add(3);
-
-System.out.println(set.contains(2));
+set.contains(2);
+set.remove(3);
+set.size();
+set.isEmpty();
+set.clear();
+set.iterator();     // Returns an iterator over the set
 ```
 
 ### PriorityQueue
@@ -1034,3 +1051,11 @@ A `PriorityQueue` is a collection of elements, with the element with the highest
 ```java
 PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
 pq.add(1);
+pq.offer(1);    // Insertion
+pq.peek();
+pq.poll();      // Deletion
+pq.remove();
+pq.size();
+pq.isEmpty();
+```
+
