@@ -918,17 +918,9 @@ Collections are used to store, retrieve, manipulate and communicate aggregate da
 It contains polymorphic algorithms that operate on collections.
 
 The hierarchy of **Collection framework** (readymade architecture) is as follows:
+
 ![collection-hierarchy](./Others/java-collection-hierarchy.png)
 
-
-```java
-List<String> list = new ArrayList<String>();
-list.add("A");
-list.add("B");
-list.add("C");
-
-Collections.sort(list);
-```
 
 | Method | Description |
 | --- | --- |
@@ -942,6 +934,10 @@ Collections.sort(list);
 | `replaceAll(List<T> list, T oldVal, T newVal)` | Replaces all occurrences of one specified value in a list with another. |
 | `frequency(Collection<?> c, Object o)` | Returns the number of elements in the specified collection equal to the specified object. |
 | `fill(List<? super T> list, T obj)` | Replaces all of the elements of the specified list with the specified element. |
+
+```java
+Collections.sort(list);
+```
 
 ### Stack
 
