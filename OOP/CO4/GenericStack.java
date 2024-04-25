@@ -2,6 +2,7 @@
 
 import java.util.Stack;
 
+
 public class GenericStack<T> {
     
     public static void main(String[] args) {
