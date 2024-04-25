@@ -822,5 +822,127 @@ When read() returns `-1`, the file has no more content to read.
 
 Make sure to handle necessary exceptions like `FileNotFoundException` and `IOException`.
 
+### Nested Classes
 
+A class which is declared inside another class is called a `nested class`.
+Nested classes are used to group classes that belong together, increase encapsulation and readability.
+There are four types of nested classes:
 
+1. **Static nested classes**: A static nested class is a nested class that is declared with the static keyword. It is associated with the outer class, **but it does not have access to the instance variables and methods of the outer class**. It can be accessed using the outer class name followed by the nested class name, like `OuterClass.NestedClass`.
+
+2. **Inner classes** (Non-static nested classes): A non-static nested class, also known as an inner class, is a nested class that is declared without the static keyword. It is associated with an instance of the outer class and has access to the instance variables and methods of the outer class. It can be accessed using an instance of the outer class.
+
+3. Local classes: A local class is a nested class that is defined inside a block, such as a method or a loop. It is only accessible within the block where it is defined. Local classes can access the variables and parameters of the enclosing block, but they must be declared as final or effectively final.
+
+4. Anonymous classes: An anonymous class is a nested class that does not have a name. It is defined and instantiated at the same time. Anonymous classes are often used to implement interfaces or extend classes on the fly without creating a separate named class.
+
+```java 
+class ParentClass {
+    ...
+    class InnerClass {
+        ...
+    }
+    static class StaticNestedClass {
+        ...
+    }
+}
+```
+
+### Enumerations
+
+An `enum` is a special datatype that allows a variable to be a set of predefined constants.
+The enum has a list of constants, and we can use these constants to create variables.
+
+```java
+enum Level {
+        LOW,
+        MEDIUM,
+        HIGH
+    }
+
+    Level myLevel = Level.MEDIUM;
+```
+
+The `values()` method returns an array containing all of the values of the enum.
+
+```java
+for (Level l : Level.values()) {
+    System.out.println(l);
+}
+```
+
+### Generics
+
+`Generics allow types to be passed as parameters at compile time.`
+
+We can create a generic class by
+
+```java
+class Box<T> {
+    private T t;
+    void set(T t) {
+        this.t = t;
+    }
+    T get() {
+        return t;
+    }
+}
+
+Box<Integer> myBox = new Box<Integer>();
+myBox.set(12);
+System.out.println(myBox.get());
+```
+
+Generics can also be applied to interfaces and methods.
+
+```java
+interface Pair<K, V> {
+    K getKey();
+    V getValue();
+}
+
+class OrderedPair<K, V> implements Pair<K, V> {
+    private K key;
+    private V value;
+
+    public OrderedPair(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public K getKey() {
+        return key;
+    }
+    public V getValue() {
+        return value;
+    }
+}
+```
+
+### Collections
+
+The `Collections` class consists of static methods that operate on collections.
+Collections are used to store, retrieve, manipulate and communicate aggregate data.
+It contains polymorphic algorithms that operate on collections.
+
+```java
+List<String> list = new ArrayList<String>();
+list.add("A");
+list.add("B");
+list.add("C");
+
+Collections.sort(list);
+```
+
+| Method | Description |
+| --- | --- |
+| `sort(List<T> list)` | Sorts the specified list into ascending order, according to the natural ordering of its elements. |
+| `reverse(List<?> list)` | Reverses the order of the elements in the specified list. |
+| `shuffle(List<?> list)` | Randomly permutes the elements in the specified list. |
+| `swap(List<?> list, int i, int j)` | Swaps the elements at the specified positions in the specified list. |
+| `min(Collection<? extends T> coll)` | Returns the minimum element of the given collection, according to the natural ordering of its elements. |
+| `max(Collection<? extends T> coll)` | Returns the maximum element of the given collection. |
+| `rotate(List<?> list, int distance)` | Rotates the elements in the specified list by the specified distance. |
+| `replaceAll(List<T> list, T oldVal, T newVal)` | Replaces all occurrences of one specified value in a list with another. |
+| `frequency(Collection<?> c, Object o)` | Returns the number of elements in the specified collection equal to the specified object. |
+| `fill(List<? super T> list, T obj)` | Replaces all of the elements of the specified list with the specified element. |
