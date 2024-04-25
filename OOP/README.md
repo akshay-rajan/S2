@@ -877,7 +877,7 @@ for (Level l : Level.values()) {
 
 `Generics allow types to be passed as parameters at compile time.`
 
-We can create a generic class by
+We can create a **Generic Class** by
 
 ```java
 class Box<T> {
@@ -897,27 +897,14 @@ System.out.println(myBox.get());
 
 Generics can also be applied to interfaces and methods.
 
+Example of a **Generic Method** in Java:
+
 ```java
-interface Pair<K, V> {
-    K getKey();
-    V getValue();
-}
-
-class OrderedPair<K, V> implements Pair<K, V> {
-    private K key;
-    private V value;
-
-    public OrderedPair(K key, V value) {
-        this.key = key;
-        this.value = value;
+public static <E> void printArray(E[] inputArray) {
+    for (E element : inputArray) {
+        System.out.printf("%s ", element);
     }
-
-    public K getKey() {
-        return key;
-    }
-    public V getValue() {
-        return value;
-    }
+    System.out.println();
 }
 ```
 
