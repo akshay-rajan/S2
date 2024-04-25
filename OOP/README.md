@@ -40,7 +40,7 @@ To execute the compiled file,
 | 43. [Nested Classes](#nested-classes) | 44. [Enumerations](#enumerations) | 45. [Generics](#generics) |
 | 46. [Collections](#collections) | 47. [Stack](#stack) | 48. [Queue](#queue) |
 | 49. [Deque (Double-Ended Queue)](#deque-double-ended-queue) | 50. [LinkedList](#linkedlist) | 51. [HashMap](#hashmap) |
-| 52. [Set](#set) | 53. [PriorityQueue](#priorityqueue) |
+| 52. [Set](#set) | 53. [PriorityQueue](#priorityqueue) | 54. [Abstract Window Toolkit (AWT)](#abstract-window-toolkit-awt) |
 
 <hr>
 <hr>
@@ -1060,4 +1060,45 @@ pq.remove();
 pq.size();
 pq.isEmpty();
 ```
+
+### Abstract Window Toolkit (AWT)
+
+AWT is a platform-dependent API used to develop window-based applications in Java.
+It's part of the Java Foundation Classes, which is the standard API for providing a GUI for a Java program.
+AWT includes a set of native user interface components, a robust event-handling model, and graphics and imaging tools. 
+
+AWT components are platform-dependent, so they're shown by the operating system's view. AWT is also considered heavyweight, meaning its components use the operating system's resources. The Java.awt package contains classes for the AWT API, including **TextField, CheckBox, Choice, Label, TextArea, Radio Button, and List**.
+
+The hierarchy of classes in AWT are:
+
+![awt-hierarchy](./Others/awt.png)
+
+| Component     | Description |
+| ------------- | ----------- |
+| Components    | All elements like button, text fields, scroll bars etc. |
+| Container     | Elements that can contain other elements. Containers extend the `Container` class (eg. Frame, Dialog, Panel etc.). |
+| Window        | A top-level container with no borders and menu bar. Windows extend the `Window` class. |
+| Panel         | A generic container for holding other containers. |
+| Frame         | A top-level window with a title and border (optionally, menu bars). Frames extend the `Frame` class. |
+| Dialog        | A top-level window with a title and border, used for taking user input. Dialogs extend the `Dialog` class. |
+| Button        | A clickable button that can trigger an event. Buttons extend the `Button` class. |
+| Label         | A non-interactive text element. Labels extend the `Label` class. |
+| TextField     | A single-line text input field. TextFields extend the `TextField` class. |
+| TextArea      | A multi-line text input field. TextAreas extend the `TextArea` class. |
+| CheckBox      | A box that can be checked or unchecked. CheckBoxes extend the `Checkbox` class. |
+| RadioButton   | A circular button that can be selected or deselected, usually used in groups where only one can be selected at a time. RadioButtons extend the `Checkbox` class but are used with a `CheckboxGroup`. |
+| Choice        | A drop-down list of options. Choices extend the `Choice` class. |
+| List          | A list of items that the user can select. Lists extend the `List` class. |
+| Scrollbar     | A bar that can be moved up and down or left and right to navigate through content. Scrollbars extend the `Scrollbar` class. |
+| MenuBar, Menu, and MenuItem | Components for creating a menu system. These extend the `MenuBar`, `Menu`, and `MenuItem` classes respectively. |
+
+Useful methods in the Component Class include
+
+```java
+public void add(Component c) // Inserts a component on this component
+public void setSize(int width, int height) // Sets the size of the component
+public void setLayout(LayoutManager m) // Defines the layout manager for the component
+public void setVisible(boolean status) // Changes the visibility of a component (false by default)
+```
+
 
