@@ -907,6 +907,7 @@ public static <E> void printArray(E[] inputArray) {
     System.out.println();
 }
 ```
+- Generic methods can only be used with Reference Types (Integer, Character etc.).
 
 ### Collections
 
