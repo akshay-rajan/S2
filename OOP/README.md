@@ -917,6 +917,10 @@ The `Collections` class consists of static methods that operate on collections.
 Collections are used to store, retrieve, manipulate and communicate aggregate data.
 It contains polymorphic algorithms that operate on collections.
 
+The hierarchy of **Collection framework** (readymade architecture) is as follows:
+![collection-hierarchy](./Others/java-collection-hierarchy.png)
+
+
 ```java
 List<String> list = new ArrayList<String>();
 list.add("A");
