@@ -936,3 +936,101 @@ Collections.sort(list);
 | `replaceAll(List<T> list, T oldVal, T newVal)` | Replaces all occurrences of one specified value in a list with another. |
 | `frequency(Collection<?> c, Object o)` | Returns the number of elements in the specified collection equal to the specified object. |
 | `fill(List<? super T> list, T obj)` | Replaces all of the elements of the specified list with the specified element. |
+
+### Stack
+
+A `Stack` is a collection of elements, with two main operations: `push` and `pop`. 
+It follows the Last In First Out (LIFO) principle.
+
+```java
+Stack<Integer> stack = new Stack<Integer>();
+stack.push(1);  // Insertion
+stack.pop();    // Deletion
+stack.peek();   // Returns the top element
+stack.empty();  // Returns true if the stack is empty
+stack.search(1);// Returns the position of an element
+```
+
+### Queue
+
+A `Queue` is a collection of elements, with two main operations: `enqueue` and `dequeue`. 
+It follows the First In First Out (FIFO) principle.
+
+```java
+Queue<Integer> queue = new LinkedList<>();
+queue.add(1);   // Enqueue
+queue.remove(); // Dequeue
+queue.poll();   // Dequeue
+queue.peek();   // Front
+queue.element();// Front
+```
+
+### Deque (Double-Ended Queue)
+
+A `Dequeue` is a double-ended queue, which allows insertion and deletion from both ends. It can be used as a stack or a queue.
+
+```java
+Deque<Integer> deque = new ArrayDeque<>();
+deque.push(0);          // Insert to the beginning
+deque.addFirst(1);      
+deque.offerFirst(2);    // Returns true if success
+deque.addLast(3);       // Insert to the end
+deque.offerLast(4);     // Returns true if success
+pop()                   // Removes the first element and returns it
+removeFirst()           // Throws exception if empty
+removeLast()
+pollFirst()             // Returns null if deque empty
+pollLast()
+getFirst()              // Throws exception if empty
+getLast()
+peekFirst()             // Returns exception if empty
+peekLast()
+```
+
+### LinkedList
+
+A `LinkedList` is a collection of elements, with each element having a reference to the next element in the list.
+
+```java
+LinkedList<String> list = new LinkedList<String>();
+list.add("A");
+list.add("B");
+list.add("C");
+
+list.addFirst("Z");
+list.addLast("Y");
+```
+
+### Map
+
+A `Map` is a collection of key-value pairs, where each key is associated with a value.
+
+```java
+Map<String, Integer> map = new HashMap<String, Integer>();
+map.put("A", 1);
+map.put("B", 2);
+map.put("C", 3);
+
+System.out.println(map.get("B"));
+```
+
+### Set
+
+A `Set` is a collection of unique elements.
+
+```java
+Set<Integer> set = new HashSet<Integer>();
+set.add(1);
+set.add(2);
+set.add(3);
+
+System.out.println(set.contains(2));
+```
+
+### PriorityQueue
+
+A `PriorityQueue` is a collection of elements, with the element with the highest priority being removed first.
+
+```java
+PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+pq.add(1);
