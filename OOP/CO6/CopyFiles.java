@@ -1,12 +1,9 @@
 // 3. Write a program to copy one file to another.
 
 
-import java.nio.*;
-import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.Reader;
 
 
 public class CopyFiles {
