@@ -2,9 +2,9 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.regex.*;
 
-public class Calculator extends Frame {
+public class Calculator0 extends Frame {
     
-    Calculator() {
+    Calculator0() {
 
         // * Input Area
         TextField t = new TextField();
@@ -62,7 +62,7 @@ public class Calculator extends Frame {
 
     public static void main(String[] args) {
         
-        Calculator c = new Calculator();
+        Calculator0 c = new Calculator0();
 
     }
 
