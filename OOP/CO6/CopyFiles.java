@@ -8,8 +8,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
 
-import javax.annotation.processing.FilerException;
-
 
 public class CopyFiles {
     
