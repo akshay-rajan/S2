@@ -41,6 +41,7 @@ To execute the compiled file,
 | 46. [Collections](#collections) | 47. [Stack](#stack) | 48. [Queue](#queue) |
 | 49. [Deque (Double-Ended Queue)](#deque-double-ended-queue) | 50. [LinkedList](#linkedlist) | 51. [HashMap](#hashmap) |
 | 52. [Set](#set) | 53. [PriorityQueue](#priorityqueue) | 54. [Abstract Window Toolkit (AWT)](#abstract-window-toolkit-awt) |
+| 55. [Multithreading](#multithreading) ||
 
 <hr>
 <hr>
@@ -1100,5 +1101,54 @@ public void setSize(int width, int height) // Sets the size of the component
 public void setLayout(LayoutManager m) // Defines the layout manager for the component
 public void setVisible(boolean status) // Changes the visibility of a component (false by default)
 ```
+
+### Multithreading
+
+Multithreading is a feature of modern programming languages that allows a single program to perform multiple tasks concurrently.
+A "thread" is a single sequence of execution in a program.
+
+Every java program has one *Main Thread* provided by the JVM.
+
+![thread-cycle](./Others/thread-life-cycle.png)
+
+We can use multithreading by either extending the `Thread` class or implementing the `Runnable` interface.
+
+```java
+// Define a class that extends the Thread class
+class MyThread extends Thread {
+    // Override the run() method
+    public void run() {
+        ...
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        // Create an instance of the class
+        MyThread t = new MyThread();
+        // Call the start() method to start the thread.
+        t.start(); 
+    }
+}
+```
+```java
+class MyRunnable implements Runnable {
+    public void run() {
+        ...
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        MyRunnable r = new MyRunnable();
+        Thread t = new Thread(r);
+        t.start();
+    }
+}
+```
+
+If multiple threads are accessing and modifying the same data, you need to ensure that they do so in a way that doesn't cause inconsistencies or other issues. 
+This is known as "thread-safety".
+
+We can use the `isAlive()` method to check whether a thread has finished running.
+
 
 
