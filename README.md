@@ -1,3 +1,7 @@
+```bash
+git clone https://github.com/akshay-rajan/S2.git
+```
+
 # [Object Oriented Programming Lab](/OOP#readme)
 
 
@@ -11,3 +15,5 @@
 
 
 # [Artificial Intelligence](/AI#readme)
+
+
