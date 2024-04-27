@@ -22,7 +22,7 @@ DML COMMANDS
 5. Enter following queries to insert values in Employees table.
 
 
-<button>[Solution](./exercise1.sql)</button>
+[Solution](./exercise1.sql)
 
 ## Q2 - Queries
 
@@ -42,7 +42,7 @@ employees.
 13. Write a query to insert an employee “Paul Newton” in department 11.
 14. Write a query to delete the shipping department
 
-[<button>Solution</button>](./exercise2.sql)
+[Solution](./exercise2.sql)
 
 ## Q3 - Queries
 
@@ -69,7 +69,7 @@ C. Insert a new course, <'Knowledge Engineering', 'CS4390', 3, 'CS'>.
 D. Delete the record for the student whose name is 'Smith' and whose student number
 is 17.
 
-[<button>Solution</button>](./exercise3.sql)
+[Solution](./exercise3.sql)
 
 ## Q4 - PLSQL
 
@@ -81,7 +81,7 @@ Create a PLSQL procedure to
     d. display which day is a specific date.
     e. factorial of a number.
 
-[<button>Solution</button>](./exercise4.sql)
+[Solution](./exercise4.sql)
 
 ## Q5 - Procedure
 
@@ -90,7 +90,7 @@ The stored procedure has as input parameters the barcode, the product name, pric
 The stored procedure should insert a row in the Product table only if the price is greater than 0 and the quantity is greater or equal to 0.
 If the conditions are not satisfied, the stored procedure just terminates (no errors generated)
 
-[<button>Solution</button>](./exercise5.sql)
+[Solution](./exercise5.sql)
 
 ## Q6 - Trigger
 
@@ -100,7 +100,7 @@ Product (Pdtld, Pname, Proce, Qtyinstock), Sale(saleld, Deliveryaddess), and Sal
 Create a trigger called updateAvailable Quantity that updates the quantity in stock in the product table, for every product sold. 
 The trigger should be executed after each insert operation on the Saleitem table: for the product with given Ptdld(the one inserted into Saleitem), update the available quantity in Product table to be the old quantity minus the sold quantity.
 
-[<button>Solution</button>](./exercise6.sql)
+[Solution](./exercise6.sql)
 
 ## Q7 - MongoDB
 
@@ -118,4 +118,4 @@ Write a MongoDB Query to:
 I
 10. Display all female students who belong to either Kollam or Thiruvananthapuram
 
-[<button>Solution</button>](./exercise7.ipynb)
+[Solution](./exercise7.ipynb)
