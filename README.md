@@ -21,7 +21,7 @@ git clone https://github.com/akshay-rajan/S2.git
     </tr>
     <tr>
         <td><a href="./ADBMS/QUESTIONS.md#exercise-4---plsql">Exercise 4 - PL/SQL</a></td>
-        <td><a href="./ADBMS/exercise4.sql">Solution</a></td>
+        <td><a href="./ADBMS/exercise4pl.sql">Solution</a></td>
     </tr>
     <tr>
         <td><a href="./ADBMS/QUESTIONS.md#exercise-5---procedure">Exercise 5 - Procedure</a></td>
