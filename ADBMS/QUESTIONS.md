@@ -1,4 +1,4 @@
-## Q1 - ER to Table
+## Exercise 1 - ER to Table
 
 ![alt](./Others/q1.png)
 
@@ -24,7 +24,7 @@ DML COMMANDS
 
 [Solution](./exercise1.sql)
 
-## Q2 - Queries
+## Exercise 2 - Queries
 
 1. Write a query to display all the countries.
 2. Write a query to display specific columns like email and phone number for all the
@@ -44,7 +44,7 @@ employees.
 
 [Solution](./exercise2.sql)
 
-## Q3 - Queries
+## Exercise 3 - Queries
 
 A UNIVERSITY database for maintaining information concerning students, courses, and grades in a university environment is given below.
 The STUDENT file stores data on each student, the COURSE file stores data on each course, the SECTION file stores data on each section of a course, the GRADE_REPORT file stores the grades that students receive in the various sections they have completed, and the PREREQUISITE file stores the prerequisites of each course.
@@ -71,7 +71,7 @@ is 17.
 
 [Solution](./exercise3.sql)
 
-## Q4 - PLSQL
+## Exercise 4 - PLSQL
 
 Create a PLSQL procedure to
     
@@ -83,7 +83,7 @@ Create a PLSQL procedure to
 
 [Solution](./exercise4.sql)
 
-## Q5 - Procedure
+## Exercise 5 - Procedure
 
 Create a database "STORE" with table named Product (Pdtld, PName, Price, Quantity) and create a stored procedure called Insertproduct that inserts a new product into the database, under some conditions. 
 The stored procedure has as input parameters the barcode, the product name, price, and quantityInStock. 
@@ -92,7 +92,7 @@ If the conditions are not satisfied, the stored procedure just terminates (no er
 
 [Solution](./exercise5.sql)
 
-## Q6 - Trigger
+## Exercise 6 - Trigger
 
 Create three tables named:
 Product (Pdtld, Pname, Proce, Qtyinstock), Sale(saleld, Deliveryaddess), and Saleitem(saleld, Pdtid, Qty).
@@ -102,7 +102,7 @@ The trigger should be executed after each insert operation on the Saleitem table
 
 [Solution](./exercise6.sql)
 
-## Q7 - MongoDB
+## Exercise 7 - MongoDB
 
 Create a database named college and then create a collection named studlist. Insert some values into it [You can use the data in test.json file].
 Write a MongoDB Query to:
