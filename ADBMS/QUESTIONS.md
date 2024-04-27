@@ -22,7 +22,7 @@ DML COMMANDS
 5. Enter following queries to insert values in Employees table.
 
 
-[<button>Solution</button>](./exercise1.sql)
+<button>[Solution](./exercise1.sql)</button>
 
 ## Q2 - Queries
 
