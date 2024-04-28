@@ -238,4 +238,4 @@ SELECT * FROM jobs;
 SELECT * FROM regions;
 SELECT * FROM dependents;
 SELECT * FROM employees;
-SELECT * FROM departments;
+SELECT * FROM Dept;
