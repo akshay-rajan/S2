@@ -246,6 +246,11 @@ DELETE FROM Employees WHERE EmployeeID = 1;
 SELECT Orders.OrderID, Customers.CustomerName FROM Orders
 JOIN Customers 
 ON Orders.CustomerID = Customers.CustomerID;
+
+-- This is equivalent to the 'comma' syntax
+SELECT Orders.OrderID, Customers.CustomerName 
+FROM Orders, Customers 
+WHERE Orders.CustomerID = Customers.CustomerID;
 ```
 6. **LEFT JOIN**: Returns all records from left table, and matching records from right table (NULL if no match on the right table)
 
