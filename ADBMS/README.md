@@ -205,10 +205,14 @@ CREATE TABLE Persons (
 10. **CREATE VIEW**: Creates a virtual table.
 
 ```sql
+-- Creation of virtual table
 CREATE VIEW view_name AS
 SELECT column1, column2, ...
 FROM table_name
 WHERE condition;
+
+-- Using the virtual table
+SELECT * FROM view_name;
 ```
 
 ## 2. Data Manipulation Language (DML):
