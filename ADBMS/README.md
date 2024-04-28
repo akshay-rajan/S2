@@ -254,6 +254,35 @@ UNION
 SELECT column_name(s) FROM table2;
 ```
 
+### where
+
+The `WHERE` clause in SQL is used to filter records. It's used to extract only those records that fulfill a specified condition.
+
+```sql
+SELECT * FROM Employees WHERE Salary > 50000;
+```
+
+The `WHERE` clause can be combined with logical operators like `AND`, `OR`, and `NOT`, as well as comparison operators like `=`, `<>`, `<`, `>`, `<=`, `>=`.
+
+`LIKE` is a simple pattern matching operator that allows us to use the wildcards:
+- `%` - Matches any sequence of characters
+- `_` - Matches any single character
+
+```sql
+SELECT * FROM employees WHERE last_name LIKE 'S%';
+```
+ `IN` is used to mention all possible values as an array.
+
+```sql
+SELECT * FROM employees WHERE last_name IN ('Ron', 'Harry');
+```
+
+`BETWEEN` is used to provide a range of values as an array, which satisfies the condition.
+
+```sql
+SELECT * FROM employees WHERE YEAR(hire_date) BETWEEN 1999 AND 2001;
+```
+
 ## 3. DCL (Data Control Language):
 
 Used for controlling the access to data within the database. It includes commands such as `GRANT` and `REVOKE`.
