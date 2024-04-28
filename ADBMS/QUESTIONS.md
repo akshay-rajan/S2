@@ -81,7 +81,7 @@ Create a PLSQL procedure to
     d. display which day is a specific date.
     e. factorial of a number.
 
-[Solution](./exercise4.sql)
+[Solution](./exercise4pl.sql)
 
 ## Exercise 5 - Procedure
 
