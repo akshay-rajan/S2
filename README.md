@@ -6,10 +6,10 @@ git clone https://github.com/akshay-rajan/S2.git
 
 ### [CO1](./OOP/CO1/)
 
-- Read 2 matrices from the console and perform matrix addition. [Solution](./OOP/CO1/Matrix.java)
-- Add complex numbers. [Solution](./OOP/CO1/Complex.java)
-- Read a matrix from the console and check whether it is symmetric or not. [Solution](./OOP/CO1/SymmetricMatrix.java)
-- Create CPU with attribute price. Create inner class Processor (no. of cores, manufacturer) and static nested class RAM (memory, manufacturer). Create an object of CPU and print information of Processor and RAM. [Solution](./OOP/CO1/CPU.java)
+- Matrix addition. [Solution](./OOP/CO1/Matrix.java)
+- Add Complex numbers. [Solution](./OOP/CO1/Complex.java)
+- Symmetric Matrix. [Solution](./OOP/CO1/SymmetricMatrix.java)
+- Inner and Static Nested Classes (CPU, Processor, RAM). [Solution](./OOP/CO1/CPU.java)
 
 ### [CO2](./OOP/CO2/)
 
