@@ -1,8 +1,5 @@
 package Graphics;
 
-// Import Abstract Class
-import Graphics.Shape;
-
 public class Rectangle implements Shape {
 
     int length;
