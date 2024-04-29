@@ -13,10 +13,10 @@ git clone https://github.com/akshay-rajan/S2.git
 
 ### [CO2](./OOP/CO2/)
 
-- Program to Sort strings. [Solution](./OOP/CO2/Sort.java)
+- Sort strings. [Solution](./OOP/CO2/Sort.java)
 - Search an element in an array. [Solution](./OOP/CO2/Search.java)
-- Perform string manipulations [Solution](./OOP/CO2/StringManipulation.java)
-- Program to create a class for Employee having attributes eNo, eName eSalary. Read n employ information and Search for an employee given eNo, using the concept of Array of Objects. [Solution](./OOP/CO2/Employee.java)
+- String manipulations [Solution](./OOP/CO2/StringManipulation.java)
+- Array of Objects. [Solution](./OOP/CO2/Employee.java)
 
 ### [CO3](./OOP/CO3/)
 
