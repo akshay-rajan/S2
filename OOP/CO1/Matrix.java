@@ -25,9 +25,9 @@ public class Matrix {
 
     // Display a matrix
     public void displayMatrix() {
-        for (int i = 0; i < this.rows; i++) {
-            for (int j = 0; j < this.cols; j++)
-                System.out.print(this.matrix[i][j] + " ");
+        for (int[] row: matrix) {
+            for (int element: row)
+                System.out.print(element + " ");
             System.out.println();
         }
     }
