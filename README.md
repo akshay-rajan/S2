@@ -15,17 +15,17 @@ git clone https://github.com/akshay-rajan/S2.git
 
 - Sort strings. [Solution](./OOP/CO2/Sort.java)
 - Search an element in an array. [Solution](./OOP/CO2/Search.java)
-- String manipulations [Solution](./OOP/CO2/StringManipulation.java)
-- Array of Objects. [Solution](./OOP/CO2/Employee.java)
+- **String manipulations** [Solution](./OOP/CO2/StringManipulation.java)
+- **Array of Objects**. [Solution](./OOP/CO2/Employee.java)
 
 ### [CO3](./OOP/CO3/)
 
-- Area of different shapes using overloaded functions [Solution](./OOP/CO3/Area.java)
-- Create a class Employee' with data members Empid, Name, Salary, Address and constructors to initialize the data members. Create another class 'Teacher' that inherit the properties of class employee and contain its own data members department, Subjects taught s of class employee and and constructors to initialize these data members and also include display function to. display all the data members. Use array of objects to display details of N teachers. [Solution](./OOP/CO3/Teacher.java)
-- Create a class 'Person' with data members Name, Gender, Address, Age and a constructor to initialize the data members and another class 'Employee' that inherits the properties of class Person and also contains its own data members like Empid, Company_name, Qualification, Salary and its own constructor. Create another class 'Teacher' that inherits the properties of class Employee and contains its own data members like Subject, Department, Teacherid and also contain constructors and methods to display the data members. Use array of objects to display details of N teachers. [Solution](./OOP/CO3/Teacher2.java)
-- Create an interface having prototypes of functions area() and perimeter(). Create two classes Circle and Rectangle which implements the above interface. Create a menu driven program to find area and perimeter of objects. [Solution](./OOP/CO3/Shapes.java)
-- Create classes Student and Sports. Create another class Result inherited from Student and Sports. Display the academic and sports score of a student. [Solution](./OOP/CO3/Result.java)
-- Write a program has class Publisher, Book, Literature and Fiction. Read the information and print the details of books from either the category, using inheritance. [Solution](./OOP/CO3/Books.java)
+- **Method Overloading**: Area of different shapes  [Solution](./OOP/CO3/Area.java)
+- **Inheritance, Array of Objects**: Employee, Teacher [Solution](./OOP/CO3/Teacher.java)
+- **Inheritance, Array of Objects**: Person, Employee, Teacher [Solution](./OOP/CO3/Teacher2.java)
+- **Interface**: Circle, Rectangle -> area and perimeter. [Solution](./OOP/CO3/Shapes.java)
+- **Interface**: Student, Sports, Result. [Solution](./OOP/CO3/Result.java)
+- **Inheritance** Publisher, Book, Literature, Fiction. [Solution](./OOP/CO3/Books.java)
 
 ### [CO4](./OOP/CO4/)
 
