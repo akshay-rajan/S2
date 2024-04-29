@@ -189,5 +189,5 @@ In MongoDB, the `$regex` operator is used to perform pattern matching queries. I
    - `s`: Allows `.` to match newline characters.
 
 ```python
-db.collection.find({ "field": { $regex: /^abc/i } })
+cursor = collection.find({ "field": { $regex: /^abc/i } })
 ```
