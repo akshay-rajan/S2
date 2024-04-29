@@ -39,12 +39,6 @@ public class StringManipulation {
 		String trimmed_s = s.trim();
 		System.out.println("Trimmed string: " + trimmed_s);
 
-		// Create a string object of the parameter p, then create a string representation of the object p
-		String p = "Hello, world!";
-		String string_object = String.valueOf(p);
-		System.out.println("String object: " + string_object);
-		System.out.println("String representation: " + p.toString());
-
 		// Return the position of first occurence of a character in a string
 		System.out.print("Enter a character: ");
 		String c = sc.next();
