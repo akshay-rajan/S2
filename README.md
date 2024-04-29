@@ -46,15 +46,15 @@ git clone https://github.com/akshay-rajan/S2.git
 
 ### [CO5](./OOP/CO5/)
 
-- Implement a simple calculator using AWT Components. [Solution](./OOP/CO5/Calculator.java)
-- Develop a program to handle all mouse events and window events. [Solution](./OOP/CO5/Events.java) 
+- **AWT**: Simple Calculator. [Solution](./OOP/CO5/Calculator.java)
+- **Events**: Mouse events and Window events. [Solution](./OOP/CO5/Events.java) 
 
 ### [CO6](./OOP/CO6/)
 
-- Program to list the sub directories and files in a given directory and also search for a filename. [Solution](./OOP/CO6/ListFiles.java) 
-- Write a program to copy one file to another. [Solution](./OOP/CO6/CopyFiles2.java)
-- Write a program to write to a file, then read from the file and display the contents on the console. [Solution](./OOP/CO6/Files.java)
-- Write a program that reads from a file having integers. Copy even numbers and odd numbers to separate files. [Solution](./OOP/CO6/Numbers.java)
+- **DirectoryStream**: List the sub directories and files in a given directory, Search for a filename. [Solution](./OOP/CO6/ListFiles.java) 
+- **Files**: Copy files. [Solution](./OOP/CO6/CopyFiles2.java)
+- **Files**: Write to a file, then read from the file and display the contents. [Solution](./OOP/CO6/Files.java)
+- **Files**: Read from a file having integers. Copy even and odd to separate files. [Solution](./OOP/CO6/Numbers.java)
 
 
 # [Advanced Database Management Systems Lab](/ADBMS#readme)
