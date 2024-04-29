@@ -157,3 +157,37 @@ Remember, MongoDB is schema-less, meaning the documents in a single collection d
 | `$exists` - Field exists | `$type` - Type of field | `$all` - All elements in array |
 | `$elemMatch` - Match in array | `$size` - Size of array | `$regex` - Regular expression |
 | `$mod` - Modulo operation | `$text` - Text search | |
+
+## REGEX
+
+In MongoDB, the `$regex` operator is used to perform pattern matching queries. It can be used with various options and wildcards. It uses javascript's regex syntax.
+
+1. **Wildcards**: 
+   - `.`: Matches any single character.
+   - `*`: Matches zero or more of the preceding element.
+   - `+`: Matches one or more of the preceding element.
+
+2. **Character Classes**:
+   - `[abc]`: Matches any of the characters inside the square brackets.
+   - `[^abc]`: Matches any character that is not in the square brackets.
+   - `[0-9]`: Matches any digit from 0 to 9.
+   - `[a-z]`: Matches any lowercase letter.
+   - `[A-Z]`: Matches any uppercase letter.
+
+3. **Special Characters**:
+   - `\d`: Matches any digit. Equivalent to `[0-9]`.
+   - `\D`: Matches any non-digit character. Equivalent to `[^0-9]`.
+   - `\w`: Matches any word character (alphanumeric or underscore). Equivalent to `[A-Za-z0-9_]`.
+   - `\W`: Matches any non-word character. Equivalent to `[^A-Za-z0-9_]`.
+   - `\s`: Matches any whitespace character (spaces, tabs, line breaks).
+   - `\S`: Matches any non-whitespace character.
+
+4. **Options**:
+   - `i`: Case insensitive match.
+   - `m`: Multiline match. Changes the behavior of `^` and `$` to match the start or end of a line, instead of the whole string.
+   - `x`: Extended. Ignores whitespace characters unless they are in a character class or escaped with a backslash.
+   - `s`: Allows `.` to match newline characters.
+
+```python
+db.collection.find({ "field": { $regex: /^abc/i } })
+```
