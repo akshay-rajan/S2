@@ -860,12 +860,12 @@ The enum has a list of constants, and we can use these constants to create varia
 
 ```java
 enum Level {
-        LOW,
-        MEDIUM,
-        HIGH
-    }
+    LOW,
+    MEDIUM,
+    HIGH
+}
 
-    Level myLevel = Level.MEDIUM;
+Level myLevel = Level.MEDIUM;
 ```
 
 The `values()` method returns an array containing all of the values of the enum.
