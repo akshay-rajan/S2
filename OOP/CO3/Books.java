@@ -19,6 +19,8 @@ public class Books {
         Fiction fiction = new Fiction(sc);
         System.out.println(fiction);
         
+        sc.close();
+        
     }
 }
 
