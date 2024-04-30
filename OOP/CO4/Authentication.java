@@ -6,45 +6,30 @@ public class Authentication {
     
     public static void main(String[] args) {
         
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your username: ");
-        String username = sc.next();
-        sc.nextLine();
-        
-        System.out.print( "Enter your password: " );
-        String password = sc.next();
-        sc.nextLine();
+        try {
 
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter username: ");
+            String username = sc.next();
+            sc.nextLine();
+            
+            if (!username.equals("username")) throw new InvalidUsernameException();
+            
+            System.out.print("Enter password: ");
+            String password = sc.next();
+            sc.nextLine();
+            sc.close();
+            
+            if (!password.equals("password")) throw new InvalidPasswordException();
+            
+            System.out.println("Logged In!");
 
-        // Exception Handling
-        while (true) {            
-            try {
-                authenticate(username, password);
-                sc.close();
-                return;
-            } catch (InvalidUsernameException e) {
-                e.printStackTrace();
-                System.out.print("Enter your username: ");
-                username = sc.next();
-                sc.nextLine();
-            } catch (InvalidPasswordException e) {
-                e.printStackTrace();
-                System.out.print( "Enter your password: " );
-                password = sc.next();
-                sc.nextLine();
-            } catch (Exception e) {
-                return;
-            }
-        }
-    }
-
-    static void authenticate(String username, String password) {
-        if (username.equals("username") && password.equals("password")) {
-            System.out.println( "You are logged in!" );
-        } else if (username.equals("username")){
-            throw new InvalidPasswordException();
-        } else {
-            throw new InvalidUsernameException();
+        } catch (InvalidUsernameException e) {
+            e.printStackTrace();
+        } catch (InvalidPasswordException e) {
+            e.printStackTrace();            
+        } catch (Exception e) {
+            return;
         }
     }
 
