@@ -17,7 +17,8 @@ A *kernel* is a crucial component of an OS which acts as a bridge between the ha
 | 13. [User Management](#user-management) | 14. [Package Management](#package-management) | 15. [Service and Process Management](#service-and-process-management) |
 | 16. [Task Scheduling](#task-scheduling) | 17. [Network Services](#network-services) | 18. [Web Services](#web-services) |
 | 19. [Backup and Restore Files and Folders](#backup-and-restore-files-and-folders) | 20. [File System Management](#file-system-management) | 21. [Network Configuration](#network-configuration) |
-| 22. [Linux Hardening](#linux-hardening) | 23. [Wireshark](#wireshark) | 24. [Hacks](#hacks) |
+| 22. [Linux Hardening](#linux-hardening) | 23. [Wireshark](#wireshark) | 24. [tcpdump](#tcpdump) |
+| 25. [Hacks](#hacks) ||
 
 <hr>
 
@@ -883,7 +884,19 @@ You can combine filters using logical operators:
 - `||` (logical OR): `ip.src == 10.0.0.1 || ip.src == 10.0.0.2`
 - `!` (logical NOT): `!arp`
 
+## tcpdump
 
+`tcpdump` is a command-line utility that captures and displays network traffic. It's available on most Unix-like operating systems and is used for network troubleshooting, analysis, software and communications protocol development, and education.
+
+    sudo apt install tcpdump
+
+* **Capture packets**: To capture packets and display them on the screen, you can use the command `sudo tcpdump -i <interface>`. Replace `<interface>` with the name of your network interface, such as `eth0` or `wlan0`.
+
+* **Filter packets**: `tcpdump` supports a wide range of filters that allow you to limit which packets are captured or displayed. For example, `sudo tcpdump -i eth0 tcp port 80` will only capture TCP packets on port 80.
+
+* **Write to a file**: To write the captured packets to a file instead of displaying them on the screen, you can use the `-w` option, like this: `sudo tcpdump -i eth0 -w output.pcap`.
+
+* **Read from a file**: You can read packets from a file using the `-r` option, like this: `tcpdump -r output.pcap`.
 
 
 # Hacks
