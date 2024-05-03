@@ -115,7 +115,7 @@ git clone https://github.com/akshay-rajan/S2.git
 
 #### CO5
 
-* [Wireshark](./NSA/README.md#wireshark)
+- [Wireshark](./NSA/README.md#wireshark)
 - [tcpdump](./NSA/README.md#tcpdump)
 
 ---
