@@ -596,6 +596,19 @@ Journalctl contains the logs of SYSTEMD
 Task scheduling allows users to schedule and automate tasks like automatically updating software, running scripts, cleaning databases, automating backups etc. 
 In addition, alerts can be set up when certain events occur. 
 
+### CRON
+
+To automate running a script on every boot, you can use the `cron` utility in Linux.
+
+1. Open the terminal.
+2. Type `crontab -e` to edit the cron table.
+3. Add the following line to the end of the file:
+
+```bash
+@reboot /path/to/your/script.sh
+```
+This will run your script every time the system boots up.
+
 `systemd` is a daemon / tool used to start services at a specific time. We can set up processes or scripts to run at a specific time, and also specify events that will trigger certain tasks.
 To do this, we need to 
 

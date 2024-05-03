@@ -100,9 +100,8 @@ git clone https://github.com/akshay-rajan/S2.git
 
 #### CO2
 
-1. Troubleshoot inability to connect to internet.
-2. Automate running of a script every time the system boots up.
-3. Write a script to add 100 users to a system from a csv file.
+1. [Automate running of a script every time the system boots up (Task Scheduling).](./NSA/README.md#task-scheduling)
+2. Write a script to add 100 users to a system from a csv file.
 
 #### CO3
 
