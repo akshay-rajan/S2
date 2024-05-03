@@ -95,30 +95,28 @@ git clone https://github.com/akshay-rajan/S2.git
 
 #### CO1
 
-1. [Install Ubuntu on a VM](./NSA/INSTALLATIONS.md#ubuntu-in-vm)
-2. [Install a suitable linux distro on a computer with low hardware resources.](./NSA/INSTALLATIONS.md#antix)
+- [Install Ubuntu on a VM](./NSA/INSTALLATIONS.md#ubuntu-in-vm)
+- [Install a suitable linux distro on a computer with low hardware resources.](./NSA/INSTALLATIONS.md#antix)
 
 #### CO2
 
-1. [Automate running of a script every time the system boots up (Task Scheduling).](./NSA/README.md#task-scheduling)
-2. [Write a script to add users to a system from a csv file.](./NSA/users.sh)
+- [Automate running of a script every time the system boots up (Task Scheduling).](./NSA/README.md#task-scheduling)
+- [Write a script to add users to a system from a csv file.](./NSA/users.sh)
 
 #### CO3
 
-1. Install an application in Ubuntu. (`sudo apt install <packagename>`)
-2. Upgrade an application in Ubuntu. (`sudo apt upgrade <packagename>`)
+- Install an application in Ubuntu. (`sudo apt install <packagename>`)
+- Upgrade an application in Ubuntu. (`sudo apt upgrade <packagename>`)
 
 #### CO4
 
-1. Write a shell script to extract the last login details of a particular user and list out all failed logins, from a system log file.
-2. Write a script which takes a process id as a command line argument, and displays the details of that running process.
+- Write a shell script to extract the last login details of a particular user and list out all failed logins, from a system log file.
+- Write a script which takes a process id as a command line argument, and displays the details of that running process.
 
 #### CO5
 
-1. Capture network traffic and use Wireshark to find out all http and https traffic to a specific host.
-
-2. Write an Ansible playbook to display a new VM on a remote server.
-
+* [Wireshark](./NSA/README.md#wireshark)
+- [tcpdump]()
 
 # [Functional Programming](/FP#readme)
 
