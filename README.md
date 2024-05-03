@@ -93,31 +93,32 @@ git clone https://github.com/akshay-rajan/S2.git
 
 # [Networking and System Administration Lab](/NSA#readme)
 
-### CO1
+#### CO1
 
-1. Install Ubuntu on a VM
-2. Install a suitable linux distro on a computer with low hardware resources.
+1. [Install Ubuntu on a VM](./NSA/INSTALLATIONS.md#ubuntu-in-vm)
+2. [Install a suitable linux distro on a computer with low hardware resources.](./NSA/INSTALLATIONS.md#antix)
 
-### CO2
+#### CO2
 
 1. Troubleshoot inability to connect to internet.
 2. Automate running of a script every time the system boots up.
 3. Write a script to add 100 users to a system from a csv file.
 
-### CO3
+#### CO3
 
 1. Install an application in Ubuntu.
 2. Upgrade an application in Ubuntu.
 
-### CO4
+#### CO4
 
 1. Write a shell script to extract the last login details of a particular user and list out all failed logins, from a system log file.
 2. Write a script which takes a process id as a command line argument, and displays the details of that running process.
 
-### CO5
+#### CO5
 
 1. Capture network traffic and use Wireshark to find out all http and https traffic to a specific host.
 2. Write an Ansible playbook to display a new VM on a remote server.
+
 
 # [Functional Programming](/FP#readme)
 
