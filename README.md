@@ -105,8 +105,8 @@ git clone https://github.com/akshay-rajan/S2.git
 
 #### CO3
 
-1. Install an application in Ubuntu.
-2. Upgrade an application in Ubuntu.
+1. Install an application in Ubuntu. (`sudo apt install <packagename>`)
+2. Upgrade an application in Ubuntu. (`sudo apt upgrade <packagename>`)
 
 #### CO4
 
@@ -116,6 +116,7 @@ git clone https://github.com/akshay-rajan/S2.git
 #### CO5
 
 1. Capture network traffic and use Wireshark to find out all http and https traffic to a specific host.
+
 2. Write an Ansible playbook to display a new VM on a remote server.
 
 
