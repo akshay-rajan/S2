@@ -8,30 +8,16 @@ A *kernel* is a crucial component of an OS which acts as a bridge between the ha
 
 <hr>
 
-## Contents
-- [5 Core Principles of linux](#5-core-principles)
-- [Components](#components)
-- [Linux Architecture](#linux-architecture)
-- [File System Hierarchy](#file-system-hierarchy)
-- [Shell](#shell)
-- [System Information](#system-information)
-- [Navigation](#navigation)
-- [Working with Files](#working-with-files)
-- [Find Files and Directories](#find-files-and-directories)
-- [File Descriptors](#file-descriptors)
-- [Read Files](#read-files)
-- [Permissions and Ownership](#permissions)
-- [User Management](#user-management)    
-- [Package Management](#package-management)    
-- [Service and Process Management](#service-and-process-management)
-- [Task Scheduling](#task-scheduling)
-- [Network Services](#network-services)
-- [Web Services](#web-services)
-- [Backup and Restore Files and Folders](#backup-and-restore-files-and-folders)
-- [File System Management](#file-system-management)
-- [Network Configuration](#network-configuration)
-- [Linux Hardening](#linux-hardening)
-- [Hacks](#hacks)
+| Contents | Contents | Contents |
+| --- | --- | --- |
+| 1. [5 Core Principles of linux](#5-core-principles) | 2. [Components](#components) | 3. [Linux Architecture](#linux-architecture) |
+| 4. [File System Hierarchy](#file-system-hierarchy) | 5. [Shell](#shell) | 6. [System Information](#system-information) |
+| 7. [Navigation](#navigation) | 8. [Working with Files](#working-with-files) | 9. [Find Files and Directories](#find-files-and-directories) |
+| 10. [File Descriptors](#file-descriptors) | 11. [Read Files](#read-files) | 12. [Permissions and Ownership](#permissions) |
+| 13. [User Management](#user-management) | 14. [Package Management](#package-management) | 15. [Service and Process Management](#service-and-process-management) |
+| 16. [Task Scheduling](#task-scheduling) | 17. [Network Services](#network-services) | 18. [Web Services](#web-services) |
+| 19. [Backup and Restore Files and Folders](#backup-and-restore-files-and-folders) | 20. [File System Management](#file-system-management) | 21. [Network Configuration](#network-configuration) |
+| 22. [Linux Hardening](#linux-hardening) | 23. [Hacks](#hacks) |  |
 
 <hr>
 
