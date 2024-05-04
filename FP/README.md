@@ -470,10 +470,16 @@ head' xs = case xs of [] -> error "No head for empty lists!"
 * *replicate*
     
     ```haskell
-    
+    -- replicate 3 's' = "sss"
+    replicate' :: Int -> a -> [a]
+    replicate' n x 
+    | n <= 0 = []
+    | otherwise = x: replicate' (n - 1) x
     ```
 
+* *take*
 
+    
 
 
 ### 11. Higher Order Functions
