@@ -458,10 +458,10 @@ head' xs = case xs of [] -> error "No head for empty lists!"
 
 ### 10. Recursion
 
-* *Maximum of a list*
+* *maximum*
 
     ```haskell
-    max' :: (Ord a) => [a] -> a
+    max' :: (Ord a) => [a] -> a -- Takes any instance of Ord typeclass -> with ordering
     max' [] = error "Invalid operation!"
     max' [x] = x
     max' (x:xs) = max x (max' xs)
@@ -479,8 +479,49 @@ head' xs = case xs of [] -> error "No head for empty lists!"
 
 * *take*
 
-    
+    ```haskell
+    take' :: (Num i, Ord i) => i -> [a] -> [a]
+    take' n _
+        | n <= 0 = []
+    take' _ [] = []
+    take' n (x:xs) = x : take' (n-1) xs
+    ```
 
+* *reverse*
+
+    ```haskell
+    reverse' :: [a] -> [a]
+    reverse' [] = []
+    reverse' (x:xs) = reverse' xs ++ [x]
+    ```
+
+* *repeat*
+
+    ```haskell
+    -- Returns an infinite list
+    repeat' :: a -> [a]
+    repeat' x = x:repeat' x
+    ```
+
+* *zip*
+
+    ```haskell
+    zip' :: [a] -> [b] -> [(a,b)]
+    zip' _ [] = []
+    zip' [] _ = []
+    zip' (x:xs) (y:ys) = (x,y):zip' xs ys
+    ```
+
+* *elem*
+
+    ```haskell
+    -- Checks whether an element is in a list
+    elem' :: (Eq a) => a -> [a] -> Bool
+    elem' a [] = False
+    elem' a (x:xs)
+        | a == x = True
+        | otherwise = a `elem'` xs
+    ```
 
 ### 11. Higher Order Functions
 
