@@ -548,9 +548,70 @@ head' xs = case xs of [] -> error "No head for empty lists!"
             bigger = [a | a <- xs, a > x]
         in quicksort smaller ++ [x] ++ quicksort bigger
     ```
+
 ### 11. Higher Order Functions
 
 A function which takes functions as arguments or returns functions as return values are called higher order functions.
+
+```haskell
+-- Applies any function twice
+applyTwice :: (a -> a) -> a -> a 
+applyTwice f x = f (f x)
+```
+```haskell
+-- Takes a function and two lists as parameters
+-- Joins the lists by applying the function between corresponding elements
+zipWith' :: (a -> b -> c) -> [a] -> [b] -> [c]
+zipWith' _ [] _ = []
+zipWith' _ _ [] = []
+zipWith' f (x:xs) (y:ys) = f x y : zipWith' f xs ys
+```
+
+* **Map**: takes a function and a list, and applies that function to every element in the list, producing a new list.
+
+    ```haskell
+    map :: (a -> b) -> [a] -> [b]
+    map _ [] = []
+    map f (x:xs) = f x : map f xs
+    ```
+* **Filter**: takes a predicate and a list, and returns the list of elements that satisfy that predicate.
+
+    ```haskell
+    filter :: (a -> Bool) -> [a] -> [a]
+    filter _ [] = []
+    filter p (x:xs)
+        | p x = x : filter p xs
+        | otherwise = filter p xs
+    ```
+    A predicate is a function that returns a Boolean value.
+
+    ```haskell
+    ghci> let listOfFuns = map (*) [0..]
+    ghci> (listOfFuns !! 4) 5
+    20
+    ```
+
+* **List Comprehension**: a way to filter, transform and combine lists. List comprehensions combine map and filter functions.
+
+        [ expression | pattern <- list, condition ]
+
+    ```haskell
+    ghci> [x*2 | x <- [1..10]]
+    [2,4,6,8,10,12,14,16,18,20]
+    -- Draw our elements from [1..10]
+    -- Bind each element to x
+    -- x*2 is the output
+    -- Output specifies how the drawn elements are to be reflected in the resulting list. ~ Map
+    
+    ghci> [x*2 | x <- [1..10], x*2 >= 12]
+    [12,14,16,18,20]
+    -- Predicates are separated from the rest using a comma. ~ Filtering    
+    
+    ghci> let lessThan10 xs = [ if x < 10 then True else False | x <- xs, odd x]
+    ghci> lessThan10 [7..13]
+    [True, True, False, False]
+    ```
+
 
 ```haskell
 
