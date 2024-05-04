@@ -420,7 +420,18 @@ greatest x y
     | otherwise = y
 ```
 
+`where` keyword is used to store the results of intermediate computation results to avoid repetition.
+
+```haskell
+parity n
+    | x == 0 = "Even"
+    | x == 1 = "Odd"
+    where x = n mod 2
+```
+
 ### 10. Recursion
+
+
 
 ### 11. Higher Order Functions
 
