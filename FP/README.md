@@ -523,6 +523,31 @@ head' xs = case xs of [] -> error "No head for empty lists!"
         | otherwise = a `elem'` xs
     ```
 
+* `quicksort`
+    
+    *Algorithm:*
+    ```
+    function quicksort(list)
+        if list is empty
+            return empty list
+        select a pivot element (first one here)
+        create two lists, 'lesser' and 'bigger'
+        for each element in list excluding the pivot
+            if element is less than pivot
+                add element to 'lesser' list
+            else
+                add element to 'greater' list
+        return concatenation of (quicksort of 'lesser', pivot, quicksort of 'greater')
+    ```
+    *Code:*
+    ```haskell
+    quicksort :: (Ord a) => [a] -> [a]
+    quicksort [] = []
+    quicksort (x:xs) =
+        let smaller = [a | a <- xs, a <= x]
+            bigger = [a | a <- xs, a > x]
+        in quicksort smaller ++ [x] ++ quicksort bigger
+    ```
 ### 11. Higher Order Functions
 
 A function which takes functions as arguments or returns functions as return values are called higher order functions.
