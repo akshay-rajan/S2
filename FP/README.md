@@ -458,6 +458,22 @@ head' xs = case xs of [] -> error "No head for empty lists!"
 
 ### 10. Recursion
 
+* *Maximum of a list*
+
+    ```haskell
+    max' :: (Ord a) => [a] -> a
+    max' [] = error "Invalid operation!"
+    max' [x] = x
+    max' (x:xs) = max x (max' xs)
+    ```
+
+* *replicate*
+    
+    ```haskell
+    
+    ```
+
+
 
 
 ### 11. Higher Order Functions
