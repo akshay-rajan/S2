@@ -429,6 +429,33 @@ parity n
     where x = n mod 2
 ```
 
+`let` allows us to bind to variables anywhere in the function, unlike `where` which can only be used at the end. 
+`let` is an expression (has a value), meanwhile *while* is just a binding.
+
+```haskell
+let <bindings> in <expression>
+```
+
+```haskell
+circle r =
+    let area = pi * r ^ 2
+        perimeter = 2 * pi * r
+    in (area, perimeter) -- return value
+```
+
+`case` expressions allow us to execute blocks of code for specific values of a variable.
+
+```haskell
+case expression of pattern -> result
+pattern -> result
+pattern -> result
+...
+```
+```haskell
+head' xs = case xs of [] -> error "No head for empty lists!"
+(x:_) -> x
+```
+
 ### 10. Recursion
 
 
