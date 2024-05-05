@@ -24,6 +24,7 @@ Features of haskell include
 9. [Function Syntax](#9-function-syntax)
 10. [Recursion](#10-recursion)
 11. [Higher Order Functions](#11-higher-order-functions)
+12. [User-Defined Data Types](#12-user-defined-data-types)
 
 ### 1. Start
 
@@ -612,7 +613,39 @@ zipWith' f (x:xs) (y:ys) = f x y : zipWith' f xs ys
     [True, True, False, False]
     ```
 
+### 12. User-Defined Data Types
 
+We use the `data` keyword to define new types.
+
+```haskell
+data Bool = True | False
+       ↑       ↑  ↑
+      type  value_constructors
+```
+We can read this as, *Bool type can have a value of True **or** False*.
+
+Value constructors are actually functions that returns a value of a datatype
+
+```haskell
+ghci> data Shape = Circle Float Float Float | Rectangle Float Float Float Float
+ghci> :t Circle
+Circle :: Float -> Float -> Float -> Shape
+```
+Here, the `Circle` value constructor can take 3 floats, meanwhile `Rectangle` has four fields.
+
+To print out a User-defined type, we need to add `deriving Show` at the end, which makes the type part of the *Show* type class.
+
+```haskell
+data Shape = Circle Float Float Float | Rectangle Float Float Float Float 
+    deriving Show
+```
+
+```haskell
+
+```
+```haskell
+
+```
 ```haskell
 
 ```
