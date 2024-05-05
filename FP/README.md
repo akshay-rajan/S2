@@ -619,7 +619,7 @@ We use the `data` keyword to define new types.
 
 ```haskell
 data Bool = True | False
-       ↑       ↑  ↑
+       ↑       ^ ^ ^
       type  value_constructors
 ```
 We can read this as, *Bool type can have a value of True **or** False*.
@@ -639,10 +639,47 @@ To print out a User-defined type, we need to add `deriving Show` at the end, whi
 data Shape = Circle Float Float Float | Rectangle Float Float Float Float 
     deriving Show
 ```
+Introducing a new type `Point`, 
+```haskell
+data Point = Point Float Float deriving Show
+
+data Shape = Circle Point Float | Rectangle Point Point deriving Show
+
+-- Calculate the area of a Shape
+area :: Shape -> Float
+area (Circle _ r) = pi * r ^ 2
+area (Rectangle (Point x1 y1) (Point x2 y2)) = abs (x2 - x1) * abs (y2 - y1)
+```
+
+We can use **Record Syntax** to write datatypes, with a name corresponding to each field types.
 
 ```haskell
+data Person = Person {
+    fname :: String,
+    lname :: String,
+    age :: Int,
+    height :: Float,
+    phone :: String
+} deriving Show
 
+ghci> let me = Person "Akshay" "Rajan" 21 180 "9440000000"
+ghci> me
+Person {fname = "Akshay", lname = "Rajan", age = 21, height = 180.0, phone = "9440000000"}
 ```
+
+#### Type Constructors
+
+A type constructor, like a value constructor can take types as parameters to produce new types.
+
+```haskell
+        type_parameter
+           ↓
+data Maybe a = Nothing | Just a
+       ↑   
+type_constructor
+```
+In the above example, if we pass a `char` as a type parameter, we get a type of `Maybe char`.
+
 ```haskell
 
 ```
