@@ -717,6 +717,25 @@ peek (Queue []) = error "Queue empty!"
 peek (Queue (x:_)) = x
 ```
 
+The most efficient approach is using two lists.
+```haskell
+data Queue a = Queue [a] [a] deriving Show
+
+empty :: Queue a
+empty = Queue [] []
+
+isEmpty :: Queue a -> Bool
+isEmpty (Queue ins outs) = null ins && null outs
+
+enqueue :: a -> Queue a -> Queue a
+enqueue x (Queue ins outs) = Queue (x:ins) outs
+
+dequeue :: Queue a -> (a, Queue a)
+dequeue (Queue [] []) = error "Queue empty!"
+dequeue (Queue ins (x:outs)) = (x, Queue ins outs)
+dequeue (Queue ins []) = dequeue (Queue [] (reverse ins))
+```
+
 #### 3. Binary Search Trees
 
 A tree is either an empty tree, or it is an element that contains some value and two other trees.
