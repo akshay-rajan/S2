@@ -682,7 +682,7 @@ In the above example, if we pass a `char` as a type parameter, we get a type of 
 
 *Recursive data structures* can be created using type constructors, where one value of some type contains values of that type, which in turn contains more values of that type and so on.
 
-#### Lists
+#### 1. Lists
 
 A list is either an empty list, or an element joined together with a ':' with another list.
 
@@ -691,10 +691,32 @@ data List a = Empty | Cons a (List a) deriving (Show, Read, Eq, Ord)
 ```
 *Cons* is another word for ':'.
 
+#### 2. Binary Search Trees
 
+A tree is either an empty tree, or it is an element that contains some value and two other trees.
 
 ```haskell
+data Tree a = EmptyTree | Node a (Tree a) (Tree a) deriving Show
 
+-- Create a tree
+singleton :: a -> Tree a
+singleton x = Node x EmptyTree EmptyTree
+
+-- Insertion
+treeInsert :: (Ord a) => a -> Tree a -> Tree a
+treeInsert x EmptyTree = singleton x
+treeInsert x (Node a left right)
+    | x == a = Node x left right
+    | x < a = Node a (treeInsert x left) right
+    | x > a = Node a left (treeInsert x right)
+
+-- Check if an element is present
+treeElem :: (Ord a) => a -> Tree a -> Bool
+treeElem x EmptyTree = False
+treeElem x (Node a left right)
+    | x == a = True
+    | x < a = treeElem x left
+    | x > a = treeElem x right
 ```
 
 ```haskell
