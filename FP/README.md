@@ -691,7 +691,33 @@ data List a = Empty | Cons a (List a) deriving (Show, Read, Eq, Ord)
 ```
 *Cons* is another word for ':'.
 
-#### 2. Binary Search Trees
+#### 2. Queues
+
+We can implement queue using a list.
+
+```haskell
+data Queue = Queue [Int] deriving Show
+
+empty :: Queue
+empty = Queue []
+
+isEmpty :: Queue -> Bool
+isEmpty (Queue []) = True
+isEmpty _ = False
+
+enqueue :: Queue -> Int -> Queue
+enqueue (Queue q) x = Queue (q ++ [x])
+
+dequeue :: Queue -> (Int, Queue)
+dequeue (Queue []) = error "Queue empty!"
+dequeue (Queue (x:xs)) = (x, Queue xs)
+
+peek :: Queue -> Int
+peek (Queue []) = error "Queue empty!"
+peek (Queue (x:_)) = x
+```
+
+#### 3. Binary Search Trees
 
 A tree is either an empty tree, or it is an element that contains some value and two other trees.
 
@@ -720,8 +746,10 @@ treeElem x (Node a left right)
 ```
 
 ```haskell
-ghci> let numTrees = foldr treeInsert EmptyTree nums
-ghci> numTrees
+-- Creating a Binary Tree from a list
+ghci> let nums = [8,6,4,1,7,3,5]
+ghci> let numsTree = foldr treeInsert EmptyTree nums
+ghci> numsTree
 Node 5 
     (Node 3 
         (Node 1 EmptyTree EmptyTree) 
@@ -731,8 +759,4 @@ Node 5
         (Node 6 EmptyTree EmptyTree) 
         (Node 8 EmptyTree EmptyTree)
     )
-```
-
-```haskell
-
 ```
