@@ -680,9 +680,27 @@ type_constructor
 ```
 In the above example, if we pass a `char` as a type parameter, we get a type of `Maybe char`.
 
+*Recursive data structures* can be created using type constructors, where one value of some type contains values of that type, which in turn contains more values of that type and so on.
+
+#### Lists
+
+A list is either an empty list, or an element joined together with a ':' with another list.
+
+```haskell
+data List a = Empty | Cons a (List a) deriving (Show, Read, Eq, Ord)
+```
+*Cons* is another word for ':'.
+
+
+
 ```haskell
 
 ```
+
+```haskell
+
+```
+
 ```haskell
 
 ```
