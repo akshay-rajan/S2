@@ -720,7 +720,17 @@ treeElem x (Node a left right)
 ```
 
 ```haskell
-
+ghci> let numTrees = foldr treeInsert EmptyTree nums
+ghci> numTrees
+Node 5 
+    (Node 3 
+        (Node 1 EmptyTree EmptyTree) 
+        (Node 4 EmptyTree EmptyTree)
+    )
+    (Node 7 
+        (Node 6 EmptyTree EmptyTree) 
+        (Node 8 EmptyTree EmptyTree)
+    )
 ```
 
 ```haskell
