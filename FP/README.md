@@ -26,7 +26,7 @@ Features of haskell include
 11. [Higher Order Functions](#11-higher-order-functions)
 12. [User-Defined Data Types](#12-user-defined-data-types)
 
-### 1. Start
+## 1. Start
 
 Open GHC's interactive mode
 
@@ -40,7 +40,7 @@ ghci> 5 /= 5 -- Not equal
 False
 ```
 
-### 2. Function Calls
+## 2. Function Calls
 
 Type | Call
 ---|---
@@ -73,7 +73,7 @@ ghci> 5 `div` 2
 2
 ```
 
-### 3. Function Definition
+## 3. Function Definition
 
 Create a file with the extension `hs`
     
@@ -114,7 +114,7 @@ We use a `'` to denote a strict version of a fuction by appending it to the end 
 hello' = "Hello, World!"
 ```
 
-### 4. Lists Introduction
+## 4. Lists Introduction
 
 Lists are homogeneous data structures.
 
@@ -207,7 +207,7 @@ ghci> product [1, 2, 3, 4]
 24
 ```
 
-### 5. Range
+## 5. Range
 
 Ranges are used to make lists composed of elements that can be enumerated.
 
@@ -241,7 +241,7 @@ ghci> take 20 (repeat 10)
 ghci> replicate 3 20
 [20,20,20]
 ```
-### 6. List Comprehension
+## 6. List Comprehension
 
 ```haskell
 ghci> [2 * x | x <- [1..10]]
@@ -269,7 +269,7 @@ ghci> onlyCapital "heLLO, worLd"
 "LLOL"
 ```
 
-### 7. Tuples
+## 7. Tuples
 
 Tuples are used to store several heterogeneous elements as a single value.
 
@@ -300,7 +300,7 @@ ghci> zip [1,2,3,4,5] [5,5,5,5,5]
 [(1,5),(2,5),(3,5),(4,5),(5,5)]
 ```
 
-### 8. Data Types
+## 8. Data Types
 
 To check the type of a variable, use `:t`
 
@@ -344,7 +344,7 @@ fst :: (a,b) -> a
 
 Functions that use type variables are called **polymorphic functions**.
 
-#### Type Class
+### Type Class
 Type class is an interface that defines some behaviour. If a type is an instance of a type class, then it supports and implements the behaviour the type class describes.
 
 Equality function takes any two values that are of the same type and returns a bool.
@@ -394,7 +394,7 @@ ghci> :t 20
 -- 'Integral' includes only whole numbers
 ```
 
-### 9. Function Syntax
+## 9. Function Syntax
 
 **Pattern matching** is used to specify patterns to which
 some data should conform and to deconstruct the
@@ -457,7 +457,7 @@ head' xs = case xs of [] -> error "No head for empty lists!"
 (x:_) -> x
 ```
 
-### 10. Recursion
+## 10. Recursion
 
 * *maximum*
 
@@ -550,7 +550,7 @@ head' xs = case xs of [] -> error "No head for empty lists!"
         in quicksort smaller ++ [x] ++ quicksort bigger
     ```
 
-### 11. Higher Order Functions
+## 11. Higher Order Functions
 
 A function which takes functions as arguments or returns functions as return values are called higher order functions.
 
@@ -613,7 +613,7 @@ zipWith' f (x:xs) (y:ys) = f x y : zipWith' f xs ys
     [True, True, False, False]
     ```
 
-### 12. User-Defined Data Types
+## 12. User-Defined Data Types
 
 We use the `data` keyword to define new types.
 
@@ -682,7 +682,7 @@ In the above example, if we pass a `char` as a type parameter, we get a type of 
 
 *Recursive data structures* can be created using type constructors, where one value of some type contains values of that type, which in turn contains more values of that type and so on.
 
-#### 1. Lists
+### 1. Lists
 
 A list is either an empty list, or an element joined together with a ':' with another list.
 
@@ -691,7 +691,7 @@ data List a = Empty | Cons a (List a) deriving (Show, Read, Eq, Ord)
 ```
 *Cons* is another word for ':'.
 
-#### 2. Queues
+### 2. Queues
 
 We can implement queue using a list.
 
@@ -736,7 +736,7 @@ dequeue (Queue ins (x:outs)) = (x, Queue ins outs)
 dequeue (Queue ins []) = dequeue (Queue [] (reverse ins))
 ```
 
-#### 3. Binary Search Trees
+### 3. Binary Search Trees
 
 A tree is either an empty tree, or it is an element that contains some value and two other trees.
 
