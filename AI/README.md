@@ -232,6 +232,21 @@ A game is deterministic if an action of a player leads to completely predictable
 
 A two-player zero-sum game is a type of game in which the total utility or payoff to the players is constant and equal to zero. 
 This means that what one player gains, the other player loses, and vice versa, resulting in a situation where the total gain is always zero.
-The outcomes of the game for each combination of strategies chosen by the players are represented in a payoff matrix. 
+
+|          | Strategy 1 | Strategy 2 |
+|----------|------------|------------|
+| Player A |     2      |    -2      |
+| Player B |    -2      |     2      |
+
 Since it's a zero-sum game, the sum of Player A's payoff and Player B's payoff in each cell of the matrix is always zero.
-In zero-sum games, players often employ a minimax strategy. This strategy involves each player trying to minimize the maximum possible gain of the opponent.
+In zero-sum games, players often employ a **minimax** strategy. This strategy involves each player trying to minimize the maximum possible gain of the opponent.
+
+*A game tree* is a type of recursive search function that examines all possible moves of a strategy game, and their results, in an attempt to ascertain the optimal move.
+
+A *Legal Move Generator* generates all legal moves from a given state. A *Plausible Move Generator* generates only a small number of promising moves.
+
+A **Static Evaluation Function** uses the available information to approximate the desirability of a game state without exhaustively exploring all possible moves. It assigns a numerical value to a given state, representing how favourable/unfavourable it is for a player.
+
+
+
+
