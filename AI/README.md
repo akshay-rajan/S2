@@ -223,3 +223,15 @@ A node is a data structure that keeps track of
 | Backtracking                 | Does not perform backtracking; may get stuck in local optima.   | Does not perform backtracking; may get stuck in local optima. |
 | Use Cases                    | Suitable for optimization problems where finding a good solution quickly is more important than guaranteeing the best solution. | Useful when the goal is to reach a better local optimum than basic hill climbing, even if it takes more iterations. |
 
+
+## Game Playing
+
+A game is deterministic if an action of a player leads to completely predictable outcomes. (Chess, Football etc.)
+
+### Two-Player Zero-Sum
+
+A two-player zero-sum game is a type of game in which the total utility or payoff to the players is constant and equal to zero. 
+This means that what one player gains, the other player loses, and vice versa, resulting in a situation where the total gain is always zero.
+The outcomes of the game for each combination of strategies chosen by the players are represented in a payoff matrix. 
+Since it's a zero-sum game, the sum of Player A's payoff and Player B's payoff in each cell of the matrix is always zero.
+In zero-sum games, players often employ a minimax strategy. This strategy involves each player trying to minimize the maximum possible gain of the opponent.
