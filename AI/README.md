@@ -247,6 +247,39 @@ A *Legal Move Generator* generates all legal moves from a given state. A *Plausi
 
 A **Static Evaluation Function** uses the available information to approximate the desirability of a game state without exhaustively exploring all possible moves. It assigns a numerical value to a given state, representing how favourable/unfavourable it is for a player.
 
+### Minimax Algorithm
 
+Minimax algorithm is a backtracking algorithm used to find the optimal move for a player, assuming that the oponent also plays optimally.
+The two players are called *Maximizer* and *Minimizer*, and they try to get the highest or lowest scores possible, respectively.
+
+The alternation of maximizing and minimizing the alternate ply when evaluation are being pushed back up corresponds to the opposing strategies of the two players and gives this method the name minimax.
+
+```prolog
+MINIMAX(Node, Depth, Player)
+    % If deep enough, return the Static Evaluation of the Node
+    if Depth == 0 or Node is a terminal node 
+    then 
+        return STATIC(Node, Depth)
+    
+    % If the player is the Maximizer, maximize the next ply
+    if Player is Maximizer
+    then
+        maxEvalutaion = -inf
+        for each Child of Node
+        do
+            evaluation = MINIMAX(Child, Depth - 1, Minimizer)
+            maxEvaluation = maximum(evaluation, maxEvaluation)
+        done
+        return maxEvaluation
+    % If the player is the Minimizer, minimize the next ply
+    else
+        minEvalutaion = +inf
+        for each Child of Node
+        do
+            evaluation = MINIMAX(Child, Depth - 1, Maximizer)
+            minEvaluation = minimum(evaluation, minEvaluation)
+        done
+        return minEvaluation
+```
 
 
