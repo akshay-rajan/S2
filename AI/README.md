@@ -282,4 +282,44 @@ MINIMAX(Node, Depth, Player)
         return minEvaluation
 ```
 
+### Alpha - Beta Pruning    
 
+Alpha-Beta pruning is an optimization technique for the minimax algorithm.
+
+* Alpha is the best value that the maximizer can guarantee, at a given level, or above (initiall, -∞)
+* Beta is the best value that the minimizer can guarantee, at a given level, or below (initially, ∞)
+
+```prolog
+MINIMAX(Node, Depth, Player, Alpha, Beta)
+    % If deep enough, return the Static Evaluation of the Node
+    if Depth == 0 or Node is a terminal node 
+    then 
+        return STATIC(Node, Depth)
+    
+    % If the player is the Maximizer, maximize the next ply
+    if Player is Maximizer
+    then
+        maxEvalutaion = -inf
+        for each Child of Node
+        do
+            evaluation = MINIMAX(Child, Depth - 1, Minimizer, Alpha, Beta)
+            maxEvaluation = maximum(evaluation, maxEvaluation)
+            Alpha = maximum(maxEvaluation, Alpha)
+            % Prune the node, if a bad evaluation has been found
+            if Beta <= Alpha
+                break
+        done
+        return maxEvaluation
+    % If the player is the Minimizer, minimize the next ply
+    else
+        minEvalutaion = +inf
+        for each Child of Node
+        do
+            evaluation = MINIMAX(Child, Depth - 1, Maximizer, Alpha, Beta)
+            minEvaluation = minimum(evaluation, minEvaluation)
+            Beta = minimum(minEvaluation, Beta)
+            if Beta <= Alpha
+                break
+        done
+        return minEvaluation
+```
