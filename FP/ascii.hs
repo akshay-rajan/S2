@@ -1,2 +1,2 @@
 ascii :: [(Integer, Char)]
-ascii = [(i,j)|(i,j) <- zip [0..] ['0'..'z']]
+ascii = [(i,j)|(i,j) <- zip [32..] [' '..'z']]
