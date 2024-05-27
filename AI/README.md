@@ -333,7 +333,7 @@ MINIMAX(Node, Depth, Player, Alpha, Beta)
 | **Quantifiers**           | None                                     | Yes (universal ∀ and existential ∃ quantifiers) |
 | **Expressiveness**        | Limited to simple statements and their combinations | More expressive, can represent relationships and properties of objects |
 | **Syntax**                | Simple, involves propositions and logical connectives (¬, ∧, ∨, →, ↔) | Complex, includes predicates, variables, functions, constants, logical connectives, and quantifiers |
-| **Example**               | \( p \rightarrow q \) (If p then q)      | \( \forall x (P(x) \rightarrow Q(x)) \) (For all x, if P(x) then Q(x)) |
+| **Example**               | p ⇒ q  (If p then q)      | ∀ x (P(x) ⇒ Q(x)) (For all x, if P(x) then Q(x)) |
 | **Interpretation**        | Truth values (true or false) assigned to propositions | Interpretation of the domain, assignment of values to variables, predicates, and functions |
 | **Domain of Discourse**   | Not applicable                           | Yes, a set of objects that the variables can refer to |
 | **Atomic Statements**     | Propositional variables (e.g., p, q, r)  | Predicates with terms (e.g., P(x), Q(a, b)) |
