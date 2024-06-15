@@ -17,7 +17,7 @@ Key Features of MongoDB:
 6. **No SQL**: It means you can store your data without having to worry about its structure.
 
 
-![diff-rel-doc](./sqlvsnosql.jpg)
+![diff-rel-doc](./Others/sqlvsnosql.jpg)
 
 
 ## CRUD
