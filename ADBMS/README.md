@@ -4,6 +4,8 @@ Structured Query Language is used to access and manipulate databases.
 
 Relational Database Management System is the basis for SQL. The data in RDBMS is stored in **Tables**. A Table consists of rows (**Tuples**) and Columns (**Attributes**).
 
+SQL is a standardized model for interacting with RDBMS. 
+They are used to perform CRUD operations as well as other administrative tasks.
 SQL keywords are not case sensitive.
 
 ## 1. Data Definition Language (DDL):
