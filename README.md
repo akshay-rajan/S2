@@ -102,7 +102,7 @@ git clone https://github.com/akshay-rajan/S2.git
 
 - [Automate running of a script every time the system boots up (Task Scheduling).](./NSA/README.md#task-scheduling)
 - [Write a script to add users to a system from a csv file.](./NSA/users.sh)
-- [Network Troubleshooting](./NSA/tr)
+- [Network Troubleshooting](./NSA/troubleshooting.md)
 
 #### CO3 - Manage Applications
 
