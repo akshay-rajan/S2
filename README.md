@@ -93,30 +93,31 @@ git clone https://github.com/akshay-rajan/S2.git
 
 # [Networking and System Administration Lab](/NSA#readme)
 
-#### CO1
+#### CO1 - Operating Systems
 
 - [Install Ubuntu on a VM](./NSA/INSTALLATIONS.md#ubuntu-in-vm)
 - [Install a suitable linux distro on a computer with low hardware resources.](./NSA/INSTALLATIONS.md#antix)
 
-#### CO2
+#### CO2 - System Administration
 
 - [Automate running of a script every time the system boots up (Task Scheduling).](./NSA/README.md#task-scheduling)
 - [Write a script to add users to a system from a csv file.](./NSA/users.sh)
 
-#### CO3
+#### CO3 - Manage Applications
 
 - Install an application in Ubuntu. (`sudo apt install <packagename>`)
 - Upgrade an application in Ubuntu. (`sudo apt upgrade <packagename>`)
 
-#### CO4
+#### CO4 - Shell Scripting
 
 - Write a shell script to extract the last login details of a particular user and list out all failed logins, from a system log file.
 - Write a script which takes a process id as a command line argument, and displays the details of that running process.
 
-#### CO5
+#### CO5 - DevOps
 
 - [Wireshark](./NSA/README.md#wireshark)
 - [tcpdump](./NSA/README.md#tcpdump)
+- Ansible
 
 ---
 ---
