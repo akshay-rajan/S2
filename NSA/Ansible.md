@@ -1,3 +1,18 @@
+# Ansible
+
+Ansible is an open-source software provisioning, configuration management and application deployment tool.
+Ansible works by assigning one system as a control station, known as the Ansible **control node**.
+This control node is responsible for managing and orchestrating the configuration and deployment of other systems, known as **managed nodes**.
+Ansible uses a declarative language called YAML to define the desired state of the managed nodes, making it easy to automate complex configuration management tasks.
+
+<img src="./Others/ansible-arch.png" alt="alt" style="height:300px;">
+
+Ansible is owned by RedHat and it's python-based.
+Ansible is **Agent-less**, meaning, it does not require installing a client on the systems.
+The control node communicates with the managed nodes over SSH or WinRM protocols, allowing it to execute tasks and playbooks remotely. 
+
+
+
 ### Q. Write an Ansible playbook to deploy a new Linux VM on a remote server.
 
 ```yaml
