@@ -111,7 +111,7 @@ git clone https://github.com/akshay-rajan/S2.git
 
 #### CO4 - Shell Scripting
 
-- Write a shell script to extract the last login details of a particular user and list out all failed logins, from a system log file.
+- [Extract the last login details of a user and list out all failed logins, from a system log file](./NSA/logs.sh)
 - Write a script which takes a process id as a command line argument, and displays the details of that running process.
 
 #### CO5 - DevOps
