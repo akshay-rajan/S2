@@ -108,11 +108,13 @@ git clone https://github.com/akshay-rajan/S2.git
 
 - Install an application in Ubuntu. (`sudo apt install <packagename>`)
 - Upgrade an application in Ubuntu. (`sudo apt upgrade <packagename>`)
+- nginx
 
 #### CO4 - Shell Scripting
 
 - [Extract the last login details of a user and list out all failed logins, from a system log file](./NSA/logs.sh)
 - [Write a script which takes a process id as a command line argument, and displays the details of that running process.](./NSA/ps.sh)
+#### [Linux Commands Cheat Sheet](./NSA/Others/cheat_sheet.pdf)
 
 #### CO5 - DevOps
 
@@ -120,7 +122,7 @@ git clone https://github.com/akshay-rajan/S2.git
 - [tcpdump](./NSA/README.md#tcpdump)
 - [ssh](./NSA/ssh.md)
 - [Docker](./NSA/Docker.md)
-- Ansible
+- [Ansible](./NSA/Ansible.md)
 
 ---
 ---
