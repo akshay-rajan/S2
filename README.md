@@ -109,8 +109,8 @@
 
 ### CO3. Manage Applications
 
-- Install an application in Ubuntu. (`sudo apt install <packagename>`)
-- Upgrade an application in Ubuntu. (`sudo apt upgrade <packagename>`)
+- [Install an application in Ubuntu.](./NSA/install_and_update.md) (`sudo apt install <packagename>`)
+- [Upgrade an application in Ubuntu.](./NSA/install_and_update.md) (`sudo apt upgrade <packagename>`)
 - [nginx](./NSA/nginx.md)
 
 ### CO4. Shell Scripting
