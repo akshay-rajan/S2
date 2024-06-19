@@ -55,35 +55,44 @@
 
 # [Advanced Database Management Systems Lab](/ADBMS#readme)
 
-<table>
-    <tr>
-        <td><a href="./ADBMS/QUESTIONS.md#exercise-1---er-to-table">Exercise 1</a> - ER to Table</td>
-        <td><a href="./ADBMS/exercise1.sql">Solution</a></td>
-    </tr>
-    <tr>
-        <td><a href="./ADBMS/QUESTIONS.md#exercise-2---queries">Exercise 2</a> - Queries</td>
-        <td><a href="./ADBMS/exercise2.sql">Solution</a></td>
-    </tr>
-    <tr>
-        <td><a href="./ADBMS/QUESTIONS.md#exercise-3---queries">Exercise 3</a> - Queries</td>
-        <td><a href="./ADBMS/exercise3.sql">Solution</a></td>
-    </tr>
-    <tr>
-        <td><a href="./ADBMS/QUESTIONS.md#exercise-4---plsql">Exercise 4</a> - PL/SQL</td>
-        <td><a href="./ADBMS/exercise4pl.sql">Solution</a></td>
-    </tr>
-    <tr>
-        <td><a href="./ADBMS/QUESTIONS.md#exercise-5---procedure">Exercise 5</a> - Procedure</td>
-        <td><a href="./ADBMS/exercise5.sql">Solution</a></td>
-    </tr>
-    <tr>
-        <td><a href="./ADBMS/QUESTIONS.md#exercise-6---trigger">Exercise 6</a> - Trigger</td>
-        <td><a href="./ADBMS/exercise6.sql">Solution</a></td>
-    </tr>
-    <tr>
-        <td><a href="./ADBMS/QUESTIONS.md#exercise-7---mongodb">Exercise 7</a> - MongoDB</td>
-        <td><a href="./ADBMS/exercise7.ipynb">Solution</a></td>
-    </tr>
+<table style="width: 100%; border: 1px solid black;">
+    <table>
+        <tr>
+            <td><a href="./ADBMS/QUESTIONS.md#exercise-1---er-to-table">Exercise 1</a></td>
+            <td>ER to Table</td>
+            <td><a href="./ADBMS/exercise1.sql">Solution</a></td>
+        </tr>
+        <tr>
+            <td><a href="./ADBMS/QUESTIONS.md#exercise-2---queries">Exercise 2</a></td>
+            <td>Queries</td>
+            <td><a href="./ADBMS/exercise2.sql">Solution</a></td>
+        </tr>
+        <tr>
+            <td><a href="./ADBMS/QUESTIONS.md#exercise-3---queries">Exercise 3</a></td>
+            <td>Queries</td>
+            <td><a href="./ADBMS/exercise3.sql">Solution</a></td>
+        </tr>
+        <tr>
+            <td><a href="./ADBMS/QUESTIONS.md#exercise-4---plsql">Exercise 4</a></td>
+            <td>PL/SQL</td>
+            <td><a href="./ADBMS/exercise4pl.sql">Solution</a></td>
+        </tr>
+        <tr>
+            <td><a href="./ADBMS/QUESTIONS.md#exercise-5---procedure">Exercise 5</a></td>
+            <td>Procedure</td>
+            <td><a href="./ADBMS/exercise5.sql">Solution</a></td>
+        </tr>
+        <tr>
+            <td><a href="./ADBMS/QUESTIONS.md#exercise-6---trigger">Exercise 6</a></td>
+            <td>Trigger</td>
+            <td><a href="./ADBMS/exercise6.sql">Solution</a></td>
+        </tr>
+        <tr>
+            <td><a href="./ADBMS/QUESTIONS.md#exercise-7---mongodb">Exercise 7</a></td>
+            <td>MongoDB</td>
+            <td><a href="./ADBMS/exercise7.ipynb">Solution</a></td>
+        </tr>
+    </table>
 </table>
 
 
