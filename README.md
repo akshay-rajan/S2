@@ -108,7 +108,7 @@ git clone https://github.com/akshay-rajan/S2.git
 
 - Install an application in Ubuntu. (`sudo apt install <packagename>`)
 - Upgrade an application in Ubuntu. (`sudo apt upgrade <packagename>`)
-- nginx
+- [nginx](./NSA/nginx.md)
 
 #### CO4 - Shell Scripting
 
