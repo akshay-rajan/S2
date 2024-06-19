@@ -5,6 +5,8 @@ Ansible works by assigning one system as a control station, known as the Ansible
 This control node is responsible for managing and orchestrating the configuration and deployment of other systems, known as **managed nodes**.
 Ansible uses a declarative language called YAML to define the desired state of the managed nodes, making it easy to automate complex configuration management tasks.
 
+### [Documentation](https://docs.ansible.com/ansible/latest/getting_started/introduction.html)
+
 <img src="./Others/ansible-arch.png" alt="alt" style="height:300px;">
 
 Ansible is owned by RedHat and it's python-based.
@@ -57,9 +59,36 @@ webservers:
       http_port: 443
 ```
 
-### [Documentation](https://docs.ansible.com/ansible/latest/getting_started/introduction.html)
+## Playbooks
 
+* **Playbook**: A list of plays that define the order in which Ansible performs operations.
+* **Play**: An ordered list of tasks that maps to managed nodes in an inventory.
+* **Task**: A reference to a single module (e.g. `ping`), that defines the operation that Ansible performs.
+* *Module*: A unit of code or library that Ansible runs on managed nodes.
 
+Below is a playbook *requirenano.yml* written to ensure nano is installed in the nodes:
+
+```yml
+---
+  - name: requirenano
+    hosts: group_name
+    tasks:
+      - name: ensure nano is there
+        yum:
+          name: nano
+          state: latest
+```
+To run a playbook, do:
+```sh
+ansible-playbook requirenano.yml
+```
+This will cause our tasks to be run on each node. 
+We'll get the state of each node and whether it has changed (installed nano) or not.
+
+**Idempotency** means that, Ansible does not make a change unless it has to. 
+If nano is already installed in the above example, it won't re-install it.
+
+If we create another playbook *deletenano.yml*, which removes nano, just change the `state` to `absent`.
 
 ### Q. Write an Ansible playbook to deploy a new Linux VM on a remote server.
 
