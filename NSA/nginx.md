@@ -8,7 +8,7 @@ This can allow for load balancing (distribution of workload across multiple serv
 
 nginx is known for its performance, stability, and low resource usage.
 
-## Installation
+### Installation
 
 ```bash
 sudo apt install nginx
@@ -36,10 +36,25 @@ To stop the server, run:
 sudo service nginx stop
 ```
 
+## `nginx.conf`
 
-## Examples
+The configuration is contains 
 
-### Serve a Static Website
+1. **Key-value pairs**, which are **directives**
+    
+    ```nginx
+    worker_processes 1;
+    ```
+
+2. **Blocks**, known as **contexts**.
+
+    ```nginx
+    http {
+        ...
+    }
+    ```
+
+## Serve a Static Website
 
 Create a directory to store the website files:
 
@@ -90,5 +105,4 @@ Reload nginx:
 ```bash
 sudo service nginx reload
 ```
-
 Now you can access the website by visiting `http://example.com` in a web browser.
