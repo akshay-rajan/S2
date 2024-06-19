@@ -59,50 +59,21 @@ The configuration is contains
 Create a directory to store the website files:
 
 ```bash
-sudo mkdir -p /var/www/html
+mkdir mysite
 ```
+Create an `index.html` file in the directory.
 
-Create an `index.html` file in the directory:
-
-```html
-sudo echo "<h1>Hello, World!</h1>" | sudo tee /var/www/html/index.html
-```
-
-Create a new configuration file in `/etc/nginx/sites-available`:
-
-```bash
-sudo nano /etc/nginx/sites-available/mywebsite
-```
-
-Add the following configuration to the file:
-
+Update the configuration of nginx:
 ```nginx
-server {
-    listen 80;
-    server_name example.com;
-
-    location / {
-        root /var/www/html;
-        index index.html;
-    }
+http {
+    server {
+        listen 8080;
+        root /path/to/mysite;
+    }    
 }
 ```
-
-Create a symbolic link to enable the site:
-
-```bash
-sudo ln -s /etc/nginx/sites-available/mywebsite /etc/nginx/sites-enabled/
+Now reload the server:
+```sh
+nginx -s reload
 ```
-
-Remove the default configuration:
-
-```bash
-sudo rm /etc/nginx/sites-enabled/default
-```
-
-Reload nginx:
-
-```bash
-sudo service nginx reload
-```
-Now you can access the website by visiting `http://example.com` in a web browser.
+Now the static website is hosted on port `8080`.
