@@ -1,60 +1,56 @@
-```bash
-git clone https://github.com/akshay-rajan/S2.git
-```
-
 # [Object Oriented Programming Lab](/OOP#readme)
 
-### [CO1](./OOP/CO1/)
+### CO1.
 
-- Matrix addition. [Solution](./OOP/CO1/Matrix.java)
-- Add Complex numbers. [Solution](./OOP/CO1/Complex.java)
-- Symmetric Matrix. [Solution](./OOP/CO1/SymmetricMatrix.java)
-- Inner and Static Nested Classes (CPU, Processor, RAM). [Solution](./OOP/CO1/CPU.java)
+- [Matrix Addition](./OOP/CO1/Matrix.java)
+- [Add Complex numbers](./OOP/CO1/Complex.java)
+- [Symmetric Matrix](./OOP/CO1/SymmetricMatrix.java)
+- [Inner and Static Nested Classes (CPU, Processor, RAM)](./OOP/CO1/CPU.java)
 
-### [CO2](./OOP/CO2/)
+### CO2.
 
-- Sort strings. [Solution](./OOP/CO2/Sort.java)
-- Search an element in an array. [Solution](./OOP/CO2/Search.java)
-- **String manipulations** [Solution](./OOP/CO2/StringManipulation.java)
-- **Array of Objects**. [Solution](./OOP/CO2/Employee.java)
+- [Sort strings](./OOP/CO2/Sort.java)
+- [Search an element in an array](./OOP/CO2/Search.java)
+- [String manipulations](./OOP/CO2/StringManipulation.java)
+- [Array of Objects](./OOP/CO2/Employee.java)
 
-### [CO3](./OOP/CO3/)
+### CO3.
 
-- **Method Overloading**: Area of different shapes  [Solution](./OOP/CO3/Area.java)
-- **Inheritance, Array of Objects**: Employee, Teacher [Solution](./OOP/CO3/Teacher.java)
-- **Inheritance, Array of Objects**: Person, Employee, Teacher [Solution](./OOP/CO3/Teacher2.java)
-- **Interface**: Circle, Rectangle -> area and perimeter. [Solution](./OOP/CO3/Shapes.java)
-- **Interface**: Student, Sports, Result. [Solution](./OOP/CO3/Result.java)
-- **Inheritance** Publisher, Book, Literature, Fiction. [Solution](./OOP/CO3/Books.java)
+- [Method Overloading: Area of different shapes](./OOP/CO3/Area.java)
+- [Inheritance, Array of Objects: Employee, Teacher](./OOP/CO3/Teacher.java)
+- [Inheritance, Array of Objects: Person, Employee, Teacher](./OOP/CO3/Teacher2.java)
+- [Interface: Circle, Rectangle -> area and perimeter](./OOP/CO3/Shapes.java)
+- [Interface: Student, Sports, Result](./OOP/CO3/Result.java)
+- [Inheritance: Publisher, Book, Literature, Fiction](./OOP/CO3/Books.java)
 
-### [CO4](./OOP/CO4/)
+### CO4.
 
-- **Package**: Graphics: Rectangle, Triangle, Square, Circle -> area. [Solution](./OOP/CO4/GraphicsPkg.java)
-- **Package**: Arithmetic: 4 basic arithmetic operations. [Solution](./OOP/CO4/ArithmeticPkg.java)
-- **Exception**: User Authentication [Solution](./OOP/CO4/Authentication.java)
-- **Exception**: Average of N positive integers, raising exception for negative input. [Solution](./OOP/CO4/Average.java)
-- **Multithreading (Thread Class)**  multiplication table of 5, first N prime numbers. [Solution](./OOP/CO4/MultiplicationTable.java)
-- **Multithreading (Runnable Interface)**: Fibonacci numbers, even numbers. [Solution](./OOP/CO4/Even.java)
-- **Generic**: Stack. [Solution](./OOP/CO4/GenericStack.java)
-- **Generic**: Bubble sort. [Solution](./OOP/CO4/GenericBubbleSort.java)
-- **ArrayList**: List of Strings. [Solution](./OOP/CO4/ArrayLists.java)
-- **Deque** [Solution](./OOP/CO4/DoubleEndedQueue.java)
-- **Hash sets**: Compare two hash sets [Solution](./OOP/CO4/HashSets.java)
-- **Set**: Using LinkedHashset. [Solution](./OOP/CO4/LHSet.java)
-- **Map**: adding, changing and removing elements. [Solution](./OOP/CO4/Maps.java)
-- **PriorityQueue** [Solution](./OOP/CO4/Queue.java)
+- [Package: Graphics: Rectangle, Triangle, Square, Circle -> area](./OOP/CO4/GraphicsPkg.java)
+- [Package: Arithmetic: 4 basic arithmetic operations](./OOP/CO4/ArithmeticPkg.java)
+- [Exception: User Authentication](./OOP/CO4/Authentication.java)
+- [Exception: Average of N positive integers, raising exception for negative input](./OOP/CO4/Average.java)
+- [Multithreading (Thread Class): multiplication table of 5, first N prime numbers](./OOP/CO4/MultiplicationTable.java)
+- [Multithreading (Runnable Interface): Fibonacci numbers, even numbers](./OOP/CO4/Even.java)
+- [Generic: Stack](./OOP/CO4/GenericStack.java)
+- [Generic: Bubble sort](./OOP/CO4/GenericBubbleSort.java)
+- [ArrayList: List of Strings](./OOP/CO4/ArrayLists.java)
+- [Deque](./OOP/CO4/DoubleEndedQueue.java)
+- [Hash sets: Compare two hash sets](./OOP/CO4/HashSets.java)
+- [Set: Using LinkedHashset](./OOP/CO4/LHSet.java)
+- [Map: adding, changing and removing elements](./OOP/CO4/Maps.java)
+- [PriorityQueue](./OOP/CO4/Queue.java)
 
-### [CO5](./OOP/CO5/)
+### CO5.
 
-- **AWT**: Simple Calculator. [Solution](./OOP/CO5/Calculator.java)
-- **Events**: Mouse events and Window events. [Solution](./OOP/CO5/Events.java) 
+- [AWT: Simple Calculator](./OOP/CO5/Calculator.java)
+- [Events: Mouse events and Window events](./OOP/CO5/Events.java) 
 
-### [CO6](./OOP/CO6/)
+### CO6. 
 
-- **DirectoryStream**: List the sub directories and files in a given directory, Search for a filename. [Solution](./OOP/CO6/ListFiles.java) 
-- **Files**: Copy files. [Solution](./OOP/CO6/CopyFiles2.java)
-- **Files**: Write to a file, then read from the file and display the contents. [Solution](./OOP/CO6/Files.java)
-- **Files**: Read from a file having integers. Copy even and odd to separate files. [Solution](./OOP/CO6/Numbers.java)
+- [DirectoryStream: List the sub directories and files in a given directory, Search for a filename](./OOP/CO6/ListFiles.java) 
+- [Files: Copy files](./OOP/CO6/CopyFiles2.java)
+- [Files: Write to a file, then read from the file and display the contents](./OOP/CO6/Files.java)
+- [Files: Read from a file having integers. Copy even and odd to separate files](./OOP/CO6/Numbers.java)
 
 
 # [Advanced Database Management Systems Lab](/ADBMS#readme)
@@ -93,30 +89,30 @@ git clone https://github.com/akshay-rajan/S2.git
 
 # [Networking and System Administration Lab](/NSA#readme)
 
-#### CO1 - Operating Systems
+### CO1. Operating Systems
 
 - [Install Ubuntu on a VM](./NSA/INSTALLATIONS.md#ubuntu-in-vm)
 - [Install a suitable linux distro on a computer with low hardware resources.](./NSA/INSTALLATIONS.md#antix)
 
-#### CO2 - System Administration
+### CO2. System Administration
 
 - [Automate running of a script every time the system boots up (Task Scheduling).](./NSA/README.md#task-scheduling)
 - [Write a script to add users to a system from a csv file.](./NSA/users.sh)
 - [Network Troubleshooting](./NSA/troubleshooting.md)
 
-#### CO3 - Manage Applications
+### CO3. Manage Applications
 
 - Install an application in Ubuntu. (`sudo apt install <packagename>`)
 - Upgrade an application in Ubuntu. (`sudo apt upgrade <packagename>`)
 - [nginx](./NSA/nginx.md)
 
-#### CO4 - Shell Scripting
+### CO4. Shell Scripting
 
 - [Extract the last login details of a user and list out all failed logins, from a system log file](./NSA/logs.sh)
 - [Write a script which takes a process id as a command line argument, and displays the details of that running process.](./NSA/ps.sh)
 #### [Linux Commands Cheat Sheet](./NSA/Others/cheat_sheet.pdf)
 
-#### CO5 - DevOps
+### CO5. DevOps
 
 - [Wireshark](./NSA/README.md#wireshark)
 - [tcpdump](./NSA/README.md#tcpdump)
