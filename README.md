@@ -55,7 +55,7 @@
 
 # [Advanced Database Management Systems Lab](/ADBMS#readme)
 
-<table style="width: 70%;">
+<table  >
     <tr>
         <td><a href="./ADBMS/QUESTIONS.md#exercise-1---er-to-table">Exercise 1</a></td>
         <td>ER to Table</td>
