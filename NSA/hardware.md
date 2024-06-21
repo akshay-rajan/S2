@@ -138,6 +138,8 @@ In summary, GPUs are specialized hardware components designed for graphics rende
 
 Ports on a computer or electronic device refer to physical interfaces that allow connectivity with external devices or peripherals. Here are the key aspects of ports:
 
+![alt text](./Others/ports.png)
+
 1. **Types of Ports:** There are various types of ports, each serving different purposes and supporting different data transfer protocols. Common types include:
    - USB (Universal Serial Bus) ports for connecting devices like keyboards, mice, external storage, printers, and smartphones.
    - HDMI (High-Definition Multimedia Interface) ports for connecting displays, TVs, and multimedia devices to transmit audio and video signals.
@@ -164,6 +166,8 @@ In summary, ports play a crucial role in enabling connectivity between computers
 
 Audio connectors on computers and electronic devices are used for connecting audio input and output devices such as headphones, speakers, microphones, and sound systems. Here are the key aspects of audio connectors:
 
+![alt text](./Others/audio.png)
+
 1. **Types of Audio Connectors:** Common audio connectors include:
    - 3.5mm audio jacks (also known as TRS or TRRS jacks) for headphones, headsets, microphones, and audio input/output devices.
    - RCA connectors for analog audio connections, often used in stereo systems, speakers, and home theaters.
@@ -187,6 +191,8 @@ In summary, audio connectors enable the connection of audio input and output dev
 ## Motherboard
 
 The motherboard is the main printed circuit board (PCB) in a computer system. It provides the physical and electrical connections for other components to communicate and work together. Here are the key components of a motherboard:
+
+![alt text](./Others/motherboard.png)
 
 1. **CPU Socket:** The CPU socket is where the processor (CPU) is installed. Different sockets support specific CPU models and architectures.
 

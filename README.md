@@ -100,6 +100,7 @@
 
 - [Install Ubuntu on a VM](./NSA/INSTALLATIONS.md#ubuntu-in-vm)
 - [Install a suitable linux distro on a computer with low hardware resources.](./NSA/INSTALLATIONS.md#antix)
+- [Computer Hardware](./NSA/hardware.md)
 
 ### CO2. System Administration
 
