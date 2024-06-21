@@ -106,6 +106,7 @@
 - [Automate running of a script every time the system boots up (Task Scheduling).](./NSA/README.md#task-scheduling)
 - [Write a script to add users to a system from a csv file.](./NSA/users.sh)
 - [Network Troubleshooting](./NSA/troubleshooting.md)
+- [Linux Commands](./NSA/commands.md)
 
 ### CO3. Manage Applications
 
@@ -117,8 +118,9 @@
 
 - [Extract the last login details of a user and list out all failed logins, from a system log file](./NSA/logs.sh)
 - [Write a script which takes a process id as a command line argument, and displays the details of that running process.](./NSA/ps.sh)
+- [Bash Scripting Note](./NSA/shellscripting.md)
+
 #### [Linux Commands Cheat Sheet](./NSA/Others/cheat_sheet.pdf)
-#### [Bash Scripting Notes](./NSA/shellscripting.md)
 
 ### CO5. DevOps
 
