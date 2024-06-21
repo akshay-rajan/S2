@@ -9,4 +9,4 @@ wc -l)
 echo "There are $num_files files in $direct"
 else
 echo "$direct is not a directory"
-f
+fi
