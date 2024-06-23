@@ -1062,7 +1062,7 @@ pq.size();
 pq.isEmpty();
 ```
 
-### Abstract Window Toolkit (AWT)
+### [Abstract Window Toolkit (AWT)](./CO5/AWT.md)
 
 AWT is a platform-dependent API used to develop window-based applications in Java.
 It's part of the Java Foundation Classes, which is the standard API for providing a GUI for a Java program.
@@ -1073,25 +1073,6 @@ AWT components are platform-dependent, so they're shown by the operating system'
 The hierarchy of classes in AWT are:
 
 ![awt-hierarchy](./Others/awt.png)
-
-| Component     | Description |
-| ------------- | ----------- |
-| Components    | All elements like button, text fields, scroll bars etc. |
-| Container     | Elements that can contain other elements. Containers extend the `Container` class (eg. Frame, Dialog, Panel etc.). |
-| Window        | A top-level container with no borders and menu bar. Windows extend the `Window` class. |
-| Panel         | A generic container for holding other containers. |
-| Frame         | A top-level window with a title and border (optionally, menu bars). Frames extend the `Frame` class. |
-| Dialog        | A top-level window with a title and border, used for taking user input. Dialogs extend the `Dialog` class. |
-| Button        | A clickable button that can trigger an event. Buttons extend the `Button` class. |
-| Label         | A non-interactive text element. Labels extend the `Label` class. |
-| TextField     | A single-line text input field. TextFields extend the `TextField` class. |
-| TextArea      | A multi-line text input field. TextAreas extend the `TextArea` class. |
-| CheckBox      | A box that can be checked or unchecked. CheckBoxes extend the `Checkbox` class. |
-| RadioButton   | A circular button that can be selected or deselected, usually used in groups where only one can be selected at a time. RadioButtons extend the `Checkbox` class but are used with a `CheckboxGroup`. |
-| Choice        | A drop-down list of options. Choices extend the `Choice` class. |
-| List          | A list of items that the user can select. Lists extend the `List` class. |
-| Scrollbar     | A bar that can be moved up and down or left and right to navigate through content. Scrollbars extend the `Scrollbar` class. |
-| MenuBar, Menu, and MenuItem | Components for creating a menu system. These extend the `MenuBar`, `Menu`, and `MenuItem` classes respectively. |
 
 Useful methods in the Component Class include
 
