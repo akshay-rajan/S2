@@ -360,6 +360,26 @@ END;
 The `IN` indicates that a parameter is an `INPUT` parameter. We provide a value for this parameter when the procedure is called. Also `IN` is the default mode of a parameter, and hence can be avoided.
 Other keywords are `OUT` (representing an output parameter) and `INOUT` (a parameter that can be both read and modified).
 
+### 6. Triggers
+
+Triggers are stored programs that are automatically executed or fired when some events occur. 
+Triggers are used to maintain the integrity of data in the database.
+
+```sql
+CREATE TRIGGER trigger_name
+BEFORE INSERT -- Event
+ON table_name
+FOR EACH ROW
+-- SQL STATEMENT;
+```
+
+`NEW` and `OLD` are used to access the new and old values of the data that caused the trigger to fire. 
+`NEW` is used for `INSERT` and `UPDATE` triggers, while `OLD` is used for `DELETE` and `UPDATE` triggers. 
+For example,
+```sql
+-- Update the Product table on INSERT, by reducing the sold quantity from the available quantity
+UPDATE Product SET QtyInStock = QtyInStock - NEW.QtyInStock WHERE PdtId = NEW.PdtId;
+```
 # MySQL
 
 MySQL is an open-source relational database management system (RDBMS) that uses Structured Query Language (SQL) for adding, accessing, and managing content in a database.
