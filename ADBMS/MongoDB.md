@@ -58,6 +58,8 @@ The `db.collection.remove()` method is used to delete documents from a collectio
 db.collection('collectionName').deleteOne({ key: 'value' });
 ```
 
+<div style="color: pink;">Note: The above syntax is for MongoDB Node.js driver.</div>
+
 Remember, MongoDB is schema-less, meaning the documents in a single collection do not need to have the same set of fields and the data type for a field can differ across documents within a collection.
 
 # PyMongo
