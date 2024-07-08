@@ -150,15 +150,97 @@ Remember, MongoDB is schema-less, meaning the documents in a single collection d
 | Query for a Document | Returns the first document that matches the filter | `document = collection.find_one({"age": {"$gt": 20}})` |
    
 
-| OPERATORS | AND | DESCRIPTIONS |
-|------------------------|------------------------|------------------------|
-| `$eq` - Equal to | `$gt` - Greater than | `$gte` - Greater than or equal |
-| `$lt` - Less than | `$lte` - Less than or equal | `$ne` - Not equal |
-| `$in` - In an array | `$nin` - Not in an array | `$or` - Logical OR |
-| `$and` - Logical AND | `$not` - Not | `$nor` - Logical NOR |
-| `$exists` - Field exists | `$type` - Type of field | `$all` - All elements in array |
-| `$elemMatch` - Match in array | `$size` - Size of array | `$regex` - Regular expression |
-| `$mod` - Modulo operation | `$text` - Text search | |
+## Operators
+### Comparison Operators
+- $eq - Equal to
+   ```python
+   db.collection.find({"age": {"$eq": 30}})
+   ```
+- $gt - Greater than
+   ```python
+   db.collection.find({"age": {"$gt": 30}})
+   ```
+- $gte - Greater than or equal
+   ```python
+   db.collection.find({"age": {"$gte": 30}})
+   ```
+- $lt - Less than
+   ```python
+   db.collection.find({"age": {"$lt": 30}})
+   ```
+- $lte - Less than or equal
+   ```python
+   db.collection.find({"age": {"$lte": 30}})
+   ```
+- $ne - Not equal
+   ```python
+   db.collection.find({"age": {"$ne": 30}})
+   ```
+- $in - In an array
+   ```python
+   db.collection.find({"age": {"$in": [25, 30, 35]}})
+   ```
+- $nin - Not in an array
+   ```python
+   db.collection.find({"age": {"$nin": [25, 30, 35]}})
+   ```
+
+### Logical Operators
+- $or - Logical OR
+   ```python
+   db.collection.find({"$or": [{"age": 30}, {"name": "John"}]})
+   ```
+- $and - Logical AND
+   ```python
+   db.collection.find({"$and": [{"age": {"$gt": 25}}, {"name": "John"}]})
+   ```
+- $not - Not
+   ```python
+   db.collection.find({"age": {"$not": {"$lt": 30}}})
+   ```
+- $nor - Logical NOR
+   ```python
+   db.collection.find({"$nor": [{"age": 30}, {"name": "John"}]})
+   ```
+
+### Element Operators
+- $exists - Field exists
+   ```python
+   db.collection.find({"address": {"$exists": True}})
+   ```
+- $type - Type of field
+   ```python
+   db.collection.find({"age": {"$type": "int"}})
+   ```
+
+### Array Operators
+- $all - All elements in array
+   ```python
+   db.collection.find({"tags": {"$all": ["red", "blank"]}})
+   ```
+- $elemMatch - Match in array
+   ```python
+   db.collection.find({"grades": {"$elemMatch": {"score": {"$gt": 80}}}})
+   ```
+- $size - Size of array
+   ```python
+   db.collection.find({"tags": {"$size": 3}})
+   ```
+
+### Evaluation Operators
+- $regex - Regular expression
+   ```python
+   db.collection.find({"name": {"$regex": "^J"}})
+   ```
+- $mod - Modulo operation
+   ```python
+   db.collection.find({"age": {"$mod": [10, 0]}})
+   ```
+- $text - Text search
+   ```python
+   db.collection.find({"$text": {"$search": "mongodb"}})
+   ```
+
 
 ## REGEX
 
