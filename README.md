@@ -121,7 +121,7 @@
 - [Write a script which takes a process id as a command line argument, and displays the details of that running process.](./NSA/ps.sh)
 - [Bash Scripting Note](./NSA/shellscripting.md)
 
-#### [Linux Commands Cheat Sheet](./NSA/Others/cheat_sheet.pdf)
+#### [Linux Commands Cheat Sheet](./NSA/cheatSheet.md)
 
 ### CO5. DevOps
 

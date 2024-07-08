@@ -1,0 +1,5 @@
+![alt](./Others/cheat_sheet_page-0001.jpg)
+![alt](./Others/cheat_sheet_page-0002.jpg)
+![alt](./Others/cheat_sheet_page-0003.jpg)
+![alt](./Others/cheat_sheet_page-0004.jpg)
+![alt](./Others/cheat_sheet_page-0005.jpg)
