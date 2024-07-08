@@ -273,5 +273,16 @@ In MongoDB, the `$regex` operator is used to perform pattern matching queries. I
    - `s`: Allows `.` to match newline characters.
 
 ```python
-cursor = collection.find({ "field": { "$regex": "^abc", "$options": "i" } })
+# ^ asserts the start of the string.
+# [a-zA-Z0-9._%+-]+ matches one or more characters that are alphanumeric or special characters commonly found in the local part of an email.
+# @ matches the at symbol.
+# [a-zA-Z0-9.-]+ matches one or more characters that are alphanumeric or dots/hyphens, commonly found in domain names.
+# \. matches the dot before the top-level domain.
+# [a-zA-Z]{2,} matches two or more alphabetical characters for the top-level domain.
+# $ asserts the end of the string.
+cursor = db.collection.find({
+    "email": {
+        "$regex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+    }
+})
 ```
