@@ -94,7 +94,7 @@ If the conditions are not satisfied, the stored procedure just terminates (no er
 ## Exercise 6 - Trigger
 
 Create three tables named:
-Product (Pdtld, Pname, Proce, Qtyinstock), Sale(saleld, Deliveryaddess), and Saleitem(saleld, Pdtid, Qty).
+Product (Pdtld, Pname, Price, Qtyinstock), Sale(saleld, Deliveryaddess), and Saleitem(saleld, Pdtid, Qty).
 
 Create a trigger called updateAvailable Quantity that updates the quantity in stock in the product table, for every product sold. 
 The trigger should be executed after each insert operation on the Saleitem table: for the product with given Ptdld(the one inserted into Saleitem), update the available quantity in Product table to be the old quantity minus the sold quantity.
@@ -103,8 +103,8 @@ The trigger should be executed after each insert operation on the Saleitem table
 
 ## Exercise 7 - MongoDB
 
-Create a database named college and then create a collection named studlist. Insert some values into it [You can use the data in test.json file].
-Write a MongoDB Query to:
+Create a database named college and then create a collection named studlist. Insert some values into it (You can use the data in [students.json](./students.json) file).
+Write MongoDB queries to:
 1. Display name (both fname and Iname) and mark of all female students in MCA department.
 2. Display the details of student who secured highest mark in the course MCA
 3. Display all male students who secured A+ grade.
