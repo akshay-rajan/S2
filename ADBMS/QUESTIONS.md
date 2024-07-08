@@ -12,14 +12,13 @@ The company database has seven tables:
 7. The regions table stores the data of regions such as Asia, Europe, America, and the Middle
 East and Africa. The countries are grouped into regions.
 
-I . WRITE QUERIES IN MYSQL TO DO THE FOLLOWING :
-DDL COMMANDS
+I . WRITE QUERIES IN MYSQL TO DO THE FOLLOWING:
 1. Design and create database which consists of above seven tables.
 2. Rename Departments table to Dept.
 3. Modify Column Salary from int to smallint
 4. Add Commission column to the Employees table.
-DML COMMANDS
-5. Enter following queries to insert values in Employees table.
+
+5. Enter the given queries to insert values in Employees table.
 
 
 [Solution](./exercise1.sql)
@@ -58,7 +57,7 @@ The STUDENT file stores data on each student, the COURSE file stores data on eac
 3. Retrieve the list of all courses and grades of 'Smith'
 4. List the names of students who took the section of the 'Database' course offered in fall 2008 and their grades in that section
 5. List the prerequisites of the 'Database' course.
-6. Retrieve the names of all senior students majoring in 'CS' (computer science).
+6. Retrieve the names of all senior students majoring in 'CS' using `VIEW`.
 7. Retrieve the names of all courses taught by Professor King in 2007 and 2008.
 8. For each section taught by Professor King, retrieve the course number, semester, year, and number of students who took the section.
 9. Retrieve the name and transcript of each senior student (Class = 4)majoring in CS. A transcript includes course name, course number, credit hours, semester, year, and grade for each course completed by the student.
