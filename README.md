@@ -190,7 +190,7 @@
   <tr>
     <td><a href="/NSA/users.sh">Users</a></td>
     <td><a href="/NSA/variables.sh">Variables</a></td>
-    <td><a href="/NSA/vote.sh">Vote</a></td>
+    <td><a href="/NSA/vote.sh">Voting Eligibility</a></td>
   </tr>
 </table>
 
