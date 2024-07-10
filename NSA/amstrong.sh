@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# 153 = 1^2 + 5^2 + 3^2
 isAmstrong() {
 	num=$1
 	sum=0
