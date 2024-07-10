@@ -131,6 +131,69 @@
 - [Docker](./NSA/Docker.md)
 - [Ansible](./NSA/Ansible.md)
 
+<table>
+  <tr>
+    <td><a href="/NSA/amstrong.sh">Amstrong Numbers</a></td>
+    <td><a href="/NSA/args.sh">Arguments</a></td>
+    <td><a href="/NSA/array.sh">Array</a></td>
+  </tr>
+  <tr>
+    <td><a href="/NSA/break.sh">Break Statement</a></td>
+    <td><a href="/NSA/calculator.sh">calculator</a></td>
+    <td><a href="/NSA/colors.sh">Colors</a></td>
+  </tr>
+  <tr>
+    <td><a href="/NSA/compare.sh">Comparison</a></td>
+    <td><a href="/NSA/continue.sh">Continue Statement</a></td>
+    <td><a href="/NSA/database.sh">Database</a></td>
+  </tr>
+  <tr>
+    <td><a href="/NSA/factorial.sh">Factorial</a></td>
+    <td><a href="/NSA/fibonacci.sh">Fibonacci</a></td>
+    <td><a href="/NSA/fileCount.sh">File Count</a></td>
+  </tr>
+  <tr>
+    <td><a href="/NSA/filerev.sh">File Reversal</a></td>
+    <td><a href="/NSA/fruit.sh">Fruit</a></td>
+    <td><a href="/NSA/gcd_lcm.sh">GCD and LCM</a></td>
+  </tr>
+  <tr>
+    <td><a href="/NSA/greatest2.sh">Greatest Number 1</a></td>
+    <td><a href="/NSA/greatest3.sh">Greatest Number 2</a></td>
+    <td><a href="/NSA/grep.sh">Grep</a></td>
+  </tr>
+  <tr>
+    <td><a href="/NSA/hello.sh">Hello</a></td>
+    <td><a href="/NSA/hello2.sh">Hello 2</a></td>
+    <td><a href="/NSA/isDirectory.sh">Directory</a></td>
+  </tr>
+  <tr>
+    <td><a href="/NSA/logs.sh">Logs</a></td>
+    <td><a href="/NSA/palindrome.sh">Palindrome</a></td>
+    <td><a href="/NSA/parity.sh">Parity</a></td>
+  </tr>
+  <tr>
+    <td><a href="/NSA/password.sh">Password</a></td>
+    <td><a href="/NSA/prime.sh">Prime</a></td>
+    <td><a href="/NSA/ps.sh">PS</a></td>
+  </tr>
+  <tr>
+    <td><a href="/NSA/reverse.sh">Reverse</a></td>
+    <td><a href="/NSA/substring.sh">Sub-string</a></td>
+    <td><a href="/NSA/sum.sh">Sum</a></td>
+  </tr>
+  <tr>
+    <td><a href="/NSA/sum2.sh">Sum 2</a></td>
+    <td><a href="/NSA/sysConfig.sh">System Configuration</a></td>
+    <td><a href="/NSA/until.sh">Until Statement</a></td>
+  </tr>
+  <tr>
+    <td><a href="/NSA/users.sh">Users</a></td>
+    <td><a href="/NSA/variables.sh">Variables</a></td>
+    <td><a href="/NSA/vote.sh">Vote</a></td>
+  </tr>
+</table>
+
 ---
 ---
 
