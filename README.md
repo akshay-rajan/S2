@@ -155,7 +155,7 @@
   </tr>
   <tr>
     <td><a href="/NSA/filerev.sh">File Reversal</a></td>
-    <td><a href="/NSA/fruit.sh">Fruits</a></td>
+    <td><a href="/NSA/fruit.sh">Fruits (Case)</a></td>
     <td><a href="/NSA/gcd_lcm.sh">GCD and LCM</a></td>
   </tr>
   <tr>
