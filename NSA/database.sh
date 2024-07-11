@@ -40,7 +40,7 @@ while [ $i = "y" ]; do
             ;;
     esac
 
-    read -p "Do you want to continue? " i
+    read -p "Do you want to continue? (y/n) " i
     if [ $i != "y" ]; then
         exit
     fi
