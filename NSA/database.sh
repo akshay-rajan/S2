@@ -10,7 +10,7 @@ while [ $i = "y" ]; do
     echo "3. Add Record"
     echo "4. Delete Record"
     echo "5. Exit"
-    read -p "Enter your choicce: " ch
+    read -p "Enter your choice: " ch
     case $ch in
         1)
             cat $db

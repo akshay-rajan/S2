@@ -1,10 +1,9 @@
 #!/bin/bash
 
 read -p "Directory: " dir
-direct="./$dir"
-if [ -d "$direct" ]; then
-    num_files=$(find "$direct" -type f | wc -l)
-    echo "There are $num_files files in $direct"
+if [ -d "$dir" ]; then
+    num_files=$(find "$dir" -type f | wc -l)
+    echo "There are $num_files files in $dir"
 else
-    echo "$direct is not a directory"
+    echo "$dir is not a directory"
 fi
