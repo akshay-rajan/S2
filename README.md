@@ -134,13 +134,13 @@
 
 <table>
   <tr>
-    <td><a href="/NSA/amstrong.sh">Amstrong Numbers</a></td>
     <td><a href="/NSA/args.sh">Arguments</a></td>
     <td><a href="/NSA/array.sh">Array</a></td>
+    <td><a href="/NSA/amstrong.sh">Amstrong Numbers</a></td>
   </tr>
   <tr>
     <td><a href="/NSA/break.sh">Break Statement</a></td>
-    <td><a href="/NSA/calculator.sh">calculator</a></td>
+    <td><a href="/NSA/calculator.sh">Calculator</a></td>
     <td><a href="/NSA/colors.sh">Colors</a></td>
   </tr>
   <tr>
@@ -155,7 +155,7 @@
   </tr>
   <tr>
     <td><a href="/NSA/filerev.sh">File Reversal</a></td>
-    <td><a href="/NSA/fruit.sh">Fruit</a></td>
+    <td><a href="/NSA/fruit.sh">Fruits</a></td>
     <td><a href="/NSA/gcd_lcm.sh">GCD and LCM</a></td>
   </tr>
   <tr>
@@ -176,21 +176,24 @@
   <tr>
     <td><a href="/NSA/password.sh">Password</a></td>
     <td><a href="/NSA/prime.sh">Prime</a></td>
-    <td><a href="/NSA/ps.sh">PS</a></td>
+    <td><a href="/NSA/ps.sh">Process Status</a></td>
   </tr>
   <tr>
     <td><a href="/NSA/reverse.sh">Reverse</a></td>
-    <td><a href="/NSA/substring.sh">Sub-string</a></td>
-    <td><a href="/NSA/sum.sh">Sum</a></td>
+    <td><a href="/NSA/standardDeviation.sh">Standard Deviation</a></td>
+    <td><a href="/NSA/substring.sh">Substring</a></td>
   </tr>
   <tr>
+    <td><a href="/NSA/sum.sh">Sum</a></td>
     <td><a href="/NSA/sum2.sh">Sum 2</a></td>
     <td><a href="/NSA/sysConfig.sh">System Configuration</a></td>
-    <td><a href="/NSA/until.sh">Until Statement</a></td>
   </tr>
   <tr>
+    <td><a href="/NSA/until.sh">Until Statement</a></td>
     <td><a href="/NSA/users.sh">Users</a></td>
     <td><a href="/NSA/variables.sh">Variables</a></td>
+  </tr>
+  <tr>
     <td><a href="/NSA/vote.sh">Voting Eligibility</a></td>
   </tr>
 </table>
