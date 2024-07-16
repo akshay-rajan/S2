@@ -14,6 +14,7 @@ public class Complex {
 	}
 
 	// String representation of a complex number
+	@Override
 	public String toString() {
 		return a + " + " + b + "i";
 	}
