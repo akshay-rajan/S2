@@ -332,6 +332,16 @@ Other similar tools used for filtering results are
 * sed
 * wc
 
+To replace all occurences of *oldtext* with *newtext*, do:
+```bash
+# s - substitution, g - global replacement
+sed 's/oldtext/newtext/g' file.txt
+```
+To print the first and third fields of a file (separated by spaces), do:
+```bash
+awk '{ print $1, $3 }' file.txt
+```
+
 ### Regular Expressions
 
 Regular expressions are used to search for patterns in text and files. They are a filter criterion used to manipulate strings. Regular expressions can be created with patterns called *metacharacters*. We can use it in tools like *grep* or *sed*.
