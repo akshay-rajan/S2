@@ -197,13 +197,3 @@
     <td><a href="/NSA/vote.sh">Voting Eligibility</a></td>
   </tr>
 </table>
-
----
----
-
-# [Functional Programming](/FP#readme)
-
-
-# [Artificial Intelligence](/AI#readme)
-
-
